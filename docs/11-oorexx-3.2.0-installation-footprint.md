@@ -104,3 +104,20 @@ or, if app-bundle embedding proves impractical:
 ```
 
 No LeooRexx release should install Java bridges, BSF4Rexx, UNO bridges, Windows-specific components, or other non-Leopard-native ballast.  
+
+
+The installer exposes ooRexx system-wide mostly through symbolic links:
+
+/usr/bin/rexx         -> /opt/ooRexx/bin/rexx
+/usr/bin/rexxc        -> /opt/ooRexx/bin/rexxc
+/usr/bin/rexxj        -> /opt/ooRexx/bin/rexxj
+/usr/bin/oorexx-config -> /opt/ooRexx/bin/oorexx-config
+
+/usr/lib/librexx*      -> /opt/ooRexx/lib/ooRexx/librexx*
+/usr/lib/librexxapi*   -> /opt/ooRexx/lib/ooRexx/librexxapi*
+/usr/lib/librexxutil*  -> /opt/ooRexx/lib/ooRexx/librexxutil*
+
+
+The installation is centralized under /opt/ooRexx, but exposed globally through /usr/bin and /usr/lib symbolic links.
+
+For LeooRexx this confirms that a future curated runtime should avoid global symlinks and prefer an app-bundle-local or Application Support based layout.
