@@ -10,7 +10,9 @@ SCRIPT="$ROOT_DIR/examples/hello.rexx"
 
 echo "Checking for ooRexx runtime..."
 
-if command -v rexx >/dev/null 2>&1; then
+if [ -n "$REXX_BIN" ]; then
+    :
+elif command -v rexx >/dev/null 2>&1; then
     REXX_BIN="$(command -v rexx)"
 elif command -v orexx >/dev/null 2>&1; then
     REXX_BIN="$(command -v orexx)"
