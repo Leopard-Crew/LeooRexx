@@ -313,7 +313,7 @@ void SysRegisterSignals(
 /* Function:   Establish exception handlers                                   */
 /******************************************************************************/
 {
-#if !defined(AIX) && !defined(LINUX)
+#if LEOOREXX_LEGACY_OS2
   PTIB   tibp;                         /* process information block         */
   PPIB   pibp;                         /* thread information block          */
   ULONG  NestingLevel;                 /* signal trap nesting level         */
@@ -341,7 +341,7 @@ void SysDeregisterSignals(
 /* Function:   Clear out registered exception handlers                        */
 /******************************************************************************/
 {
-#if !defined(AIX) && !defined(LINUX)
+#if LEOOREXX_LEGACY_OS2
   PTIB   tibp;                         /* process information block         */
   PPIB   pibp;                         /* thread information block          */
   ULONG  NestingLevel;                 /* signal trap nesting level         */
@@ -362,7 +362,7 @@ SYSWINDOWINFO *SysInitializeWindowEnv()
 /******************************************************************************/
 {
   SYSWINDOWINFO *windowInfo = NULL;    /* PM specific thread info           */
-#if !defined(AIX) && !defined(LINUX)
+#if LEOOREXX_LEGACY_OS2
   PTIB   tibp;                         /* process information block         */
   PPIB   pibp;                         /* thread information block          */
 
@@ -411,7 +411,7 @@ void SysTerminateWindowEnv(SYSWINDOWINFO *windowInfo)
 /* Function:  Initialize a PM thread for possible WIN message later.          */
 /******************************************************************************/
 {
-#if !defined(AIX) && !defined(LINUX)
+#if LEOOREXX_LEGACY_OS2
                                        /* Were we even passed an INfo Block?*/
   if (windowInfo) {
                                        /* Yes, Free up resources.           */
