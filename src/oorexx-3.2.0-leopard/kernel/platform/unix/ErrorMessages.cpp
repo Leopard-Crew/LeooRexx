@@ -123,7 +123,7 @@ RexxString * SysMessageText(           /* simplified whole code             */
      message = catgets(catd, set_num, msgid, NULL);
      if(!message)                    /* got a message ?                   */
      {
-# if defined(OPSYS_LINUX) && !defined(OPSYS_SUN)
+# if LEOOREXX_PLATFORM_POSIX
        sprintf(DataArea, "%s/%s", ORX_CATDIR, REXXMESSAGEFILE);
        if ((catd = catopen(DataArea, SECOND_PARAMETER)) == (nl_catd)CATD_ERR)
        {
