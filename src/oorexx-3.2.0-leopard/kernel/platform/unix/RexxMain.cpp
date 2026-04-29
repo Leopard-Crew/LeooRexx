@@ -745,7 +745,7 @@ void  SysRunProgram(
 /* functions for concurrency synchronization/termination               */
 
 
-#if defined(AIX) || defined(LINUX)
+#if LEOOREXX_PLATFORM_POSIX
 
 void APIENTRY RexxWaitForTermination(void)
 {
