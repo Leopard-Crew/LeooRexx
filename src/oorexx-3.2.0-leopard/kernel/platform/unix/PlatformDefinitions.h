@@ -51,6 +51,8 @@
 #ifndef AIXREXX_H                      /* provide a define here to protect  */
 #define AIXREXX_H                      /* against multiple includes         */
 
+#include "../leopard/LeooRexxPlatform.h"
+
 /******************************************************************************/
 /* REQUIRED:  The implemenation must decide on the C_STACK_SIZE defining      */
 /* constants that are compiler/linker dependent.                              */
