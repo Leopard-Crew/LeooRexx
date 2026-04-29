@@ -2,6 +2,32 @@
 #define LEOOREXX_PLATFORM_H
 
 /*
+ * Build guard:
+ * This source cut is intentionally limited to Mac OS X Leopard / Darwin
+ * on PowerPC. It must fail early on foreign platforms.
+ */
+
+#ifndef __APPLE__
+#error "LeooRexx Leopard cut requires Mac OS X / Darwin."
+#endif
+
+#ifndef __MACH__
+#error "LeooRexx Leopard cut requires Darwin / Mach."
+#endif
+
+#if !defined(__ppc__) && !defined(__PPC__) && !defined(__POWERPC__) && !defined(__powerpc__)
+#error "LeooRexx Leopard cut requires PowerPC."
+#endif
+
+#ifndef __ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__
+#error "LeooRexx Leopard cut requires an explicit Mac OS X deployment target."
+#endif
+
+#if __ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__ < 1050
+#error "LeooRexx Leopard cut requires Mac OS X 10.5 or later as deployment target."
+#endif
+
+/*
  * LeooRexx platform identity for Mac OS X 10.5.x Leopard / PowerPC.
  *
  * This header defines the intended platform identity for the curated
