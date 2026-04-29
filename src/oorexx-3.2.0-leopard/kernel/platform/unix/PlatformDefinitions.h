@@ -377,7 +377,7 @@ typedef void *(* PTHREADFN)(void *);    /* define a thread function          */
 /******************************************************************************/
 
 
-#if defined(AIX) || defined(LINUX)
+#if LEOOREXX_PLATFORM_POSIX
 #define SysEnterResourceSection() MTXRQ(resource_semaphore);
 #define SysExitResourceSection() MTXRL(resource_semaphore);
 #else
@@ -538,7 +538,7 @@ typedef PVOID SYSWINDOWINFO;
 #endif
 
 
-#if defined(AIX) || defined(LINUX)
+#if LEOOREXX_PLATFORM_POSIX
   #define  OLDMETAVERSION       22     /* highest meta version number:                  */
 #else
   #define  OLDMETAVERSION       30     // each platform should have it's own old meta version
