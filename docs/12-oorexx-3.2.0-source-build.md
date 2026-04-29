@@ -1,0 +1,8 @@
+- Configure target: powerpc-apple-darwin9.8.0
+- Compiler: /usr/bin/gcc and /usr/bin/g++
+- Flags: -Os -arch ppc -mmacosx-version-min=10.5
+- Build result: rexx, rexxc, librexx, librexxapi, librexxutil
+- Self-built runtime: ./rexx
+- Version output shows build date Apr 28 2026
+- One-line execution test succeeded
+- Existing smoke test still uses /usr/bin/rexx, i.e. the historical installed package
