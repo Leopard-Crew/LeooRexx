@@ -1,0 +1,70 @@
+LeooRexx platform residue scan
+Source: /mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard
+
+Marker counts:
+WINDOWS/WIN32: 147
+OS/2/OS2/PM/Dos*: 91
+AIX: 377
+SUN/SOLARIS: 62
+LINUX/OPSYS_LINUX: 124
+DARWIN/MACOSX: 120
+
+Platform directories:
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/kernel/platform
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/kernel/platform/unix
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/kernel/platform/windows
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/platform
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/platform/unix
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/platform/windows
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/rexutils/unix
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/rexutils/windows
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/rexxapi/unix
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/rexxapi/windows
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/samples/unix
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/samples/windows
+
+Foreign platform files:
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/kernel/platform/windows/WindowsMethods.orx
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/lib/orxwin32.mak
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/makeorx.bat
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/orxdb.bat
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/platform/windows/buildorx.bat
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/platform/windows/oodialog/makedll.bat
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/platform/windows/oodialog/tokenize.bat
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/platform/windows/orxscrpt/clean.bat
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/windows-build.txt
+
+Top LINUX/OPSYS_LINUX hit files:
+configure
+configure.ac
+kernel/platform/unix/ErrorMessages.cpp
+kernel/platform/unix/ExternalFunctions.cpp
+kernel/platform/unix/FileSystem.cpp
+kernel/platform/unix/MemorySupport.cpp
+kernel/platform/unix/MiscSystem.cpp
+kernel/platform/unix/PlatformDefinitions.h
+kernel/platform/unix/RexxMain.cpp
+kernel/platform/unix/SharedMemorySupport.h
+kernel/platform/unix/SystemCommands.cpp
+kernel/platform/unix/ThreadSupport.cpp
+kernel/platform/unix/ThreadSupport.hpp
+kernel/RexxClasses/SystemMethods.orx
+kernel/runtime/RexxCore.h
+kernel/runtime/RexxStartup.cpp
+kernel/streamLibrary/StreamNative.cpp
+kernel/streamLibrary/StreamNative.h
+platform/unix/RexxCompiler.cpp
+platform/unix/rexx.cpp
+rexutils/rxmath.cpp
+rexutils/rxsock.c
+rexutils/rxsockfn.c
+rexutils/rxsock.h
+rexutils/unix/rexxutil.cpp
+rexxapi/unix/MacroSpace.cpp
+rexxapi/unix/QueueCommand.cpp
+rexxapi/unix/QueuesAPI.cpp
+rexxapi/unix/RexxAPIManager.h
+rexxapi/unix/rexx.h
+rexxapi/unix/SUBCOMCommand.cpp
+rexxapi/unix/SubcommandAPI.cpp
+samples/rexxtry.rex
