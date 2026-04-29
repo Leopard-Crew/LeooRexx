@@ -60,7 +60,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#if !defined(AIX) && !defined(LINUX)
+#if LEOOREXX_LEGACY_OS2
 #define  INCL_DOSSEMAPHORES
 #include "os2.h"
 
