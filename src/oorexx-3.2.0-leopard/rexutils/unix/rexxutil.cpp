@@ -406,7 +406,7 @@ extern RexxMutex rexxutil_call_sem;
 }
 
 
-#if defined(AIX) || defined(LINUX)
+#if LEOOREXX_PLATFORM_POSIX
 #define RETVAL(retc) { \
   _ltoa((long)retc, retstr->strptr,10); \
   retstr->strlength = strlen(retstr->strptr); \
@@ -632,7 +632,7 @@ static PSZ  RxFncTable[] =
 extern "C" {
 #endif
 
-#if defined(AIX) || defined(LINUX)
+#if LEOOREXX_PLATFORM_POSIX
 LONG APIENTRY SysLoadFuncs(
   PSZ       name,                      /* Function name              */
   LONG      numargs,                   /* Number of arguments        */
