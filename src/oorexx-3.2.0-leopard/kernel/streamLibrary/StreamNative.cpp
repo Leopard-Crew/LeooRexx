@@ -412,7 +412,7 @@ void close_stream(
    int rc = 0;                         /* close return code                 */
 
    if (stream_info->flags.bstd) {      /* standard stream?                  */
-#if defined(AIX) || defined(LINUX)
+#if LEOOREXX_PLATFORM_POSIX
      if (stream_info->fh!=stdin_handle) { /* don't flush stdin              */
 #endif
                                        /* return the flush information      */
@@ -420,7 +420,7 @@ void close_stream(
      if (rc != 0)                      /* did this work?                    */
                                        /* go raise a notready condition     */
        stream_error(self, stream_info, rc, RexxInteger(rc));
-#if defined(AIX) || defined(LINUX)
+#if LEOOREXX_PLATFORM_POSIX
      }
 #endif
    }
@@ -839,7 +839,7 @@ void read_setup(                       /* setup for a read operation        */
                                        /* reset to a ready state            */
    stream_info->state = stream_ready_state;
 
-#if defined(AIX) || defined(LINUX)
+#if LEOOREXX_PLATFORM_POSIX
    if (!stream_info->flags.bstd ||     /* no standard stream?               */
        stream_info->fh!=stdin_handle) {/* no stdin ?                        */
 #endif
@@ -853,7 +853,7 @@ void read_setup(                       /* setup for a read operation        */
        stream_error(self, stream_info, errno, result);
    }
 
-#if defined(AIX) || defined(LINUX)
+#if LEOOREXX_PLATFORM_POSIX
    }
 #endif
                                        /* if this isn't a repeat of the last*/
@@ -1779,7 +1779,7 @@ RexxMethod3(long, stream_lines,
    if (stream_info->flags.bstd && (stream_info->fh == 0))
    {
      if (SysFileIsDevice(stream_info->fh))
-#if defined(AIX) || defined(LINUX)
+#if LEOOREXX_PLATFORM_POSIX
 //     return SysPeekSTDIN(stream_info);
        return SysPeekSTD(stream_info);
 #else
@@ -1953,7 +1953,7 @@ RexxMethod2(long, stream_chars,
    if (stream_info->flags.bstd && (stream_info->fh == 0))
    {
      if (SysFileIsDevice(stream_info->fh))
-#if defined(AIX) || defined(LINUX)
+#if LEOOREXX_PLATFORM_POSIX
        return SysPeekSTD(stream_info);
 #else
        return SysPeekKeyboard();

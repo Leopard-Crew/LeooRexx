@@ -44,7 +44,9 @@
 #ifndef STREAM_H_INCLUDED
 #define STREAM_H_INCLUDED
 
-#if defined(AIX) || defined(LINUX)
+#include "../platform/leopard/LeooRexxPlatform.h"
+
+#if LEOOREXX_PLATFORM_POSIX
 
 #ifdef HAVE_CONFIG_H
 # include "config.h"
@@ -83,7 +85,7 @@
 #define stdout_handle 1
 #define stderr_handle 2
 
-#if defined(AIX) || defined(LINUX)
+#if LEOOREXX_PLATFORM_POSIX
 #define SH_DENYRW     0x10
 #define SH_DENYWR     0x20
 #define SH_DENYRD     0x30
@@ -258,13 +260,13 @@ BOOL SysFileIsDevice(int fhandle);
 int SysPeekKeyboard(void);
 #endif
 
-#if defined(AIX) || defined(LINUX)
+#if LEOOREXX_PLATFORM_POSIX
 #ifndef SysPeekSTDIN
 int SysPeekSTDIN(STREAM_INFO *);
 #endif
 #endif
 
-#if defined(AIX) || defined(LINUX)
+#if LEOOREXX_PLATFORM_POSIX
 #ifndef SysPeekSTD
 int SysPeekSTD(STREAM_INFO *);
 #endif
