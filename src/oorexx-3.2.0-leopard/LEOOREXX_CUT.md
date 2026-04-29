@@ -18,5 +18,32 @@ This directory contains the working source cut derived from the unmodified ooRex
 
 Source archive:
 
-```text
 vendor/oorexx-3.2.0/ooRexx-3.2.0.tar.gz
+
+
+Core candidate:
+- kernel/
+
+Darwin/POSIX surgery candidate:
+- kernel/platform/unix
+- platform/unix
+- rexxapi/unix
+
+Immediate exclude from active LeooRexx build:
+- kernel/platform/windows
+- platform/windows
+- rexutils/windows
+- rexxapi/windows
+- samples/windows
+- makeorx.bat
+- orxdb.bat
+- windows-build.txt
+
+Quarantine:
+- rexutils/
+- rxregexp/
+- samples/
+
+Audit:
+- lib/
+- build system files
