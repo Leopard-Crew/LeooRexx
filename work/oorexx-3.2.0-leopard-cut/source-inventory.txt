@@ -1,0 +1,65 @@
+Source inventory for: /mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard
+
+Top-level entries:
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/acinclude.m4
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/aclocal.m4
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/CHANGES
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/compile
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/config.guess
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/config.h.in
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/config.sub
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/configure
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/configure.ac
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/CONTRIBUTORS
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/CPLv1.0.txt
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/depcomp
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/INSTALL
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/install-sh
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/kernel
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/LEOOREXX_CUT.md
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/lib
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/ltmain.sh
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/Makefile.am
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/Makefile.in
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/makeorx.bat
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/missing
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/oorexx.ver
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/oorexx.ver.incl
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/orxdb.bat
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/platform
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/rexutils
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/rexxapi
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/rxregexp
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/samples
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/windows-build.txt
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/xsl.sh.in
+
+File counts by top-level directory:
+kernel: 308
+lib: 6
+platform: 127
+rexutils: 20
+rexxapi: 39
+rxregexp: 10
+samples: 312
+
+Source file counts:
+C files:      41
+C++ files:    190
+Headers:      178
+Rexx files:   123
+Makefiles:    16
+
+Platform directories:
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/kernel/platform
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/kernel/platform/unix
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/kernel/platform/windows
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/platform
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/platform/unix
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/platform/windows
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/rexutils/unix
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/rexutils/windows
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/rexxapi/unix
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/rexxapi/windows
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/samples/unix
+/mnt/imac_admin/Desktop/Projekte/LeooRexx/src/oorexx-3.2.0-leopard/samples/windows
