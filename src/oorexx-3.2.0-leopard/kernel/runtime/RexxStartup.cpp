@@ -54,7 +54,7 @@
 #include "RexxNativeAPI.h"
 #include "ActivityTable.hpp"
 #include "StackClass.hpp"
-#if defined(AIX) || defined(LINUX)
+#if LEOOREXX_PLATFORM_POSIX
 #include <limits.h>
 #include <unistd.h>
 #include "APIDefinitions.h"
@@ -87,7 +87,7 @@ extern RexxInteger *ProcessName;
 extern MemorySegmentPool *ProcessCurrentPool;
 extern MemorySegmentPool *GlobalCurrentPool;
 
-#if defined(AIX) || defined(LINUX)
+#if LEOOREXX_PLATFORM_POSIX
 char achRexxCurDir[ CCHMAXPATH+2 ];          /* Save current working direct */
 extern int thread_counter;
 extern int  SecureFlag;
@@ -106,7 +106,7 @@ void kernelShutdown (void)
 /******************************************************************************/
 {
 #ifdef SHARED
-#if defined(AIX) || defined(LINUX)
+#if LEOOREXX_PLATFORM_POSIX
     MTXRQ(initialize_sem);
 #else
   MTXRQ(start_semaphore);              /* serialize startup/shutdown        */
@@ -139,14 +139,14 @@ void kernelShutdown (void)
     memoryObject.freePools();          /* release access to memoryPools     */
 #endif
     ProcessName = OREF_NULL;           /* no process name now               */
-#if defined(AIX) || defined(LINUX)
+#if LEOOREXX_PLATFORM_POSIX
     EVCLOSE(RexxServerWait);           /* and clear the semaphore           */
 #else
     EVCL(RexxServerWait);              /* and clear the semaphore           */
 #endif
   }
 #ifdef SHARED
-#if defined(AIX) || defined(LINUX)
+#if LEOOREXX_PLATFORM_POSIX
     MTXRL(initialize_sem);
 #else
     MTXRL(start_semaphore);              /* serialize startup/shutdown        */
@@ -247,7 +247,7 @@ BOOL REXXENTRY RexxInitialize (void)
 {
   BOOL result;                         /* initialization result             */
 
-#if defined(AIX) || defined(LINUX)
+#if LEOOREXX_PLATFORM_POSIX
   LONG lRC;                            /* Return Code                       */
   if (!getcwd(achRexxCurDir, CCHMAXPATH))    /* Save current working direct */
   {
@@ -273,7 +273,7 @@ BOOL REXXENTRY RexxInitialize (void)
   setbuf(stdout,NULL);                 /* No buffering                      */
   setbuf(stderr,NULL);
 
-#if defined(AIX) || defined(LINUX)
+#if LEOOREXX_PLATFORM_POSIX
 #ifdef THREADS
   if (!thread_counter)                 /*thread_counter is global defined    */
   {                                    /* and reset in RexxWaitForTermination */
@@ -320,7 +320,7 @@ BOOL REXXENTRY RexxInitialize (void)
 #endif
     EVCR(RexxTerminated);              /* Create the terminated semaphore   */
     EVSET(RexxTerminated);             /* make sure Semaphore is UnPosted   */
-#if defined(AIX) || defined(LINUX)
+#if LEOOREXX_PLATFORM_POSIX
     SecureFlag = 1;
 #endif
     EVCR(RexxServerWait);              /* Create the ServerWait semaphore   */
