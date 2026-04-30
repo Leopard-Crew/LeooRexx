@@ -40,6 +40,8 @@
 /*                 sockets utility function package                        */
 /***************************************************************************/
 
+#include "../kernel/platform/leopard/LeooRexxPlatform.h"
+
 /*------------------------------------------------------------------
  * typedef for struct
  *------------------------------------------------------------------*/
@@ -55,7 +57,7 @@ typedef int socklen_t;
  *------------------------------------------------------------------*/
 RexxFunctionHandler SockFunctionGateWay            ;
 
-#if defined(WIN32) || defined(OPSYS_AIX) || defined(OPSYS_LINUX)
+#if defined(WIN32) || LEOOREXX_PLATFORM_BSD_SOCKETS
 RexxFunctionHandler SockLoadFuncs                  ;
 #endif
 
@@ -195,7 +197,7 @@ void SetErrno(void);
  *------------------------------------------------------------------*/
 void SetH_Errno(void);
 
-#if defined(OPSYS_AIX) || defined(OPSYS_LINUX)
+#if LEOOREXX_PLATFORM_BSD_SOCKETS
 /*------------------------------------------------------------------
  * string compare ignore upper and lower case
  *------------------------------------------------------------------*/

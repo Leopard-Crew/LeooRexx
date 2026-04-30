@@ -54,7 +54,7 @@
  * rexx includes
  *------------------------------------------------------------------*/
 #define INCL_REXXSAA
-#if defined(OPSYS_AIX) || defined(OPSYS_LINUX)
+#if LEOOREXX_PLATFORM_BSD_SOCKETS
 # include "rexx.h"
 #else
 # ifdef WIN32
@@ -100,7 +100,7 @@
    #define psock_errno(s) fprintf(stderr, "RxSOCK Error: %s\n", s)
 #endif
 
-#if defined(OPSYS_AIX) || defined(OPSYS_LINUX)
+#if LEOOREXX_PLATFORM_BSD_SOCKETS
    #define sock_errno() errno
    #define psock_errno(s) printf("\nSocket error %s\n",s)
 #endif
@@ -496,7 +496,7 @@ ULONG APIENTRY SockGetHostId(
    ia.s_addr = (*(ULONG *)pHostEnt->h_addr);// in network byte order already
    addr = inet_ntoa(ia);
 #else
-#if defined(OPSYS_AIX) || defined(OPSYS_LINUX)
+#if LEOOREXX_PLATFORM_BSD_SOCKETS
    #define h_addr h_addr_list[0]
 
    UCHAR    pszBuff[64];                    /* buffer for ip address*/

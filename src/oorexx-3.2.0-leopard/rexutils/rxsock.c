@@ -43,7 +43,7 @@
 /*------------------------------------------------------------------
  * program defines
  *------------------------------------------------------------------*/
-#if defined(OPSYS_AIX) || defined(OPSYS_LINUX)
+#if LEOOREXX_PLATFORM_BSD_SOCKETS
 #define PROG_NAME "rxsock"
 #else
 #define PROG_NAME "RxSock"
@@ -87,7 +87,7 @@
  *------------------------------------------------------------------*/
 #define INCL_REXXSAA
 
-#if defined(OPSYS_AIX) || defined(OPSYS_LINUX)
+#if LEOOREXX_PLATFORM_BSD_SOCKETS
    #include "rexx.h"
 #else
 #ifdef WIN32
@@ -161,7 +161,7 @@ RxSockFuncTableEntry RxSockFuncTable[] =
 #define RxSockFuncTableSize \
    (sizeof RxSockFuncTable / sizeof RxSockFuncTable[0] )
 
-#if defined(OPSYS_AIX31) || defined(OPSYS_LINUX)
+#if defined(OPSYS_AIX31) || LEOOREXX_PLATFORM_BSD_SOCKETS
 #define RFB_TABLEENTRY(fun) { #fun , SockFunctionGateWay, NULL},
 
 RXFUNCBLOCK RxSockFuncBlock[] =
@@ -199,7 +199,7 @@ RXFUNCBLOCK RxSockFuncBlock[] =
 /*-/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\-*/
 /*-\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/-*/
 
-#if defined(OPSYS_AIX) || defined(OPSYS_LINUX)
+#if LEOOREXX_PLATFORM_BSD_SOCKETS
 /*------------------------------------------------------------------
  * stricmp for aix
  *------------------------------------------------------------------*/
@@ -365,7 +365,7 @@ PSZ RxVarGet(
    memcpy(pszValue,shv.shvvalue.strptr,shv.shvvalue.strlength);
    pszValue[shv.shvvalue.strlength] = 0;
 
-#if defined(OPSYS_AIX) || defined(OPSYS_LINUX)
+#if LEOOREXX_PLATFORM_BSD_SOCKETS
    free(shv.shvvalue.strptr);
 #else
    GlobalFree(shv.shvvalue.strptr);
@@ -654,7 +654,7 @@ void sockaddr2stem(
    /*---------------------------------------------------------------
     * set address
     *---------------------------------------------------------------*/
-#if defined(OPSYS_AIX) || defined(OPSYS_LINUX)
+#if LEOOREXX_PLATFORM_BSD_SOCKETS
    RxVarSet(pszStem,"addr",(PSZ)inet_ntoa(pSockAddr->sin_addr));
 #else
    RxVarSet(pszStem,"addr",inet_ntoa(pSockAddr->sin_addr));
@@ -679,7 +679,7 @@ void hostent2stem(
    /*---------------------------------------------------------------
     * set family
     *---------------------------------------------------------------*/
-#if defined(OPSYS_AIX) || defined(OPSYS_LINUX)
+#if LEOOREXX_PLATFORM_BSD_SOCKETS
    RxVarSet(pszStem,"name",(PSZ)pHostEnt->h_name);
 #else
    RxVarSet(pszStem,"name",pHostEnt->h_name);
@@ -706,7 +706,7 @@ void hostent2stem(
     * set addr
     *---------------------------------------------------------------*/
    addr.s_addr = (*(ULONG *)pHostEnt->h_addr);
-#if defined(OPSYS_AIX) || defined(OPSYS_LINUX)
+#if LEOOREXX_PLATFORM_BSD_SOCKETS
    RxVarSet(pszStem,"addr",(PSZ)inet_ntoa(addr));
 #else
    RxVarSet(pszStem,"addr",inet_ntoa(addr));
@@ -729,7 +729,7 @@ void hostent2stem(
       sprintf((PSZ)&szBuffer,"addr.%d",count+1);
       addr.s_addr = (*(ULONG *)pHostEnt->h_addr_list[count]);
 
-#if defined(OPSYS_AIX) || defined(OPSYS_LINUX)
+#if LEOOREXX_PLATFORM_BSD_SOCKETS
       RxVarSet(pszStem,(PSZ)&szBuffer, (PSZ)inet_ntoa(addr));
 #else
       RxVarSet(pszStem,szBuffer, inet_ntoa(addr));
@@ -784,7 +784,7 @@ void SetErrno(void)
 
 #if defined(WIN32)
    theErrno = WSAGetLastError();
-#elif defined(OPSYS_AIX) || defined(OPSYS_LINUX)
+#elif LEOOREXX_PLATFORM_BSD_SOCKETS
    theErrno = errno;
 #endif
 
@@ -999,7 +999,7 @@ ULONG APIENTRY SockVersion(
 #if !defined(OPSYS_AIX31)
 /*-/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\-*/
 /*-\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/-*/
-#if defined(OPSYS_AIX) || defined(OPSYS_LINUX)
+#if LEOOREXX_PLATFORM_BSD_SOCKETS
 ULONG APIENTRY SOCKLOADFUNCS         (
    PUCHAR     name,
    ULONG      argc,
