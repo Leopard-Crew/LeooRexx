@@ -1211,7 +1211,7 @@ ULONG APIENTRY SockSelect(
    PRXSTRING  retStr
    )
    {
-#if defined(OPSYS_LINUX)
+#if LEOOREXX_LEGACY_LINUX
    struct timespec  timeOutS;
    struct timespec *timeOutP;
 #else
@@ -1227,7 +1227,7 @@ ULONG APIENTRY SockSelect(
    int             i;
    int             j;
    int             rc;
-#if defined(OPSYS_LINUX)
+#if LEOOREXX_LEGACY_LINUX
    fd_set   rSetS, *rSet = &rSetS;
    fd_set   wSetS, *wSet = &wSetS;
    fd_set   eSetS, *eSet = &eSetS;
@@ -1262,7 +1262,7 @@ ULONG APIENTRY SockSelect(
          to = 0;
 
       timeOutS.tv_sec  = to;
-#if defined(OPSYS_LINUX)
+#if LEOOREXX_LEGACY_LINUX
       timeOutS.tv_nsec = 0;
 #else
       timeOutS.tv_usec = 0;
