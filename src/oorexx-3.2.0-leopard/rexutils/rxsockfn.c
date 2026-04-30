@@ -48,6 +48,7 @@
 #include <string.h>
 
 #include <ctype.h>
+#include "../kernel/platform/leopard/LeooRexxPlatform.h"
 #include <setjmp.h>
 
 /*------------------------------------------------------------------
