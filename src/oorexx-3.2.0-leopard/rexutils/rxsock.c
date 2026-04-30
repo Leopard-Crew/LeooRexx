@@ -57,7 +57,7 @@
 #define PROG_ALRRc "are made available under the terms of the Common Public License v1.0"
 
 
-#ifdef OPSYS_LINUX
+#if LEOOREXX_LEGACY_LINUX
   #define SO_USELOOPBACK  0x0040    /* bypass hardware when possible         */
 //#define SO_SNDLOWAT     0x1003    /* send low-water mark                   */
 //#define SO_RCVLOWAT     0x1004    /* receive low-water mark                */
@@ -73,6 +73,7 @@
 #include <string.h>
 
 #include <ctype.h>
+#include "../kernel/platform/leopard/LeooRexxPlatform.h"
 #include <setjmp.h>
 
 /*------------------------------------------------------------------
