@@ -45,7 +45,7 @@
 #define Included_RexxNumberString
 
 #define MAXNUM      999999999               /* maximum size of 9 digits int         */
-#define MAXPOSNUM  4294967294               /* maximum size of a ULONG              */
+#define MAXPOSNUM  4294967294UL             /* maximum size of a ULONG              */
 #define MAXNEGNUM  2147483647               /* maximum size of a negative long      */
 #define MAXPOSBASE  429496729               /* maximum size value ULONG before * 10 */
 #define MAXNEGBASE  214748365               /* maximum size neg long before * 10    */

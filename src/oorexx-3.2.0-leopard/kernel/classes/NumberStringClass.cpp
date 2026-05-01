@@ -105,7 +105,7 @@ long number_create_integer(UCHAR *thisnum, long intlength, int carry, int sign)
 /*********************************************************************/
 int  number_create_uinteger(UCHAR *thisnum, long intlength, int carry, int sign, ULONG *value)
 {
-  long intnum;
+  ULONG intnum;
   int  numpos;
 
   if (intlength > 10) {                /* too many digits for integer????   */
