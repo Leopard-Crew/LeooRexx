@@ -864,7 +864,7 @@ extern double NO_DOUBLE;
  typedef RexxObject *  (VLAENTRY RexxObject::*PCPPM) (...);
  #define CPPM(n) ((PCPPM)&n)
 
-#ifdef LINUX
+#if LEOOREXX_CXX_UNIFORM_METHOD_POINTER_CASTS
 
  #include "TableClass.hpp"
  #include "StackClass.hpp"
