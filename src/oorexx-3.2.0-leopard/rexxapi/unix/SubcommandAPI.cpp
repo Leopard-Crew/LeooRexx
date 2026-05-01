@@ -1302,8 +1302,8 @@ LONG  RegLoad(
   int len;                             /* length of the module name  */
   int i;                               /* loop counter               */
   ULONG pblock = 0;                    /* Init 0 for entry block     */
-#ifdef LINUX
-  const char *error;                   /* error message              */
+#if LEOOREXX_PLATFORM_DARWIN
+  const char *error;                   /* legacy unused error message slot */
 #else
   RXFUNCBLOCK *funcblock;              /* Base for function blocks   */
   PRXINITFUNCPKG InitFunc;             /* Pointer returned from load */
