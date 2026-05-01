@@ -135,7 +135,7 @@
 #define _loadds
 #define PFN             void *
 
-#if defined(LINUX) && defined(PPC)
+#if LEOOREXX_ABI_POWERPC_DARWIN
 #define VAPVOID         void *
 #define VACHAR          int
 #define VAINT           int
