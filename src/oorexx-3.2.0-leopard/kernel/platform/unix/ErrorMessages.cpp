@@ -80,9 +80,9 @@ typedef struct msgEntry {              /* define for error table entries    */
 #include "RexxMessageNumbers.h"        /* include  definition of errorcodes */
 #include "RexxMessageTable.h"          /* include actual table definition   */
 
-#ifdef LINUX
-//#define SECOND_PARAMETER MCLoadAll   /* different sign. Lin-AIX           */
-#define SECOND_PARAMETER 1             /* different sign. Lin-AIX           */
+#if LEOOREXX_PLATFORM_POSIX
+//#define SECOND_PARAMETER MCLoadAll   /* different sign. POSIX/AIX         */
+#define SECOND_PARAMETER 1             /* different sign. POSIX/AIX         */
 #define CATD_ERR -1                    /* Duplicate for AIX                 */
 #else
 #define SECOND_PARAMETER 0             /* 0 for no  NL_CAT_LOCALE           */
