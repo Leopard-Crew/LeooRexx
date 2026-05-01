@@ -68,11 +68,12 @@
 **********************************************************************/
 
 extern int errno;
+#include "../kernel/platform/leopard/LeooRexxPlatform.h"
 
 /*------------------------------------------------------------------
  * program defines
  *------------------------------------------------------------------*/
-#if defined(OPSYS_AIX) || defined(LINUX)
+#if LEOOREXX_PLATFORM_POSIX
 #define PROG_NAME "rxmath"
 #else
 #define PROG_NAME "RxMath"
@@ -100,7 +101,7 @@ extern int errno;
  *------------------------------------------------------------------*/
 #define INCL_REXXSAA
 
-#if defined(OPSYS_AIX) || defined(LINUX)
+#if LEOOREXX_PLATFORM_POSIX
 #include "rexx.h"
 #include "PlatformDefinitions.h"
 #include "locale.h"
@@ -213,7 +214,7 @@ void RxErrMsgSet1(PSZ);
 /*------------------------------------------------------------------
  * load the function package
  *------------------------------------------------------------------*/
-#if defined(LINUX) || defined(OPSYS_AIX)
+#if LEOOREXX_PLATFORM_POSIX
 ULONG MATHLOADFUNCS(PUCHAR, ULONG, PRXSTRING, PSZ, PRXSTRING);
 ULONG APIENTRY MathLoadFuncs (
    PUCHAR     name,
