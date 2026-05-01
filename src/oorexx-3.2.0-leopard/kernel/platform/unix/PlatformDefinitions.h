@@ -561,7 +561,10 @@ typedef char *(far *REXXENTRY PNMF)(void **);
 
 #define SysRelinquish()
 
-#if defined(AIX)
+#if LEOOREXX_PLATFORM_MACOSX
+#define SysName() new_string("MACOSX", 6)
+#define SysINTName() new_string("MACOSX",6)
+#elif defined(AIX)
 #define SysName() new_string("AIX", 3)
 #define SysINTName() new_string("AIX",3)
 #elif defined(OPSYS_SUN)
