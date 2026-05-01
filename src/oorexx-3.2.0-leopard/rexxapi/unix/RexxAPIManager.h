@@ -59,7 +59,7 @@
 #define QMEMSESSION    4
 #define QMEMNAMEDQUE   5
 
-#ifdef LINUX
+#if LEOOREXX_REXXAPI_COMPACT_SEMAPHORE_LIMITS
 # ifdef LIMITED_SOLARIS_SEMS
 /* Solaris 8 and 9 only allow a maximum of 25 semaphores per set */
 #  define MAXSEM         25             /* max number of queue semaphores (per user)*/
