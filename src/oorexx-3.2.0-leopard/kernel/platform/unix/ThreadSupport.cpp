@@ -165,7 +165,7 @@ INT SysCreateThread(PTHREADFN threadFnc, INT stackSize, PVOID args)
    rc = pthread_attr_init(&newThreadAttr);
                               // Set the stack size.
 //#ifdef OPSYS_SUN
-#if defined(OPSYS_AIX43) || defined(LINUX) ||  defined OPSYS_SUN
+#if defined(OPSYS_AIX43) || LEOOREXX_PTHREAD_PRIORITY_HINTS || defined(OPSYS_SUN)
 
 /* scheduling on two threads controlled by the result method of the message object */
 /* do not work proper without an enhanced priority                                 */
