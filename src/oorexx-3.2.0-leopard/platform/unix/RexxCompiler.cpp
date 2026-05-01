@@ -67,8 +67,8 @@
 
 #define BUFFERLEN         256           /* Length of message bufs used        */
 #define CCHMAXPATH PATH_MAX+1
-#ifdef LINUX
-#define SECOND_PARAMETER 1              /* different sign. Lin-AIX            */
+#if LEOOREXX_PLATFORM_POSIX
+#define SECOND_PARAMETER 1              /* different sign. POSIX/AIX          */
 #define CATD_ERR -1
 #else
 #define SECOND_PARAMETER 0              /* 0 for no  NL_CAT_LOCALE            */
