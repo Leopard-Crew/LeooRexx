@@ -18840,8 +18840,8 @@ LIBTOOL='$(SHELL) $(top_builddir)/libtool'
 
 
 
-GENERIC_OS="-DLINUX"
-GENERIC_OPSYS="-DOPSYS_LINUX"
+GENERIC_OS=""
+GENERIC_OPSYS=""
 GENERIC_DEFINES="-DNOOPT -DPTHREAD_KERNEL \
                  -DSHARED -D_POSIX_THREAD -D_REENTRANT -DHIGHTID  \
                  -D_GNU_SOURCE"
@@ -18939,17 +18939,25 @@ case "$target" in
    i*86-*linux*)
       CC_WARNINGS="$GCC_WARNINGS"
       CXX_WARNINGS="$GCXX_WARNINGS"
+      GENERIC_OS="-DLINUX"
+      GENERIC_OPSYS="-DOPSYS_LINUX"
       ORX_SYS_STR="LINUX"
       ;;
    *86_64-*linux*)
       CC_WARNINGS="-m32 $GCC_WARNINGS"
       CXX_WARNINGS="-m32 $GCXX_WARNINGS"
+      GENERIC_OS="-DLINUX"
+      GENERIC_OPSYS="-DOPSYS_LINUX"
       ORX_SYS_STR="LINUX"
       ;;
    alpha*-*linux*)
+      GENERIC_OS="-DLINUX"
+      GENERIC_OPSYS="-DOPSYS_LINUX"
       ORX_SYS_STR="LINUX"
       ;;
    *linux*)
+      GENERIC_OS="-DLINUX"
+      GENERIC_OPSYS="-DOPSYS_LINUX"
       ORX_SYS_STR="LINUX"
       ;;
    *cygnus*)
@@ -18983,6 +18991,8 @@ case "$target" in
       ORX_LDFLAGS_PACKAGE="-nostartfiles -shared"
       ;;
    *apple-darwin*)
+      GENERIC_OS="-DLEOOREXX_BUILD_LEOPARD=1"
+      GENERIC_OPSYS="-DLEOOREXX_BUILD_DARWIN=1"
       ORX_SYS_STR="MACOSX"
       ORX_SHARED_LIBRARY_EXT=".dylib"
       ;;
