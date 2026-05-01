@@ -120,10 +120,10 @@
 #define BOOL            unsigned long
 #define UBYTE           unsigned char
 #ifndef TID
-#ifndef LINUX
-#define TID             tid_t
-#else
+#if LEOOREXX_PLATFORM_POSIX
 #define TID             pthread_t
+#else
+#define TID             tid_t
 #endif
 #endif
 #ifndef PID
