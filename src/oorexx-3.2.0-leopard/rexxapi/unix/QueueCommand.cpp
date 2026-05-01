@@ -77,7 +77,7 @@
 #define MSG_BUF_SIZE    256    /* Error message buffer size          */
 
 #define CCHMAXPATH PATH_MAX+1
-#ifdef LINUX                   /*  AIX already defined               */
+#if LEOOREXX_PLATFORM_POSIX
 #define CATD_ERR -1
 #endif
 
