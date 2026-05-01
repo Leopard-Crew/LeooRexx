@@ -571,8 +571,7 @@ typedef char *(far *REXXENTRY PNMF)(void **);
 #define SysName() new_string("SUNOS", 5)
 #define SysINTName() new_string("SUNOS",5)
 #else
-#define SysName() new_string("LINUX", 5)
-#define SysINTName() new_string("LINUX",5)
+#error "Unsupported LeooRexx platform identity."
                                        // Thread yielding functions in
                                        // threading package
 //#define SysThreadYield()   sched_yield()
