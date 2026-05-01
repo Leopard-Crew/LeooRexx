@@ -674,7 +674,7 @@ LONG sys_command(char *cmd, CMD_TYPE local_env_type)
   int         pid;                     /* process id of child from fork     */
   int         status;
   int         cmdlength;
-#ifdef LINUX
+#if LEOOREXX_PLATFORM_POSIX
   int         iErrCode = 0;
 #endif
 
@@ -729,7 +729,7 @@ LONG sys_command(char *cmd, CMD_TYPE local_env_type)
   /* Invoke the system command handler to execute the command                 */
   /****************************************************************************/
 
-#ifdef LINUX
+#if LEOOREXX_PLATFORM_POSIX
   if ( local_env_type == cmd_bash )
   {
     iErrCode = system( cmd );
@@ -786,7 +786,7 @@ LONG sys_command(char *cmd, CMD_TYPE local_env_type)
         break;
       } /* endswitch */
     }
-#ifdef LINUX
+#if LEOOREXX_PLATFORM_POSIX
   }
 #endif
    return rc;
