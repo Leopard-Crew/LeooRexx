@@ -75,6 +75,8 @@
  */
 #include <pthread.h>
 
+#include "../../kernel/platform/leopard/LeooRexxPlatform.h"
+
 /* Definitions maybe provided ---------------------------------------------- */
 
 #if !defined(AIX) && !LEOOREXX_PLATFORM_DARWIN
