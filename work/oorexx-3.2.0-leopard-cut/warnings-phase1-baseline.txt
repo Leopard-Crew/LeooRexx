@@ -1,0 +1,18 @@
+55:./kernel/classes/NumberStringClass.cpp:127: warning: this decimal constant is unsigned only in ISO C90
+365:./kernel/platform/unix/MemorySupport.cpp:178: warning: 'operator new' must not return NULL unless it is declared 'throw()' (or -fcheck-new is in effect)
+374:./kernel/platform/unix/RexxMain.cpp:100: warning: 'initialize_sem' initialized and declared 'extern'
+375:./kernel/platform/unix/RexxMain.cpp:103: warning: 'SecureFlag' initialized and declared 'extern'
+376:./kernel/platform/unix/RexxMain.cpp:104: warning: 'thread_counter' initialized and declared 'extern'
+421:./kernel/runtime/GlobalData.cpp:274: warning: 'validMaxWhole' initialized and declared 'extern'
+630:./rexutils/unix/rexxutil.cpp:3022: warning: NULL used in arithmetic
+632:./rexutils/unix/rexxutil.cpp:3085: warning: NULL used in arithmetic
+634:./rexutils/unix/rexxutil.cpp:3210: warning: NULL used in arithmetic
+636:./rexutils/unix/rexxutil.cpp:3276: warning: NULL used in arithmetic
+638:./rexutils/unix/rexxutil.cpp:3349: warning: NULL used in arithmetic
+640:./rexutils/unix/rexxutil.cpp:3422: warning: NULL used in arithmetic
+642:./rexutils/unix/rexxutil.cpp:3540: warning: NULL used in arithmetic
+644:./rexutils/unix/rexxutil.cpp:3692: warning: NULL used in arithmetic
+646:./rexutils/unix/rexxutil.cpp:3805: warning: NULL used in arithmetic
+648:./rexutils/unix/rexxutil.cpp:3885: warning: NULL used in arithmetic
+650:./rexutils/unix/rexxutil.cpp:4051: warning: NULL used in arithmetic
+652:./rexutils/unix/rexxutil.cpp:4130: warning: NULL used in arithmetic
