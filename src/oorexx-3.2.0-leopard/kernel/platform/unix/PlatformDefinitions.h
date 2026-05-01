@@ -92,7 +92,7 @@
 #define PULONG          ULONG *
 #define PVOID           void *
 
-#ifdef LINUX
+#if LEOOREXX_PLATFORM_POSIX
 #define PPVOID          void **
 #endif
 
