@@ -157,7 +157,7 @@
 
 #endif
 
-#ifdef LINUX
+#if LEOOREXX_PLATFORM_POSIX
 #define FNONBLOCK       O_NONBLOCK
 #endif
 
