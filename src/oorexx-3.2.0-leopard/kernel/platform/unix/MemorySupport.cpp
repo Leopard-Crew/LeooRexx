@@ -55,7 +55,7 @@ extern MemorySegmentPool *GlobalCurrentPool;
 //extern BOOL  ProcessSaveImage;         /* we're saving    the image       */
 
 #define MEMSIZE     4194304            /* memory pool                       */
-#ifdef LINUX
+#if LEOOREXX_PLATFORM_POSIX
 #define PAGESIZE    4096               /* page size                         */
 #endif
 
