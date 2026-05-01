@@ -240,7 +240,7 @@ class MemorySegmentPool : public MemorySegmentPoolHeader {
 #endif
  friend BOOL SysAccessPool(MemorySegmentPool **);
  public:
-   void          *operator new(size_t size, size_t minSize);
+   void          *operator new(size_t size, size_t minSize) throw();
    void          *operator new(size_t size, void *pool) { return pool;}
    MemorySegmentPool();
    MemorySegment *newSegment(size_t minSize);

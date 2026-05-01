@@ -148,7 +148,7 @@ BOOL SysAccessPool(MemorySegmentPool **pool)
     return FALSE;                      /* newly created.                    */
 }
 
-void     *MemorySegmentPool::operator new(size_t size, size_t minSize)
+void     *MemorySegmentPool::operator new(size_t size, size_t minSize) throw()
 /*********************************************************************/
 /* Function:: Create a new MemoryPool block                          */
 /*                                                                   */
