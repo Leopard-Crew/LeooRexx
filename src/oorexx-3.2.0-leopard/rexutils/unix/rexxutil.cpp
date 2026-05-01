@@ -586,7 +586,7 @@ static PSZ  RxFncTable[] =
 //      "SysIni",
       "SysLoadFuncs",
       "SysMkDir",
-#ifdef LINUX
+#if LEOOREXX_LEGACY_LINUX
       "SysLinVer",
 #endif
       "SysVersion",
@@ -2967,7 +2967,7 @@ LONG APIENTRY SysSearchPath(
   BUILDRXSTRING(retstr, (const char *)buf);          /* pass back result           */
   return VALID_ROUTINE;
 }
-#ifdef LINUX
+#if LEOOREXX_LEGACY_LINUX
 /*************************************************************************
 * Function:  SysLinVer                                                   *
 *                                                                        *
