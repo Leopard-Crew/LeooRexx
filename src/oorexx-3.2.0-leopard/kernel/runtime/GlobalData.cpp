@@ -271,7 +271,7 @@ PCHAR NO_CSTRING = NULL;
 
 /* Array for valid whole number at various digits settings */
 /*  for value 1-8.                                         */
-extern long validMaxWhole[] = {10,
+long validMaxWhole[] = {10,
                                100,
                                1000,
                                10000,

@@ -97,11 +97,11 @@ BOOL rexxutil_call = FALSE;
 RexxMutex rexxutil_call_sem;
 
 
-extern SMTX initialize_sem = 0;
+SMTX initialize_sem = 0;
 extern SEV   RexxTerminated;               /* Termination complete semaphore.     */
 BOOL         bProcessExitInitFlag = FALSE;
-extern int  SecureFlag = 0;
-extern int  thread_counter = 0;
+int  SecureFlag = 0;
+int  thread_counter = 0;
 
 
 APIRET APIENTRY RexxExecuteMacroFunction ( PSZ, PRXSTRING );
