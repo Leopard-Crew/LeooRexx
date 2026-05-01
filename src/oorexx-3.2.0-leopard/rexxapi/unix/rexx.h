@@ -77,8 +77,8 @@
 
 /* Definitions maybe provided ---------------------------------------------- */
 
-#if !defined(AIX) && !defined(LINUX)
-#define AIX                           /* Default definition for AIX          */
+#if !defined(AIX) && !LEOOREXX_PLATFORM_DARWIN
+#define AIX                           /* Legacy fallback for non-LeooRexx Unix */
 #endif
 
 #ifndef TRUE
@@ -202,10 +202,10 @@
 #endif
 
 #ifndef TID
-#ifndef LINUX
-#define TID             tid_t
-#else
+#if LEOOREXX_PLATFORM_POSIX
 #define TID             pthread_t
+#else
+#define TID             tid_t
 #endif
 #endif
 
