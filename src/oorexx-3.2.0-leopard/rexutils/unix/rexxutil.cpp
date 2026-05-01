@@ -2989,7 +2989,7 @@ LONG APIENTRY SysLinVer(
   if (numargs != 0)                    /* validate arg count         */
     return INVALID_ROUTINE;
 
-  if(uname(&info)<NULL)                /* if no info stored          */
+  if(uname(&info) < 0)                /* if no info stored          */
     return INVALID_ROUTINE;            /* get out                    */
 
   sprintf(retstr->strptr, "%s %s",info.sysname,info.release);
@@ -3019,7 +3019,7 @@ LONG APIENTRY SysVersion(
   if (numargs != 0)                    /* validate arg count         */
     return INVALID_ROUTINE;
 
-  if(uname(&info)<NULL)                /* if no info stored          */
+  if(uname(&info) < 0)                /* if no info stored          */
     return INVALID_ROUTINE;            /* get out                    */
 
   sprintf(retstr->strptr, "%s %s.%s",info.sysname, info.version, info.release);
@@ -3082,7 +3082,7 @@ LONG APIENTRY SysCreateEventSem(
     /* check wheather semaphore exists                               */
     handle = -1;                       /* reset handle               */
     for(i=0;i<MAXUTILSEM;i++){         /* for all semaphores         */
-      if(((apidata->utilsemfree[i]).usecount > NULL) &&/* a used     */
+      if(((apidata->utilsemfree[i]).usecount > 0) &&/* a used     */
              ((apidata->utilsemfree[i]).type == EVENT)){/*event sem ?*/
                                        /* if we have a match         */
         if(!strcmp((apidata->utilsemfree[i]).name,args[0].strptr)){
@@ -3205,9 +3205,9 @@ LONG APIENTRY SysOpenEventSem(
       return INVALID_ROUTINE;          /* get out                    */
   }
                                        /* get a binary handle        */
-  handle = strtoul(args[0].strptr,NULL,NULL);
+  handle = strtoul(args[0].strptr, NULL, 0);
   handle = handle - OFFSET;            /* make it real               */
-  if (handle < NULL || handle >= MAXUTILSEM){/* if bad handle        */
+  if (handle < 0 || handle >= MAXUTILSEM){/* if bad handle        */
     sprintf(retstr->strptr, "%d", 6);  /* say so                     */
     retstr->strlength = strlen(retstr->strptr);
     return VALID_ROUTINE;
@@ -3271,9 +3271,9 @@ LONG APIENTRY SysResetEventSem(
       return INVALID_ROUTINE;          /* get out                    */
   }
                                        /* get a binary handle        */
-  handle = strtoul(args[0].strptr,NULL,NULL);
+  handle = strtoul(args[0].strptr, NULL, 0);
   handle = handle - OFFSET;            /* make it real               */
-  if (handle < NULL || handle >= MAXUTILSEM){/* if bad handle        */
+  if (handle < 0 || handle >= MAXUTILSEM){/* if bad handle        */
     sprintf(retstr->strptr, "%d", 6);  /* say so                     */
     retstr->strlength = strlen(retstr->strptr);
     return VALID_ROUTINE;
@@ -3344,9 +3344,9 @@ LONG APIENTRY SysPostEventSem(
       return INVALID_ROUTINE;          /* get out                    */
   }
                                        /* get a binary handle        */
-  handle = strtoul(args[0].strptr,NULL,NULL);
+  handle = strtoul(args[0].strptr, NULL, 0);
   handle = handle - OFFSET;            /* make it real               */
-  if (handle < NULL || handle >= MAXUTILSEM){/* if bad handle        */
+  if (handle < 0 || handle >= MAXUTILSEM){/* if bad handle        */
     sprintf(retstr->strptr, "%d", 6);  /* say so                     */
     retstr->strlength = strlen(retstr->strptr);
     return VALID_ROUTINE;
@@ -3417,9 +3417,9 @@ LONG APIENTRY SysCloseEventSem(
       return INVALID_ROUTINE;          /* get out                    */
   }
                                        /* get a binary handle        */
-  handle = strtoul(args[0].strptr,NULL,NULL);
+  handle = strtoul(args[0].strptr, NULL, 0);
   handle = handle - OFFSET;            /* make it real               */
-  if (handle < NULL || handle >= MAXUTILSEM){/* if bad handle        */
+  if (handle < 0 || handle >= MAXUTILSEM){/* if bad handle        */
     sprintf(retstr->strptr, "%d", 6);  /* say so                     */
     retstr->strlength = strlen(retstr->strptr);
     return VALID_ROUTINE;
@@ -3535,9 +3535,9 @@ LONG APIENTRY SysWaitEventSem(
     if(!strpbrk(c,"1234567890"))       /* if it is no number        */
       return INVALID_ROUTINE;          /* get out                    */
   }
-  handle = strtoul(args[0].strptr,NULL,NULL);/* get binary handle    */
+  handle = strtoul(args[0].strptr, NULL, 0);/* get binary handle    */
   handle = handle - OFFSET;            /* make it real               */
-  if (handle < NULL || handle >= MAXUTILSEM){/* if bad handle        */
+  if (handle < 0 || handle >= MAXUTILSEM){/* if bad handle        */
     sprintf(retstr->strptr, "%d", 6);  /* say so                     */
     retstr->strlength = strlen(retstr->strptr);
     return VALID_ROUTINE;
@@ -3689,7 +3689,7 @@ LONG APIENTRY SysCreateMutexSem(
     /* check wheather semaphore exists                               */
     handle = -1;                       /* reset handle               */
     for(i=0;i<MAXUTILSEM;i++){         /* for all semaphores         */
-      if(((apidata->utilsemfree[i]).usecount > NULL) &&/* a used     */
+      if(((apidata->utilsemfree[i]).usecount > 0) &&/* a used     */
              ((apidata->utilsemfree[i]).type == MUTEX)){/*mutex sem ?*/
                                        /* if we have a match         */
         if(!strcmp((apidata->utilsemfree[i]).name,args[0].strptr)){
@@ -3800,9 +3800,9 @@ LONG APIENTRY SysOpenMutexSem(
       return INVALID_ROUTINE;          /* get out                    */
   }
                                        /* get a binary handle        */
-  handle = strtoul(args[0].strptr,NULL,NULL);
+  handle = strtoul(args[0].strptr, NULL, 0);
   handle = handle - OFFSET;            /* make it real               */
-  if (handle < NULL || handle >= MAXUTILSEM){/* if bad handle        */
+  if (handle < 0 || handle >= MAXUTILSEM){/* if bad handle        */
     sprintf(retstr->strptr, "%d", 6);  /* say so                     */
     retstr->strlength = strlen(retstr->strptr);
     return VALID_ROUTINE;
@@ -3880,9 +3880,9 @@ LONG APIENTRY SysRequestMutexSem(
     if(!strpbrk(c,"1234567890"))       /* if it is no number        */
       return INVALID_ROUTINE;          /* get out                    */
   }
-  handle = strtoul(args[0].strptr,NULL,NULL);/* get binary handle    */
+  handle = strtoul(args[0].strptr, NULL, 0);/* get binary handle    */
   handle = handle - OFFSET;            /* make it real               */
-  if (handle < NULL || handle >= MAXUTILSEM){/* if bad handle        */
+  if (handle < 0 || handle >= MAXUTILSEM){/* if bad handle        */
     sprintf(retstr->strptr, "%d", 6);  /* say so                     */
     retstr->strlength = strlen(retstr->strptr);
     return VALID_ROUTINE;
@@ -4046,9 +4046,9 @@ LONG APIENTRY SysReleaseMutexSem(
       return INVALID_ROUTINE;          /* get out                    */
   }
                                        /* get a binary handle        */
-  handle = strtoul(args[0].strptr,NULL,NULL);
+  handle = strtoul(args[0].strptr, NULL, 0);
   handle = handle - OFFSET;            /* make it real               */
-  if (handle < NULL || handle >= MAXUTILSEM){/* if bad handle        */
+  if (handle < 0 || handle >= MAXUTILSEM){/* if bad handle        */
     sprintf(retstr->strptr, "%d", 6);  /* say so                     */
     retstr->strlength = strlen(retstr->strptr);
     return VALID_ROUTINE;
@@ -4125,9 +4125,9 @@ LONG APIENTRY SysCloseMutexSem(
       return INVALID_ROUTINE;          /* get out                    */
   }
                                        /* get a binary handle        */
-  handle = strtoul(args[0].strptr,NULL,NULL);
+  handle = strtoul(args[0].strptr, NULL, 0);
   handle = handle - OFFSET;            /* make it real               */
-  if (handle < NULL || handle >= MAXUTILSEM){/* if bad handle        */
+  if (handle < 0 || handle >= MAXUTILSEM){/* if bad handle        */
     sprintf(retstr->strptr, "%d", 6);  /* say so                     */
     retstr->strlength = strlen(retstr->strptr);
     return VALID_ROUTINE;
