@@ -65,8 +65,8 @@
 #  define MAXSEM         25             /* max number of queue semaphores (per user)*/
 #  define MAXUTILSEM     25             /* max number of util semaphores  (per user)*/
 # else
-#  define MAXSEM         48             /* max number of queue semaphores (per user)*/
-#  define MAXUTILSEM     32             /* max number of util semaphores  (per user)*/
+#  define MAXSEM         128            /* max number of queue semaphores (per user)*/
+#  define MAXUTILSEM     64             /* max number of util semaphores  (per user)*/
 # endif
 #else  /* AIX */
 /* #define MAXSEM         129          */
