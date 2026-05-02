@@ -1345,10 +1345,10 @@ VOID Queue_Detach(ULONG pid)
 
     if(!(apidata->base) && !(apidata->session_base))
     {
-      delete_queue_sem(current);      /* free the semaphores         */
       removeshmem(apidata->qbasememId);/* remove the queue mem pool  */
       detachshmem(apidata->qbase);    /* force the deletion          */
-      apidata->qbase == NULL;         /* reset the memory pointer    */
+      apidata->qbase = NULL;          /* reset the memory pointer    */
+      apidata->qbasememId = 0;        /* no queue memory segment     */
       apidata->qmemsizeused = 1;
     }
     else                     /* we have still Named or/and Sessionqueues in shared memory */
