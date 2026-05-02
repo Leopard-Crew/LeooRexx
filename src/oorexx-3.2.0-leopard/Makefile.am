@@ -818,6 +818,14 @@ am_config_clean-local:
 	rm -fr $(top_srcdir)/rpm
 
 install-exec-local:
+	@if test -f "$(top_srcdir)/../../tools/templates/leoorxenv.sh.in"; then \
+		echo "Generating $(DESTDIR)$(bindir)/leoorxenv.sh"; \
+		$(install_sh) -d "$(DESTDIR)$(bindir)"; \
+		sed "s|__LEOOREXX_PREFIX__|$(prefix)|g" "$(top_srcdir)/../../tools/templates/leoorxenv.sh.in" > "$(DESTDIR)$(bindir)/leoorxenv.sh"; \
+		chmod +x "$(DESTDIR)$(bindir)/leoorxenv.sh"; \
+	else \
+		echo "No leoorxenv.sh template to install"; \
+	fi
 	echo $(DESTDIR) is destdir
 	echo $(prefix) is prefix
 	echo $(install_sh_PROGRAM)

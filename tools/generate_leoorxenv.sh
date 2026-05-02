@@ -39,7 +39,7 @@ if [ ! -d "$prefix/bin" ]; then
   exit 1
 fi
 
-sed "s|@prefix@|$prefix|g" "$template" > "$target"
+sed "s|__LEOOREXX_PREFIX__|$prefix|g" "$template" > "$target"
 chmod +x "$target"
 
 echo "Generated: $target"

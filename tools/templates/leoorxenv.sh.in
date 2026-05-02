@@ -3,7 +3,7 @@
 # This file is generated from tools/templates/leoorxenv.sh.in.
 # It activates an installed LeooRexx prefix for command-line use.
 
-LEOOREXX_HOME="@prefix@"
+LEOOREXX_HOME="__LEOOREXX_PREFIX__"
 export LEOOREXX_HOME
 
 PATH="$LEOOREXX_HOME/bin:$PATH"
