@@ -254,8 +254,7 @@ LONG        lRC;
       exit(-1);                         /* Stop anyway                    */
    }
 /* ipckey = ftok(getenv("HOME"),'r');    * generate a unique key          */
-/* semrc = createsem(&SemId,ipckey, MAXSEM+1);                      */
-   semrc = createsem(&SemId,ipckey, MAXSEM);
+   semrc = createsem(&SemId,ipckey, MAXSEM+1);
    if(semrc == -1)                      /* already exists             */
    {
      if(opensem(&SemId,ipckey))         /* open the API semaphore     */
