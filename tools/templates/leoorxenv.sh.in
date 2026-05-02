@@ -1,0 +1,14 @@
+# LeooRexx environment for Mac OS X 10.5.8 PowerPC
+#
+# This file is generated from tools/templates/leoorxenv.sh.in.
+# It activates an installed LeooRexx prefix for command-line use.
+
+LEOOREXX_HOME="@prefix@"
+export LEOOREXX_HOME
+
+PATH="$LEOOREXX_HOME/bin:$PATH"
+export PATH
+
+NLSPATH="$LEOOREXX_HOME/bin/%N:$LEOOREXX_HOME/bin/%N.cat:$LEOOREXX_HOME/bin/rexx.cat"
+export NLSPATH
+
