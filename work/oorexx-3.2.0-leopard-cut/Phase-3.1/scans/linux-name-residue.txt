@@ -1,0 +1,322 @@
+src/oorexx-3.2.0-leopard/aclocal.m4:532:x86_64-*linux*|ppc*-*linux*|powerpc*-*linux*|s390*-*linux*|sparc*-*linux*)
+src/oorexx-3.2.0-leopard/aclocal.m4:539:        x86_64-*linux*)
+src/oorexx-3.2.0-leopard/aclocal.m4:542:        ppc64-*linux*|powerpc64-*linux*)
+src/oorexx-3.2.0-leopard/aclocal.m4:543:          LD="${LD-ld} -m elf32ppclinux"
+src/oorexx-3.2.0-leopard/aclocal.m4:545:        s390x-*linux*)
+src/oorexx-3.2.0-leopard/aclocal.m4:548:        sparc64-*linux*)
+src/oorexx-3.2.0-leopard/aclocal.m4:555:        x86_64-*linux*)
+src/oorexx-3.2.0-leopard/aclocal.m4:558:        ppc*-*linux*|powerpc*-*linux*)
+src/oorexx-3.2.0-leopard/aclocal.m4:561:        s390*-*linux*)
+src/oorexx-3.2.0-leopard/aclocal.m4:564:        sparc*-*linux*)
+src/oorexx-3.2.0-leopard/aclocal.m4:1231:  version_type=linux
+src/oorexx-3.2.0-leopard/aclocal.m4:1240:  version_type=linux
+src/oorexx-3.2.0-leopard/aclocal.m4:1296:  version_type=linux
+src/oorexx-3.2.0-leopard/aclocal.m4:1388:  version_type=linux
+src/oorexx-3.2.0-leopard/aclocal.m4:1401:  version_type=linux
+src/oorexx-3.2.0-leopard/aclocal.m4:1457:  version_type=linux
+src/oorexx-3.2.0-leopard/aclocal.m4:1513:  version_type=linux
+src/oorexx-3.2.0-leopard/aclocal.m4:1529:		version_type=linux
+src/oorexx-3.2.0-leopard/aclocal.m4:1561:# No shared lib support for Linux oldld, aout, or coff.
+src/oorexx-3.2.0-leopard/aclocal.m4:1562:linux*oldld* | linux*aout* | linux*coff*)
+src/oorexx-3.2.0-leopard/aclocal.m4:1566:# This must be Linux ELF.
+src/oorexx-3.2.0-leopard/aclocal.m4:1567:linux*)
+src/oorexx-3.2.0-leopard/aclocal.m4:1568:  version_type=linux
+src/oorexx-3.2.0-leopard/aclocal.m4:1605:  # powerpc, because MkLinux only supported shared libraries with the
+src/oorexx-3.2.0-leopard/aclocal.m4:1607:  # most powerpc-linux boxes support dynamic linking these days and
+src/oorexx-3.2.0-leopard/aclocal.m4:1609:  # assume the GNU/Linux dynamic linker is in use.
+src/oorexx-3.2.0-leopard/aclocal.m4:1610:  dynamic_linker='GNU/Linux ld.so'
+src/oorexx-3.2.0-leopard/aclocal.m4:1614:  version_type=linux
+src/oorexx-3.2.0-leopard/aclocal.m4:1644:  version_type=linux
+src/oorexx-3.2.0-leopard/aclocal.m4:1651:  version_type=linux
+src/oorexx-3.2.0-leopard/aclocal.m4:1707:  version_type=linux
+src/oorexx-3.2.0-leopard/aclocal.m4:1732:  version_type=linux
+src/oorexx-3.2.0-leopard/aclocal.m4:1757:    version_type=linux
+src/oorexx-3.2.0-leopard/aclocal.m4:1788:  version_type=linux
+src/oorexx-3.2.0-leopard/aclocal.m4:2383:# This must be Linux ELF.
+src/oorexx-3.2.0-leopard/aclocal.m4:2384:linux*)
+src/oorexx-3.2.0-leopard/aclocal.m4:3295:  linux*)
+src/oorexx-3.2.0-leopard/aclocal.m4:4665:linux*)
+src/oorexx-3.2.0-leopard/aclocal.m4:4981:      linux*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5003:	    # Linux and Compaq Tru64 Unix objects are PIC.
+src/oorexx-3.2.0-leopard/aclocal.m4:5039:	    # Linux and Compaq Tru64 Unix objects are PIC.
+src/oorexx-3.2.0-leopard/aclocal.m4:5235:    linux*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5546:    linux*)
+src/oorexx-3.2.0-leopard/config.guess:139:## for Red Hat Linux
+src/oorexx-3.2.0-leopard/config.guess:193:	# suitable tag, in the style of linux-gnu.
+src/oorexx-3.2.0-leopard/config.guess:811:    arm*:Linux:*:*)
+src/oorexx-3.2.0-leopard/config.guess:812:	echo ${UNAME_MACHINE}-unknown-linux-gnu
+src/oorexx-3.2.0-leopard/config.guess:814:    cris:Linux:*:*)
+src/oorexx-3.2.0-leopard/config.guess:815:	echo cris-axis-linux-gnu
+src/oorexx-3.2.0-leopard/config.guess:817:    ia64:Linux:*:*)
+src/oorexx-3.2.0-leopard/config.guess:818:	echo ${UNAME_MACHINE}-${VENDOR:-unknown}-linux-gnu
+src/oorexx-3.2.0-leopard/config.guess:820:    m68*:Linux:*:*)
+src/oorexx-3.2.0-leopard/config.guess:821:	echo ${UNAME_MACHINE}-unknown-linux-gnu
+src/oorexx-3.2.0-leopard/config.guess:823:    mips:Linux:*:*)
+src/oorexx-3.2.0-leopard/config.guess:840:	test x"${CPU}" != x && echo "${CPU}-unknown-linux-gnu" && exit 0
+src/oorexx-3.2.0-leopard/config.guess:842:    mips64:Linux:*:*)
+src/oorexx-3.2.0-leopard/config.guess:859:	test x"${CPU}" != x && echo "${CPU}-unknown-linux-gnu" && exit 0
+src/oorexx-3.2.0-leopard/config.guess:861:    ppc:Linux:*:*)
+src/oorexx-3.2.0-leopard/config.guess:862:	echo powerpc-${VENDOR:-unknown}-linux-gnu
+src/oorexx-3.2.0-leopard/config.guess:864:    ppc64:Linux:*:*)
+src/oorexx-3.2.0-leopard/config.guess:865:	echo powerpc64-${VENDOR:-unknown}-linux-gnu
+src/oorexx-3.2.0-leopard/config.guess:867:    alpha:Linux:*:*)
+src/oorexx-3.2.0-leopard/config.guess:879:	echo ${UNAME_MACHINE}-unknown-linux-gnu${LIBC}
+src/oorexx-3.2.0-leopard/config.guess:881:    parisc:Linux:*:* | hppa:Linux:*:*)
+src/oorexx-3.2.0-leopard/config.guess:884:	  PA7*) echo hppa1.1-unknown-linux-gnu ;;
+src/oorexx-3.2.0-leopard/config.guess:885:	  PA8*) echo hppa2.0-unknown-linux-gnu ;;
+src/oorexx-3.2.0-leopard/config.guess:886:	  *)    echo hppa-unknown-linux-gnu ;;
+src/oorexx-3.2.0-leopard/config.guess:889:    parisc64:Linux:*:* | hppa64:Linux:*:*)
+src/oorexx-3.2.0-leopard/config.guess:890:	echo hppa64-unknown-linux-gnu
+src/oorexx-3.2.0-leopard/config.guess:892:    s390:Linux:*:* | s390x:Linux:*:*)
+src/oorexx-3.2.0-leopard/config.guess:893:	echo ${UNAME_MACHINE}-${VENDOR:-ibm}-linux-gnu
+src/oorexx-3.2.0-leopard/config.guess:895:    sh64*:Linux:*:*)
+src/oorexx-3.2.0-leopard/config.guess:896:    	echo ${UNAME_MACHINE}-unknown-linux-gnu
+src/oorexx-3.2.0-leopard/config.guess:898:    sh*:Linux:*:*)
+src/oorexx-3.2.0-leopard/config.guess:899:	echo ${UNAME_MACHINE}-unknown-linux-gnu
+src/oorexx-3.2.0-leopard/config.guess:901:    sparc:Linux:*:* | sparc64:Linux:*:*)
+src/oorexx-3.2.0-leopard/config.guess:902:	echo ${UNAME_MACHINE}-unknown-linux-gnu
+src/oorexx-3.2.0-leopard/config.guess:904:    x86_64:Linux:*:*)
+src/oorexx-3.2.0-leopard/config.guess:905:	echo x86_64-${VENDOR:-unknown}-linux-gnu
+src/oorexx-3.2.0-leopard/config.guess:907:    i*86:Linux:*:*)
+src/oorexx-3.2.0-leopard/config.guess:920:		TENTATIVE="${UNAME_MACHINE}-pc-linux-gnu"
+src/oorexx-3.2.0-leopard/config.guess:922:	  a.out-i386-linux)
+src/oorexx-3.2.0-leopard/config.guess:923:		echo "${UNAME_MACHINE}-pc-linux-gnuaout"
+src/oorexx-3.2.0-leopard/config.guess:926:		echo "${UNAME_MACHINE}-pc-linux-gnucoff"
+src/oorexx-3.2.0-leopard/config.guess:929:		# Either a pre-BFD a.out linker (linux-gnuoldld) or
+src/oorexx-3.2.0-leopard/config.guess:931:		echo "${UNAME_MACHINE}-pc-linux-gnuoldld"
+src/oorexx-3.2.0-leopard/config.guess:957:	test x"${LIBC}" != x && echo "${UNAME_MACHINE}-${VENDOR:-pc}-linux-${LIBC}" && exit 0
+src/oorexx-3.2.0-leopard/config.sub:121:  nto-qnx* | linux-gnu* | freebsd*-gnu* | netbsd*-gnu* | storm-chaos* | os2-emx* | rtmk-nova*)
+src/oorexx-3.2.0-leopard/config.sub:676:		os=-linux
+src/oorexx-3.2.0-leopard/config.sub:1113:	-gnu/linux*)
+src/oorexx-3.2.0-leopard/config.sub:1114:		os=`echo $os | sed -e 's|gnu/linux|linux-gnu|'`
+src/oorexx-3.2.0-leopard/config.sub:1133:	      | -mingw32* | -linux-gnu* | -uxpv* | -beos* | -mpeix* | -udk* \
+src/oorexx-3.2.0-leopard/config.sub:1137:	      | -os2* | -vos* | -palmos* | -uclinux* | -nucleus* \
+src/oorexx-3.2.0-leopard/config.sub:1163:	-linux*)
+src/oorexx-3.2.0-leopard/config.sub:1164:		os=`echo $os | sed -e 's|linux|linux-gnu|'`
+src/oorexx-3.2.0-leopard/config.sub:1280:		os=-linux
+src/oorexx-3.2.0-leopard/configure:399:# hostname on some systems (SVR3.2, Linux) returns a bogus exit status,
+src/oorexx-3.2.0-leopard/configure:4016:# This must be Linux ELF.
+src/oorexx-3.2.0-leopard/configure:4017:linux*)
+src/oorexx-3.2.0-leopard/configure:4173:x86_64-*linux*|ppc*-*linux*|powerpc*-*linux*|s390*-*linux*|sparc*-*linux*)
+src/oorexx-3.2.0-leopard/configure:4184:        x86_64-*linux*)
+src/oorexx-3.2.0-leopard/configure:4187:        ppc64-*linux*|powerpc64-*linux*)
+src/oorexx-3.2.0-leopard/configure:4188:          LD="${LD-ld} -m elf32ppclinux"
+src/oorexx-3.2.0-leopard/configure:4190:        s390x-*linux*)
+src/oorexx-3.2.0-leopard/configure:4193:        sparc64-*linux*)
+src/oorexx-3.2.0-leopard/configure:4200:        x86_64-*linux*)
+src/oorexx-3.2.0-leopard/configure:4203:        ppc*-*linux*|powerpc*-*linux*)
+src/oorexx-3.2.0-leopard/configure:4206:        s390*-*linux*)
+src/oorexx-3.2.0-leopard/configure:4209:        sparc*-*linux*)
+src/oorexx-3.2.0-leopard/configure:5808:linux*)
+src/oorexx-3.2.0-leopard/configure:6728:    linux*)
+src/oorexx-3.2.0-leopard/configure:7167:    linux*)
+src/oorexx-3.2.0-leopard/configure:8053:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:8062:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:8118:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:8210:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:8223:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:8279:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:8335:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:8351:		version_type=linux
+src/oorexx-3.2.0-leopard/configure:8383:# No shared lib support for Linux oldld, aout, or coff.
+src/oorexx-3.2.0-leopard/configure:8384:linux*oldld* | linux*aout* | linux*coff*)
+src/oorexx-3.2.0-leopard/configure:8388:# This must be Linux ELF.
+src/oorexx-3.2.0-leopard/configure:8389:linux*)
+src/oorexx-3.2.0-leopard/configure:8390:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:8431:  # powerpc, because MkLinux only supported shared libraries with the
+src/oorexx-3.2.0-leopard/configure:8433:  # most powerpc-linux boxes support dynamic linking these days and
+src/oorexx-3.2.0-leopard/configure:8435:  # assume the GNU/Linux dynamic linker is in use.
+src/oorexx-3.2.0-leopard/configure:8436:  dynamic_linker='GNU/Linux ld.so'
+src/oorexx-3.2.0-leopard/configure:8440:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:8470:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:8477:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:8533:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:8558:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:8583:    version_type=linux
+src/oorexx-3.2.0-leopard/configure:8614:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:10883:  linux*)
+src/oorexx-3.2.0-leopard/configure:11595:      linux*)
+src/oorexx-3.2.0-leopard/configure:11617:	    # Linux and Compaq Tru64 Unix objects are PIC.
+src/oorexx-3.2.0-leopard/configure:11653:	    # Linux and Compaq Tru64 Unix objects are PIC.
+src/oorexx-3.2.0-leopard/configure:12033:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:12042:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:12098:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:12190:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:12203:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:12259:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:12315:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:12331:		version_type=linux
+src/oorexx-3.2.0-leopard/configure:12363:# No shared lib support for Linux oldld, aout, or coff.
+src/oorexx-3.2.0-leopard/configure:12364:linux*oldld* | linux*aout* | linux*coff*)
+src/oorexx-3.2.0-leopard/configure:12368:# This must be Linux ELF.
+src/oorexx-3.2.0-leopard/configure:12369:linux*)
+src/oorexx-3.2.0-leopard/configure:12370:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:12411:  # powerpc, because MkLinux only supported shared libraries with the
+src/oorexx-3.2.0-leopard/configure:12413:  # most powerpc-linux boxes support dynamic linking these days and
+src/oorexx-3.2.0-leopard/configure:12415:  # assume the GNU/Linux dynamic linker is in use.
+src/oorexx-3.2.0-leopard/configure:12416:  dynamic_linker='GNU/Linux ld.so'
+src/oorexx-3.2.0-leopard/configure:12420:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:12450:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:12457:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:12513:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:12538:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:12563:    version_type=linux
+src/oorexx-3.2.0-leopard/configure:12594:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:13339:    linux*)
+src/oorexx-3.2.0-leopard/configure:13778:    linux*)
+src/oorexx-3.2.0-leopard/configure:14644:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:14653:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:14709:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:14801:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:14814:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:14870:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:14926:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:14942:		version_type=linux
+src/oorexx-3.2.0-leopard/configure:14974:# No shared lib support for Linux oldld, aout, or coff.
+src/oorexx-3.2.0-leopard/configure:14975:linux*oldld* | linux*aout* | linux*coff*)
+src/oorexx-3.2.0-leopard/configure:14979:# This must be Linux ELF.
+src/oorexx-3.2.0-leopard/configure:14980:linux*)
+src/oorexx-3.2.0-leopard/configure:14981:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:15022:  # powerpc, because MkLinux only supported shared libraries with the
+src/oorexx-3.2.0-leopard/configure:15024:  # most powerpc-linux boxes support dynamic linking these days and
+src/oorexx-3.2.0-leopard/configure:15026:  # assume the GNU/Linux dynamic linker is in use.
+src/oorexx-3.2.0-leopard/configure:15027:  dynamic_linker='GNU/Linux ld.so'
+src/oorexx-3.2.0-leopard/configure:15031:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:15061:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:15068:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:15124:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:15149:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:15174:    version_type=linux
+src/oorexx-3.2.0-leopard/configure:15205:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:15938:    linux*)
+src/oorexx-3.2.0-leopard/configure:16377:    linux*)
+src/oorexx-3.2.0-leopard/configure:17263:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:17272:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:17328:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:17420:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:17433:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:17489:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:17545:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:17561:		version_type=linux
+src/oorexx-3.2.0-leopard/configure:17593:# No shared lib support for Linux oldld, aout, or coff.
+src/oorexx-3.2.0-leopard/configure:17594:linux*oldld* | linux*aout* | linux*coff*)
+src/oorexx-3.2.0-leopard/configure:17598:# This must be Linux ELF.
+src/oorexx-3.2.0-leopard/configure:17599:linux*)
+src/oorexx-3.2.0-leopard/configure:17600:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:17641:  # powerpc, because MkLinux only supported shared libraries with the
+src/oorexx-3.2.0-leopard/configure:17643:  # most powerpc-linux boxes support dynamic linking these days and
+src/oorexx-3.2.0-leopard/configure:17645:  # assume the GNU/Linux dynamic linker is in use.
+src/oorexx-3.2.0-leopard/configure:17646:  dynamic_linker='GNU/Linux ld.so'
+src/oorexx-3.2.0-leopard/configure:17650:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:17680:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:17687:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:17743:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:17768:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:17793:    version_type=linux
+src/oorexx-3.2.0-leopard/configure:17824:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:18939:   i*86-*linux*)
+src/oorexx-3.2.0-leopard/configure:18942:      GENERIC_OS="-DLINUX"
+src/oorexx-3.2.0-leopard/configure:18943:      GENERIC_OPSYS="-DOPSYS_LINUX"
+src/oorexx-3.2.0-leopard/configure:18944:      ORX_SYS_STR="LINUX"
+src/oorexx-3.2.0-leopard/configure:18946:   *86_64-*linux*)
+src/oorexx-3.2.0-leopard/configure:18949:      GENERIC_OS="-DLINUX"
+src/oorexx-3.2.0-leopard/configure:18950:      GENERIC_OPSYS="-DOPSYS_LINUX"
+src/oorexx-3.2.0-leopard/configure:18951:      ORX_SYS_STR="LINUX"
+src/oorexx-3.2.0-leopard/configure:18953:   alpha*-*linux*)
+src/oorexx-3.2.0-leopard/configure:18954:      GENERIC_OS="-DLINUX"
+src/oorexx-3.2.0-leopard/configure:18955:      GENERIC_OPSYS="-DOPSYS_LINUX"
+src/oorexx-3.2.0-leopard/configure:18956:      ORX_SYS_STR="LINUX"
+src/oorexx-3.2.0-leopard/configure:18958:   *linux*)
+src/oorexx-3.2.0-leopard/configure:18959:      GENERIC_OS="-DLINUX"
+src/oorexx-3.2.0-leopard/configure:18960:      GENERIC_OPSYS="-DOPSYS_LINUX"
+src/oorexx-3.2.0-leopard/configure:18961:      ORX_SYS_STR="LINUX"
+src/oorexx-3.2.0-leopard/configure.ac:166:   i*86-*linux*)
+src/oorexx-3.2.0-leopard/configure.ac:169:      GENERIC_OS="-DLINUX"
+src/oorexx-3.2.0-leopard/configure.ac:170:      GENERIC_OPSYS="-DOPSYS_LINUX"
+src/oorexx-3.2.0-leopard/configure.ac:171:      ORX_SYS_STR="LINUX"
+src/oorexx-3.2.0-leopard/configure.ac:173:   *86_64-*linux*)
+src/oorexx-3.2.0-leopard/configure.ac:176:      GENERIC_OS="-DLINUX"
+src/oorexx-3.2.0-leopard/configure.ac:177:      GENERIC_OPSYS="-DOPSYS_LINUX"
+src/oorexx-3.2.0-leopard/configure.ac:178:      ORX_SYS_STR="LINUX"
+src/oorexx-3.2.0-leopard/configure.ac:180:   alpha*-*linux*)
+src/oorexx-3.2.0-leopard/configure.ac:181:      GENERIC_OS="-DLINUX"
+src/oorexx-3.2.0-leopard/configure.ac:182:      GENERIC_OPSYS="-DOPSYS_LINUX"
+src/oorexx-3.2.0-leopard/configure.ac:183:      ORX_SYS_STR="LINUX"
+src/oorexx-3.2.0-leopard/configure.ac:185:   *linux*)
+src/oorexx-3.2.0-leopard/configure.ac:186:      GENERIC_OS="-DLINUX"
+src/oorexx-3.2.0-leopard/configure.ac:187:      GENERIC_OPSYS="-DOPSYS_LINUX"
+src/oorexx-3.2.0-leopard/configure.ac:188:      ORX_SYS_STR="LINUX"
+src/oorexx-3.2.0-leopard/INSTALL:91:Linux
+src/oorexx-3.2.0-leopard/INSTALL:95:available.  Both Redhat and SuSE Linux generally use .rpm files, as do many
+src/oorexx-3.2.0-leopard/INSTALL:96:other Linux distributions.  Debian based systems (Debian, Ubuntu, Kubuntu,
+src/oorexx-3.2.0-leopard/INSTALL:147:Unix-like Systems (Linux, Solaris, AIX, etc.)
+src/oorexx-3.2.0-leopard/INSTALL:175:happens to be from a Windows system, the svn command is the same on Linux,
+src/oorexx-3.2.0-leopard/kernel/platform/leopard/LeooRexxPlatform.h:52:#define LEOOREXX_LEGACY_LINUX      0
+src/oorexx-3.2.0-leopard/kernel/platform/unix/ExternalFunctions.cpp:99:#define SYSENV          "sh"                 /* Default LINUX cmd environment  */
+src/oorexx-3.2.0-leopard/kernel/platform/unix/FileSystem.cpp:690:#if defined(LINUX) && !defined(OPSYS_SUN)
+src/oorexx-3.2.0-leopard/kernel/platform/unix/MiscSystem.cpp:335:#endif   // AIX and LINUX
+src/oorexx-3.2.0-leopard/kernel/platform/unix/MiscSystem.cpp:356:#endif  // AIX and LINUX
+src/oorexx-3.2.0-leopard/kernel/platform/unix/MiscSystem.cpp:405:#endif  // AIX and LINUX
+src/oorexx-3.2.0-leopard/kernel/platform/unix/MiscSystem.cpp:429:#endif  // AIX and LINUX
+src/oorexx-3.2.0-leopard/kernel/platform/unix/PlatformDefinitions.h:39:/* REXX AIX/Linux Support                                          aixrexx.h  */
+src/oorexx-3.2.0-leopard/kernel/platform/unix/PlatformDefinitions.h:41:/* AIX/Linux master definition file                                           */
+src/oorexx-3.2.0-leopard/kernel/platform/unix/SharedMemorySupport.cpp:44:/* Both, IBM AIX and Linux do support the System V IPC standard form AT&T,   */
+src/oorexx-3.2.0-leopard/kernel/platform/unix/SharedMemorySupport.h:44:/* Both, IBM AIX and Linux do support the System V IPC standard form AT&T,   */
+src/oorexx-3.2.0-leopard/kernel/platform/unix/SharedMemorySupport.h:58://#ifndef LINUX
+src/oorexx-3.2.0-leopard/kernel/platform/unix/SystemCommands.cpp:86:#else                                       /* shell for Linux               */
+src/oorexx-3.2.0-leopard/kernel/platform/unix/SystemSemaphores.h:39:/* REXX AIX/Linux Support                                       aixsem.h      */
+src/oorexx-3.2.0-leopard/kernel/platform/unix/ThreadSupport.cpp:41:/* Threading support for AIX/LINUX                                           */
+src/oorexx-3.2.0-leopard/kernel/platform/unix/ThreadSupport.cpp:87://#ifdef LINUX
+src/oorexx-3.2.0-leopard/kernel/platform/unix/ThreadSupport.cpp:121://#ifdef LINUX
+src/oorexx-3.2.0-leopard/kernel/platform/unix/ThreadSupport.cpp:212://#ifdef LINUX
+src/oorexx-3.2.0-leopard/kernel/platform/unix/ThreadSupport.cpp:232://#ifdef LINUX
+src/oorexx-3.2.0-leopard/kernel/platform/unix/ThreadSupport.cpp:247://#ifdef LINUX
+src/oorexx-3.2.0-leopard/kernel/platform/unix/ThreadSupport.cpp:266://#ifdef LINUX
+src/oorexx-3.2.0-leopard/kernel/platform/unix/ThreadSupport.cpp:302:   LINUX: PTHREAD_MUTEX_RECURSIVE_NP
+src/oorexx-3.2.0-leopard/kernel/platform/unix/ThreadSupport.cpp:310:# if defined( HAVE_PTHREAD_MUTEX_RECURSIVE_NP ) /* Linux most likely */
+src/oorexx-3.2.0-leopard/kernel/platform/unix/ThreadSupport.cpp:412:   LINUX: PTHREAD_MUTEX_RECURSIVE_NP
+src/oorexx-3.2.0-leopard/kernel/platform/unix/ThreadSupport.cpp:419:# if defined( HAVE_PTHREAD_MUTEX_RECURSIVE_NP ) /* Linux most likely */
+src/oorexx-3.2.0-leopard/kernel/platform/unix/ThreadSupport.hpp:41:/* Threading support for AIX/LINUX                                           */
+src/oorexx-3.2.0-leopard/kernel/platform/unix/ThreadSupport.hpp:45:#ifndef LINUX_THREADS_DEFINED
+src/oorexx-3.2.0-leopard/kernel/platform/unix/ThreadSupport.hpp:46:#define LINUX_THREADS_DEFINED
+src/oorexx-3.2.0-leopard/kernel/platform/unix/UnixMethods.orx:38:/* Methods specific for AIX and Linux */
+src/oorexx-3.2.0-leopard/kernel/platform/unix/UnixMethods.orx:47:/* Define the Linux system specific functions                 */
+src/oorexx-3.2.0-leopard/kernel/platform/unix/ValueFunction.cpp:134:                                       /* Linux environment variables can   */
+src/oorexx-3.2.0-leopard/kernel/RexxClasses/SystemMethods.orx:62:                                            /* running on LINUX  ?      */
+src/oorexx-3.2.0-leopard/kernel/RexxClasses/SystemMethods.orx:63: when 'LINUX' = sysIntname | 'SUNOS' = sysIntname | 'AIX' = sysIntname | 'MACOSX' == sysIntname Then do  /* Like on AIX  */
+src/oorexx-3.2.0-leopard/kernel/RexxClasses/SystemMethods.orx:64:     call 'UnixMethods.orx'        /* get the Linux specific m. */
+src/oorexx-3.2.0-leopard/kernel/runtime/RexxActivity.cpp:72:/*          Code restructering for AIX port of the Linux Code                 */
+src/oorexx-3.2.0-leopard/kernel/runtime/RexxActivity.cpp:86:/*          Linux: Signal on HALT kills the whole process                     */
+src/oorexx-3.2.0-leopard/kernel/streamLibrary/StreamNative.h:75:#endif   //AIX or LINUX
+src/oorexx-3.2.0-leopard/ltmain.sh:3221:	  darwin|linux|osf|windows|none)
+src/oorexx-3.2.0-leopard/ltmain.sh:3287:	  # Like Linux, but with the current version available in
+src/oorexx-3.2.0-leopard/ltmain.sh:3328:	linux)
+src/oorexx-3.2.0-leopard/platform/unix/oorexx.spec:39:# not an official part of a Linux distribution.
+src/oorexx-3.2.0-leopard/platform/unix/oorexx.spec:40:# If this RPM is for a Linux distribution you should replace "/opt/ooRexx"
+src/oorexx-3.2.0-leopard/platform/unix/oorexx.spec.in:39:# not an official part of a Linux distribution.
+src/oorexx-3.2.0-leopard/platform/unix/oorexx.spec.in:40:# If this RPM is for a Linux distribution you should replace "/opt/ooRexx"
+src/oorexx-3.2.0-leopard/platform/unix/rexx.1:37:Open Object Rexx for Linux is distributed under the terms of
+src/oorexx-3.2.0-leopard/platform/unix/rexx.cpp:43:/*   main entry point to REXX    for LINUX and AIX                            */
+src/oorexx-3.2.0-leopard/platform/unix/rexx.cpp:74:#endif // AIX and LINUX
+src/oorexx-3.2.0-leopard/platform/unix/RexxCompiler.cpp:43:/* Common code for AIX and LINUX                                              */
+src/oorexx-3.2.0-leopard/rexutils/rxsock.c:60:#if LEOOREXX_LEGACY_LINUX
+src/oorexx-3.2.0-leopard/rexutils/rxsock.c:132://#if defined(WIN32) || defined(OPSYS_LINUX)
+src/oorexx-3.2.0-leopard/rexutils/rxsockfn.c:1215:#if LEOOREXX_LEGACY_LINUX
+src/oorexx-3.2.0-leopard/rexutils/rxsockfn.c:1231:#if LEOOREXX_LEGACY_LINUX
+src/oorexx-3.2.0-leopard/rexutils/rxsockfn.c:1266:#if LEOOREXX_LEGACY_LINUX
+src/oorexx-3.2.0-leopard/rexutils/unix/rexxutil.cpp:39:/* REXX AIX/LINUX Support                                         lrxutil.c   */
+src/oorexx-3.2.0-leopard/rexutils/unix/rexxutil.cpp:280:#include <utime.h>                /* moved, used by AIX & Linux          */
+src/oorexx-3.2.0-leopard/rexutils/unix/rexxutil.cpp:589:#if LEOOREXX_LEGACY_LINUX
+src/oorexx-3.2.0-leopard/rexutils/unix/rexxutil.cpp:1281://#ifdef LINUX
+src/oorexx-3.2.0-leopard/rexutils/unix/rexxutil.cpp:2970:#if LEOOREXX_LEGACY_LINUX
+src/oorexx-3.2.0-leopard/rexutils/unix/rexxutil.cpp:2976:* Return:    Linux Version                                               *
+src/oorexx-3.2.0-leopard/rexutils/unix/rexxutil.cpp:3006:* Return:    Operating System name (LINUX/AIX/WINDOWS) and Version       *
+src/oorexx-3.2.0-leopard/rexxapi/unix/MacroSpace.cpp:904://#ifndef LINUX
+src/oorexx-3.2.0-leopard/rexxapi/unix/QueuesAPI.cpp:1297:/* this is for LINUX only. AIX does not create different PID's for   */
+src/oorexx-3.2.0-leopard/rexxapi/unix/QueuesAPI.cpp:1308://#ifdef LINUX
+src/oorexx-3.2.0-leopard/rexxapi/unix/QueuesAPI.cpp:1361://#ifdef LINUX
+src/oorexx-3.2.0-leopard/rexxapi/unix/RexxAPIManager.cpp:2274:/*                   be deleted. It stays until Linux goes down.     */
+src/oorexx-3.2.0-leopard/rexxapi/unix/SUBCOMCommand.cpp:42:/* Descriptive Name:   AIX/Linux Command Line Program for Subcommand */
+src/oorexx-3.2.0-leopard/samples/rexxtry.rex:96:    when sysrx = 'LINUX' | sysrx = 'AIX' | sysrx = 'SUNOS' then
+src/oorexx-3.2.0-leopard/samples/rexxtry.rex:124:    when sysrx = 'LINUX' | sysrx = 'AIX' | sysrx = 'SUNOS' then
+src/oorexx-3.2.0-leopard/samples/rexxtry.rex:190:    when sysrx = AIX | sysrx = LINUX | sysrx = 'SUNOS' then do

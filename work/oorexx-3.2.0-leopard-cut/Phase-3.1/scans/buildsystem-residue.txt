@@ -1,0 +1,1055 @@
+src/oorexx-3.2.0-leopard/configure.ac:118:   *ibm-aix*)
+src/oorexx-3.2.0-leopard/configure.ac:119:      GENERIC_OS="-DAIX"
+src/oorexx-3.2.0-leopard/configure.ac:120:      GENERIC_OPSYS="-DOPSYS_AIX"
+src/oorexx-3.2.0-leopard/configure.ac:121:      GENERIC_DEFINES="$GENERIC_DEFINES -DOPSYS_AIX43"
+src/oorexx-3.2.0-leopard/configure.ac:125:            CC_WARNINGS="-maix32 -mthreads $GCC_WARNINGS"
+src/oorexx-3.2.0-leopard/configure.ac:126:            CXX_WARNINGS="-maix32 -mthreads $GCXX_WARNINGS"
+src/oorexx-3.2.0-leopard/configure.ac:137:      PACKAGETYPE="aix"
+src/oorexx-3.2.0-leopard/configure.ac:138:      ORX_SYS_STR="AIX"
+src/oorexx-3.2.0-leopard/configure.ac:140:   *solaris*)
+src/oorexx-3.2.0-leopard/configure.ac:152:      ORX_SYS_STR="SUNOS"
+src/oorexx-3.2.0-leopard/configure.ac:154:         *solaris2.8)
+src/oorexx-3.2.0-leopard/configure.ac:155:            SPECIFIC_DEFINES="-DLIMITED_SOLARIS_SEMS"
+src/oorexx-3.2.0-leopard/configure.ac:157:         *solaris2.9)
+src/oorexx-3.2.0-leopard/configure.ac:158:            SPECIFIC_DEFINES="-DLIMITED_SOLARIS_SEMS"
+src/oorexx-3.2.0-leopard/configure.ac:163:   sparc*sunos*)
+src/oorexx-3.2.0-leopard/configure.ac:164:      ORX_SYS_STR="SUNOS"
+src/oorexx-3.2.0-leopard/configure.ac:166:   i*86-*linux*)
+src/oorexx-3.2.0-leopard/configure.ac:169:      GENERIC_OS="-DLINUX"
+src/oorexx-3.2.0-leopard/configure.ac:170:      GENERIC_OPSYS="-DOPSYS_LINUX"
+src/oorexx-3.2.0-leopard/configure.ac:171:      ORX_SYS_STR="LINUX"
+src/oorexx-3.2.0-leopard/configure.ac:173:   *86_64-*linux*)
+src/oorexx-3.2.0-leopard/configure.ac:176:      GENERIC_OS="-DLINUX"
+src/oorexx-3.2.0-leopard/configure.ac:177:      GENERIC_OPSYS="-DOPSYS_LINUX"
+src/oorexx-3.2.0-leopard/configure.ac:178:      ORX_SYS_STR="LINUX"
+src/oorexx-3.2.0-leopard/configure.ac:180:   alpha*-*linux*)
+src/oorexx-3.2.0-leopard/configure.ac:181:      GENERIC_OS="-DLINUX"
+src/oorexx-3.2.0-leopard/configure.ac:182:      GENERIC_OPSYS="-DOPSYS_LINUX"
+src/oorexx-3.2.0-leopard/configure.ac:183:      ORX_SYS_STR="LINUX"
+src/oorexx-3.2.0-leopard/configure.ac:185:   *linux*)
+src/oorexx-3.2.0-leopard/configure.ac:186:      GENERIC_OS="-DLINUX"
+src/oorexx-3.2.0-leopard/configure.ac:187:      GENERIC_OPSYS="-DOPSYS_LINUX"
+src/oorexx-3.2.0-leopard/configure.ac:188:      ORX_SYS_STR="LINUX"
+src/oorexx-3.2.0-leopard/configure.ac:196:   *freebsd*)
+src/oorexx-3.2.0-leopard/configure.ac:197:      ORX_SYS_STR="FREEBSD"
+src/oorexx-3.2.0-leopard/configure.ac:204:   *netbsd*)
+src/oorexx-3.2.0-leopard/configure.ac:205:      ORX_SYS_STR="NETBSD"
+src/oorexx-3.2.0-leopard/configure.ac:213:      ORX_SYS_STR="NETBSD"
+src/oorexx-3.2.0-leopard/configure.ac:226:   *hp-hpux*)
+src/oorexx-3.2.0-leopard/Makefile.am:63:platform_windows_dir = $(platform_dir)/windows
+src/oorexx-3.2.0-leopard/Makefile.am:67:rexxapi_windows_dir = $(rexxapi_dir)/windows
+src/oorexx-3.2.0-leopard/Makefile.am:70:kernel_platform_windows_dir = $(kernel_dir)/platform/windows
+src/oorexx-3.2.0-leopard/Makefile.am:85:rexutils_windows_dir = $(rexutils_dir)/windows
+src/oorexx-3.2.0-leopard/Makefile.am:91:samples_windows_dir = $(top_srcdir)/samples/windows
+src/oorexx-3.2.0-leopard/Makefile.am:246:aixExportFiles = $(rexutils_unix_dir)/*.exp \
+src/oorexx-3.2.0-leopard/Makefile.am:250:windowsDefFiles = $(kernel_dir)/*.def \
+src/oorexx-3.2.0-leopard/Makefile.am:251:                  $(kernel_platform_windows_dir)/*.def \
+src/oorexx-3.2.0-leopard/Makefile.am:259:            $(aixExportFiles) \
+src/oorexx-3.2.0-leopard/Makefile.am:265:            $(samples_windows_dir)/* \
+src/oorexx-3.2.0-leopard/Makefile.am:267:windowsFiles = \
+src/oorexx-3.2.0-leopard/Makefile.am:270:            $(top_srcdir)/windows-build.txt \
+src/oorexx-3.2.0-leopard/Makefile.am:272:            $(kernel_platform_windows_dir)/*.cpp \
+src/oorexx-3.2.0-leopard/Makefile.am:273:            $(kernel_platform_windows_dir)/*.h \
+src/oorexx-3.2.0-leopard/Makefile.am:274:            $(kernel_platform_windows_dir)/*.rc \
+src/oorexx-3.2.0-leopard/Makefile.am:275:            $(kernel_platform_windows_dir)/*.xsl \
+src/oorexx-3.2.0-leopard/Makefile.am:276:            $(kernel_platform_windows_dir)/*.orx \
+src/oorexx-3.2.0-leopard/Makefile.am:281:            $(rexxapi_windows_dir)/* \
+src/oorexx-3.2.0-leopard/Makefile.am:282:            $(rexutils_windows_dir)/* \
+src/oorexx-3.2.0-leopard/Makefile.am:283:            $(platform_windows_dir)/*
+src/oorexx-3.2.0-leopard/Makefile.am:789:             $(windowsFiles) \
+src/oorexx-3.2.0-leopard/Makefile.am:790:             $(windowsDefFiles)
+src/oorexx-3.2.0-leopard/Makefile.am:806:# Add oorexx.ver.incl, a file used by the Windows build, to the source
+src/oorexx-3.2.0-leopard/Makefile.in:458:platform_windows_dir = $(platform_dir)/windows
+src/oorexx-3.2.0-leopard/Makefile.in:462:rexxapi_windows_dir = $(rexxapi_dir)/windows
+src/oorexx-3.2.0-leopard/Makefile.in:465:kernel_platform_windows_dir = $(kernel_dir)/platform/windows
+src/oorexx-3.2.0-leopard/Makefile.in:479:rexutils_windows_dir = $(rexutils_dir)/windows
+src/oorexx-3.2.0-leopard/Makefile.in:483:samples_windows_dir = $(top_srcdir)/samples/windows
+src/oorexx-3.2.0-leopard/Makefile.in:649:aixExportFiles = $(rexutils_unix_dir)/*.exp \
+src/oorexx-3.2.0-leopard/Makefile.in:654:windowsDefFiles = $(kernel_dir)/*.def \
+src/oorexx-3.2.0-leopard/Makefile.in:655:                  $(kernel_platform_windows_dir)/*.def \
+src/oorexx-3.2.0-leopard/Makefile.in:664:            $(aixExportFiles) \
+src/oorexx-3.2.0-leopard/Makefile.in:670:            $(samples_windows_dir)/* \
+src/oorexx-3.2.0-leopard/Makefile.in:673:windowsFiles = \
+src/oorexx-3.2.0-leopard/Makefile.in:676:            $(top_srcdir)/windows-build.txt \
+src/oorexx-3.2.0-leopard/Makefile.in:678:            $(kernel_platform_windows_dir)/*.cpp \
+src/oorexx-3.2.0-leopard/Makefile.in:679:            $(kernel_platform_windows_dir)/*.h \
+src/oorexx-3.2.0-leopard/Makefile.in:680:            $(kernel_platform_windows_dir)/*.rc \
+src/oorexx-3.2.0-leopard/Makefile.in:681:            $(kernel_platform_windows_dir)/*.xsl \
+src/oorexx-3.2.0-leopard/Makefile.in:682:            $(kernel_platform_windows_dir)/*.orx \
+src/oorexx-3.2.0-leopard/Makefile.in:687:            $(rexxapi_windows_dir)/* \
+src/oorexx-3.2.0-leopard/Makefile.in:688:            $(rexutils_windows_dir)/* \
+src/oorexx-3.2.0-leopard/Makefile.in:689:            $(platform_windows_dir)/*
+src/oorexx-3.2.0-leopard/Makefile.in:1193:             $(windowsFiles) \
+src/oorexx-3.2.0-leopard/Makefile.in:1194:             $(windowsDefFiles)
+src/oorexx-3.2.0-leopard/Makefile.in:2952:	$(mkdir_p) $(distdir)/$(classes_dir) $(distdir)/$(expression_dir) $(distdir)/$(instructions_dir) $(distdir)/$(kernel_dir) $(distdir)/$(kernel_platform_common_dir) $(distdir)/$(kernel_platform_unix_dir) $(distdir)/$(kernel_platform_windows_dir) $(distdir)/$(lib_dir) $(distdir)/$(messages_dir) $(distdir)/$(parser_dir) $(distdir)/$(platform_unix_dir) $(distdir)/$(platform_windows_dir) $(distdir)/$(rexutils_dir) $(distdir)/$(rexutils_unix_dir) $(distdir)/$(rexutils_windows_dir) $(distdir)/$(rexxapi_dir) $(distdir)/$(rexxapi_unix_dir) $(distdir)/$(rexxapi_windows_dir) $(distdir)/$(runtime_dir) $(distdir)/$(rxregexp_dir) $(distdir)/$(samples_dir) $(distdir)/$(samples_windows_dir) $(distdir)/$(som_dir) $(distdir)/$(streamlibrary_dir) $(distdir)/$(top_srcdir) $(distdir)/. $(distdir)/platform/unix $(distdir)/platform/unix/debian
+src/oorexx-3.2.0-leopard/Makefile.in:3255:# Add oorexx.ver.incl, a file used by the Windows build, to the source
+src/oorexx-3.2.0-leopard/aclocal.m4:113:aix3*)
+src/oorexx-3.2.0-leopard/aclocal.m4:114:  # AIX sometimes has problems with the GCC collect2 program.  For some
+src/oorexx-3.2.0-leopard/aclocal.m4:207:AC_PROVIDE_IFELSE([AC_LIBTOOL_WIN32_DLL],
+src/oorexx-3.2.0-leopard/aclocal.m4:208:enable_win32_dll=yes, enable_win32_dll=no)
+src/oorexx-3.2.0-leopard/aclocal.m4:287:# _LT_AC_SYS_LIBPATH_AIX
+src/oorexx-3.2.0-leopard/aclocal.m4:294:# to the aix ld manual.
+src/oorexx-3.2.0-leopard/aclocal.m4:295:AC_DEFUN([_LT_AC_SYS_LIBPATH_AIX],
+src/oorexx-3.2.0-leopard/aclocal.m4:297:aix_libpath=`dump -H conftest$ac_exeext 2>/dev/null | $SED -n -e '/Import File Strings/,/^$/ { /^0/ { s/^0  *\(.*\)$/\1/; p; }
+src/oorexx-3.2.0-leopard/aclocal.m4:300:if test -z "$aix_libpath"; then aix_libpath=`dump -HX64 conftest$ac_exeext 2>/dev/null | $SED -n -e '/Import File Strings/,/^$/ { /^0/ { s/^0  *\(.*\)$/\1/; p; }
+src/oorexx-3.2.0-leopard/aclocal.m4:302:if test -z "$aix_libpath"; then aix_libpath="/usr/lib:/lib"; fi
+src/oorexx-3.2.0-leopard/aclocal.m4:303:])# _LT_AC_SYS_LIBPATH_AIX
+src/oorexx-3.2.0-leopard/aclocal.m4:380:  # The Solaris, AIX, and Digital Unix default echo programs unquote
+src/oorexx-3.2.0-leopard/aclocal.m4:484:ia64-*-hpux*)
+src/oorexx-3.2.0-leopard/aclocal.m4:490:      HPUX_IA64_MODE="32"
+src/oorexx-3.2.0-leopard/aclocal.m4:493:      HPUX_IA64_MODE="64"
+src/oorexx-3.2.0-leopard/aclocal.m4:532:x86_64-*linux*|ppc*-*linux*|powerpc*-*linux*|s390*-*linux*|sparc*-*linux*)
+src/oorexx-3.2.0-leopard/aclocal.m4:539:        x86_64-*linux*)
+src/oorexx-3.2.0-leopard/aclocal.m4:542:        ppc64-*linux*|powerpc64-*linux*)
+src/oorexx-3.2.0-leopard/aclocal.m4:543:          LD="${LD-ld} -m elf32ppclinux"
+src/oorexx-3.2.0-leopard/aclocal.m4:545:        s390x-*linux*)
+src/oorexx-3.2.0-leopard/aclocal.m4:548:        sparc64-*linux*)
+src/oorexx-3.2.0-leopard/aclocal.m4:555:        x86_64-*linux*)
+src/oorexx-3.2.0-leopard/aclocal.m4:558:        ppc*-*linux*|powerpc*-*linux*)
+src/oorexx-3.2.0-leopard/aclocal.m4:561:        s390*-*linux*)
+src/oorexx-3.2.0-leopard/aclocal.m4:564:        sparc*-*linux*)
+src/oorexx-3.2.0-leopard/aclocal.m4:587:sparc*-*solaris*)
+src/oorexx-3.2.0-leopard/aclocal.m4:603:AC_PROVIDE_IFELSE([AC_LIBTOOL_WIN32_DLL],
+src/oorexx-3.2.0-leopard/aclocal.m4:604:[*-*-cygwin* | *-*-mingw* | *-*-pw32*)
+src/oorexx-3.2.0-leopard/aclocal.m4:724:  cygwin* | mingw*)
+src/oorexx-3.2.0-leopard/aclocal.m4:741:  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
+src/oorexx-3.2.0-leopard/aclocal.m4:931:  mingw* | pw32*)
+src/oorexx-3.2.0-leopard/aclocal.m4:936:  cygwin*)
+src/oorexx-3.2.0-leopard/aclocal.m4:1230:aix3*)
+src/oorexx-3.2.0-leopard/aclocal.m4:1231:  version_type=linux
+src/oorexx-3.2.0-leopard/aclocal.m4:1235:  # AIX 3 has no versioning support, so we append a major version to the name.
+src/oorexx-3.2.0-leopard/aclocal.m4:1239:aix4* | aix5*)
+src/oorexx-3.2.0-leopard/aclocal.m4:1240:  version_type=linux
+src/oorexx-3.2.0-leopard/aclocal.m4:1245:    # AIX 5 supports IA64
+src/oorexx-3.2.0-leopard/aclocal.m4:1255:      aix4 | aix4.[[01]] | aix4.[[01]].*)
+src/oorexx-3.2.0-leopard/aclocal.m4:1265:    # AIX (on Power*) has no versioning support, so currently we can not hardcode correct
+src/oorexx-3.2.0-leopard/aclocal.m4:1268:    if test "$aix_use_runtimelinking" = yes; then
+src/oorexx-3.2.0-leopard/aclocal.m4:1269:      # If using run time linking (on AIX 4.2 or later) use lib<name>.so
+src/oorexx-3.2.0-leopard/aclocal.m4:1271:      # typical AIX shared libraries.
+src/oorexx-3.2.0-leopard/aclocal.m4:1274:      # We preserve .a as extension for shared libraries through AIX4.2
+src/oorexx-3.2.0-leopard/aclocal.m4:1296:  version_type=linux
+src/oorexx-3.2.0-leopard/aclocal.m4:1309:cygwin* | mingw* | pw32*)
+src/oorexx-3.2.0-leopard/aclocal.m4:1310:  version_type=windows
+src/oorexx-3.2.0-leopard/aclocal.m4:1316:  yes,cygwin* | yes,mingw* | yes,pw32*)
+src/oorexx-3.2.0-leopard/aclocal.m4:1331:    cygwin*)
+src/oorexx-3.2.0-leopard/aclocal.m4:1332:      # Cygwin DLLs use 'cyg' prefix rather than 'lib'
+src/oorexx-3.2.0-leopard/aclocal.m4:1336:    mingw*)
+src/oorexx-3.2.0-leopard/aclocal.m4:1337:      # MinGW DLLs use traditional 'lib' prefix
+src/oorexx-3.2.0-leopard/aclocal.m4:1341:        # It is most probably a Windows format PATH printed by
+src/oorexx-3.2.0-leopard/aclocal.m4:1342:        # mingw gcc, but we are running on Cygwin. Gcc prints its search
+src/oorexx-3.2.0-leopard/aclocal.m4:1344:        # drive letters (cygwin fileutils understands them), so leave them,
+src/oorexx-3.2.0-leopard/aclocal.m4:1345:        # especially as we might pass files found there to a mingw objdump,
+src/oorexx-3.2.0-leopard/aclocal.m4:1346:        # which wouldn't understand a cygwinified path. Ahh.
+src/oorexx-3.2.0-leopard/aclocal.m4:1363:  dynamic_linker='Win32 ld.exe'
+src/oorexx-3.2.0-leopard/aclocal.m4:1388:  version_type=linux
+src/oorexx-3.2.0-leopard/aclocal.m4:1396:freebsd1*)
+src/oorexx-3.2.0-leopard/aclocal.m4:1400:kfreebsd*-gnu)
+src/oorexx-3.2.0-leopard/aclocal.m4:1401:  version_type=linux
+src/oorexx-3.2.0-leopard/aclocal.m4:1412:freebsd* | dragonfly*)
+src/oorexx-3.2.0-leopard/aclocal.m4:1419:    freebsd[[123]]*) objformat=aout ;;
+src/oorexx-3.2.0-leopard/aclocal.m4:1423:  version_type=freebsd-$objformat
+src/oorexx-3.2.0-leopard/aclocal.m4:1425:    freebsd-elf*)
+src/oorexx-3.2.0-leopard/aclocal.m4:1430:    freebsd-*)
+src/oorexx-3.2.0-leopard/aclocal.m4:1437:  freebsd2*)
+src/oorexx-3.2.0-leopard/aclocal.m4:1440:  freebsd3.[[01]]* | freebsdelf3.[[01]]*)
+src/oorexx-3.2.0-leopard/aclocal.m4:1444:  freebsd3.[[2-9]]* | freebsdelf3.[[2-9]]* | \
+src/oorexx-3.2.0-leopard/aclocal.m4:1445:  freebsd4.[[0-5]] | freebsdelf4.[[0-5]] | freebsd4.1.1 | freebsdelf4.1.1)
+src/oorexx-3.2.0-leopard/aclocal.m4:1449:  freebsd*) # from 4.6 on
+src/oorexx-3.2.0-leopard/aclocal.m4:1457:  version_type=linux
+src/oorexx-3.2.0-leopard/aclocal.m4:1466:hpux9* | hpux10* | hpux11*)
+src/oorexx-3.2.0-leopard/aclocal.m4:1469:  version_type=sunos
+src/oorexx-3.2.0-leopard/aclocal.m4:1481:    if test "X$HPUX_IA64_MODE" = X32; then
+src/oorexx-3.2.0-leopard/aclocal.m4:1482:      sys_lib_search_path_spec="/usr/lib/hpux32 /usr/local/lib/hpux32 /usr/local/lib"
+src/oorexx-3.2.0-leopard/aclocal.m4:1484:      sys_lib_search_path_spec="/usr/lib/hpux64 /usr/local/lib/hpux64"
+src/oorexx-3.2.0-leopard/aclocal.m4:1513:  version_type=linux
+src/oorexx-3.2.0-leopard/aclocal.m4:1529:		version_type=linux
+src/oorexx-3.2.0-leopard/aclocal.m4:1561:# No shared lib support for Linux oldld, aout, or coff.
+src/oorexx-3.2.0-leopard/aclocal.m4:1562:linux*oldld* | linux*aout* | linux*coff*)
+src/oorexx-3.2.0-leopard/aclocal.m4:1566:# This must be Linux ELF.
+src/oorexx-3.2.0-leopard/aclocal.m4:1567:linux*)
+src/oorexx-3.2.0-leopard/aclocal.m4:1568:  version_type=linux
+src/oorexx-3.2.0-leopard/aclocal.m4:1605:  # powerpc, because MkLinux only supported shared libraries with the
+src/oorexx-3.2.0-leopard/aclocal.m4:1607:  # most powerpc-linux boxes support dynamic linking these days and
+src/oorexx-3.2.0-leopard/aclocal.m4:1609:  # assume the GNU/Linux dynamic linker is in use.
+src/oorexx-3.2.0-leopard/aclocal.m4:1610:  dynamic_linker='GNU/Linux ld.so'
+src/oorexx-3.2.0-leopard/aclocal.m4:1613:knetbsd*-gnu)
+src/oorexx-3.2.0-leopard/aclocal.m4:1614:  version_type=linux
+src/oorexx-3.2.0-leopard/aclocal.m4:1625:netbsd*)
+src/oorexx-3.2.0-leopard/aclocal.m4:1626:  version_type=sunos
+src/oorexx-3.2.0-leopard/aclocal.m4:1632:    dynamic_linker='NetBSD (a.out) ld.so'
+src/oorexx-3.2.0-leopard/aclocal.m4:1636:    dynamic_linker='NetBSD ld.elf_so'
+src/oorexx-3.2.0-leopard/aclocal.m4:1644:  version_type=linux
+src/oorexx-3.2.0-leopard/aclocal.m4:1651:  version_type=linux
+src/oorexx-3.2.0-leopard/aclocal.m4:1661:  version_type=sunos
+src/oorexx-3.2.0-leopard/aclocal.m4:1686:os2*)
+src/oorexx-3.2.0-leopard/aclocal.m4:1706:solaris*)
+src/oorexx-3.2.0-leopard/aclocal.m4:1707:  version_type=linux
+src/oorexx-3.2.0-leopard/aclocal.m4:1719:sunos4*)
+src/oorexx-3.2.0-leopard/aclocal.m4:1720:  version_type=sunos
+src/oorexx-3.2.0-leopard/aclocal.m4:1732:  version_type=linux
+src/oorexx-3.2.0-leopard/aclocal.m4:1757:    version_type=linux
+src/oorexx-3.2.0-leopard/aclocal.m4:1765:  version_type=freebsd-elf
+src/oorexx-3.2.0-leopard/aclocal.m4:1788:  version_type=linux
+src/oorexx-3.2.0-leopard/aclocal.m4:1920:# AC_LIBTOOL_WIN32_DLL
+src/oorexx-3.2.0-leopard/aclocal.m4:1922:# declare package support for building win32 DLLs
+src/oorexx-3.2.0-leopard/aclocal.m4:1923:AC_DEFUN([AC_LIBTOOL_WIN32_DLL],
+src/oorexx-3.2.0-leopard/aclocal.m4:1925:])# AC_LIBTOOL_WIN32_DLL
+src/oorexx-3.2.0-leopard/aclocal.m4:2166:  *-*-mingw*)
+src/oorexx-3.2.0-leopard/aclocal.m4:2167:    # gcc leaves a trailing carriage return which upsets mingw
+src/oorexx-3.2.0-leopard/aclocal.m4:2299:aix4* | aix5*)
+src/oorexx-3.2.0-leopard/aclocal.m4:2313:cygwin*)
+src/oorexx-3.2.0-leopard/aclocal.m4:2314:  # func_win32_libid is a shell function defined in ltmain.sh
+src/oorexx-3.2.0-leopard/aclocal.m4:2316:  lt_cv_file_magic_cmd='func_win32_libid'
+src/oorexx-3.2.0-leopard/aclocal.m4:2319:mingw* | pw32*)
+src/oorexx-3.2.0-leopard/aclocal.m4:2320:  # Base MSYS/MinGW do not provide the 'file' command needed by
+src/oorexx-3.2.0-leopard/aclocal.m4:2321:  # func_win32_libid shell function, so use a weaker test based on 'objdump'.
+src/oorexx-3.2.0-leopard/aclocal.m4:2330:freebsd* | kfreebsd*-gnu | dragonfly*)
+src/oorexx-3.2.0-leopard/aclocal.m4:2336:      lt_cv_deplibs_check_method='file_magic (FreeBSD|OpenBSD|DragonFly)/i[[3-9]]86 (compact )?demand paged shared library'
+src/oorexx-3.2.0-leopard/aclocal.m4:2350:hpux10.20* | hpux11*)
+src/oorexx-3.2.0-leopard/aclocal.m4:2355:    lt_cv_file_magic_test_file=/usr/lib/hpux32/libc.so
+src/oorexx-3.2.0-leopard/aclocal.m4:2383:# This must be Linux ELF.
+src/oorexx-3.2.0-leopard/aclocal.m4:2384:linux*)
+src/oorexx-3.2.0-leopard/aclocal.m4:2388:netbsd*)
+src/oorexx-3.2.0-leopard/aclocal.m4:2418:solaris*)
+src/oorexx-3.2.0-leopard/aclocal.m4:2519:*-*-beos* | *-*-cygwin* | *-*-pw32* | *-*-darwin*)
+src/oorexx-3.2.0-leopard/aclocal.m4:2661:# enable support for Windows resource files
+src/oorexx-3.2.0-leopard/aclocal.m4:2714:# On AIX, shared libraries and static libraries use the same namespace, and
+src/oorexx-3.2.0-leopard/aclocal.m4:2717:aix3*)
+src/oorexx-3.2.0-leopard/aclocal.m4:2725:aix4* | aix5*)
+src/oorexx-3.2.0-leopard/aclocal.m4:2726:  if test "$host_cpu" != ia64 && test "$aix_use_runtimelinking" = no ; then
+src/oorexx-3.2.0-leopard/aclocal.m4:2887:  aix3*)
+src/oorexx-3.2.0-leopard/aclocal.m4:2891:  aix4* | aix5*)
+src/oorexx-3.2.0-leopard/aclocal.m4:2895:      aix_use_runtimelinking=no
+src/oorexx-3.2.0-leopard/aclocal.m4:2899:      aix_use_runtimelinking=no
+src/oorexx-3.2.0-leopard/aclocal.m4:2902:      # AIX style linking. If -brtl is somewhere in LDFLAGS, we
+src/oorexx-3.2.0-leopard/aclocal.m4:2904:      case $host_os in aix4.[[23]]|aix4.[[23]].*|aix5*)
+src/oorexx-3.2.0-leopard/aclocal.m4:2908:	    aix_use_runtimelinking=yes
+src/oorexx-3.2.0-leopard/aclocal.m4:2920:    # When large executables or shared objects are built, AIX ld can
+src/oorexx-3.2.0-leopard/aclocal.m4:2932:      case $host_os in aix4.[[012]]|aix4.[[012]].*)
+src/oorexx-3.2.0-leopard/aclocal.m4:2933:      # We only want to do this on AIX 4.2 and lower, the check
+src/oorexx-3.2.0-leopard/aclocal.m4:2954:      if test "$aix_use_runtimelinking" = yes; then
+src/oorexx-3.2.0-leopard/aclocal.m4:2960:	# VisualAge C++, Version 5.5 for AIX 5L for IA-64, Beta 3 Release
+src/oorexx-3.2.0-leopard/aclocal.m4:2964:	if test "$aix_use_runtimelinking" = yes; then
+src/oorexx-3.2.0-leopard/aclocal.m4:2975:    if test "$aix_use_runtimelinking" = yes; then
+src/oorexx-3.2.0-leopard/aclocal.m4:2980:      _LT_AC_SYS_LIBPATH_AIX
+src/oorexx-3.2.0-leopard/aclocal.m4:2981:      _LT_AC_TAGVAR(hardcode_libdir_flag_spec, $1)='${wl}-blibpath:$libdir:'"$aix_libpath"
+src/oorexx-3.2.0-leopard/aclocal.m4:2991:	_LT_AC_SYS_LIBPATH_AIX
+src/oorexx-3.2.0-leopard/aclocal.m4:2992:	_LT_AC_TAGVAR(hardcode_libdir_flag_spec, $1)='${wl}-blibpath:$libdir:'"$aix_libpath"
+src/oorexx-3.2.0-leopard/aclocal.m4:3000:	# This is similar to how AIX traditionally builds its shared libraries.
+src/oorexx-3.2.0-leopard/aclocal.m4:3026:  cygwin* | mingw* | pw32*)
+src/oorexx-3.2.0-leopard/aclocal.m4:3129:  freebsd[[12]]*)
+src/oorexx-3.2.0-leopard/aclocal.m4:3133:  freebsd-elf*)
+src/oorexx-3.2.0-leopard/aclocal.m4:3136:  freebsd* | kfreebsd*-gnu | dragonfly*)
+src/oorexx-3.2.0-leopard/aclocal.m4:3137:    # FreeBSD 3 and later use GNU C++ and GNU ld with standard ELF
+src/oorexx-3.2.0-leopard/aclocal.m4:3143:  hpux9*)
+src/oorexx-3.2.0-leopard/aclocal.m4:3179:  hpux10*|hpux11*)
+src/oorexx-3.2.0-leopard/aclocal.m4:3295:  linux*)
+src/oorexx-3.2.0-leopard/aclocal.m4:3397:  netbsd*)
+src/oorexx-3.2.0-leopard/aclocal.m4:3551:  sunos4*)
+src/oorexx-3.2.0-leopard/aclocal.m4:3569:  solaris*)
+src/oorexx-3.2.0-leopard/aclocal.m4:3582:	  solaris2.[[0-5]] | solaris2.[[0-5]].*) ;;
+src/oorexx-3.2.0-leopard/aclocal.m4:3591:	    # Supported since Solaris 2.6 (maybe 2.5.1?)
+src/oorexx-3.2.0-leopard/aclocal.m4:3613:	# GNU C++ compiler with Solaris linker
+src/oorexx-3.2.0-leopard/aclocal.m4:3890:solaris*)
+src/oorexx-3.2.0-leopard/aclocal.m4:3970:# On AIX, shared libraries and static libraries use the same namespace, and
+src/oorexx-3.2.0-leopard/aclocal.m4:3973:aix3*)
+src/oorexx-3.2.0-leopard/aclocal.m4:3980:aix4* | aix5*)
+src/oorexx-3.2.0-leopard/aclocal.m4:3981:  if test "$host_cpu" != ia64 && test "$aix_use_runtimelinking" = no ; then
+src/oorexx-3.2.0-leopard/aclocal.m4:4068:# Ensure that the configuration vars for the Windows resource compiler are
+src/oorexx-3.2.0-leopard/aclocal.m4:4329:# Used on cygwin: DLL creation program.
+src/oorexx-3.2.0-leopard/aclocal.m4:4332:# Used on cygwin: object dumper.
+src/oorexx-3.2.0-leopard/aclocal.m4:4335:# Used on cygwin: assembler.
+src/oorexx-3.2.0-leopard/aclocal.m4:4571:  aix3*)
+src/oorexx-3.2.0-leopard/aclocal.m4:4574:# AIX sometimes has problems with the GCC collect2 program.  For some
+src/oorexx-3.2.0-leopard/aclocal.m4:4652:aix*)
+src/oorexx-3.2.0-leopard/aclocal.m4:4655:cygwin* | mingw* | pw32*)
+src/oorexx-3.2.0-leopard/aclocal.m4:4658:hpux*) # Its linker distinguishes data from code symbols
+src/oorexx-3.2.0-leopard/aclocal.m4:4665:linux*)
+src/oorexx-3.2.0-leopard/aclocal.m4:4678:solaris*)
+src/oorexx-3.2.0-leopard/aclocal.m4:4695:# Handle CRLF in mingw tool chain
+src/oorexx-3.2.0-leopard/aclocal.m4:4698:mingw*)
+src/oorexx-3.2.0-leopard/aclocal.m4:4842:    aix*)
+src/oorexx-3.2.0-leopard/aclocal.m4:4843:      # All AIX code is PIC.
+src/oorexx-3.2.0-leopard/aclocal.m4:4845:	# AIX 5 now supports IA64 processor
+src/oorexx-3.2.0-leopard/aclocal.m4:4855:    beos* | cygwin* | irix5* | irix6* | nonstopux* | osf3* | osf4* | osf5*)
+src/oorexx-3.2.0-leopard/aclocal.m4:4858:    mingw* | os2* | pw32*)
+src/oorexx-3.2.0-leopard/aclocal.m4:4881:    hpux*)
+src/oorexx-3.2.0-leopard/aclocal.m4:4898:      aix4* | aix5*)
+src/oorexx-3.2.0-leopard/aclocal.m4:4899:	# All AIX code is PIC.
+src/oorexx-3.2.0-leopard/aclocal.m4:4901:	  # AIX 5 now supports IA64 processor
+src/oorexx-3.2.0-leopard/aclocal.m4:4938:      freebsd* | kfreebsd*-gnu | dragonfly*)
+src/oorexx-3.2.0-leopard/aclocal.m4:4939:	# FreeBSD uses GNU C++
+src/oorexx-3.2.0-leopard/aclocal.m4:4941:      hpux9* | hpux10* | hpux11*)
+src/oorexx-3.2.0-leopard/aclocal.m4:4981:      linux*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5003:	    # Linux and Compaq Tru64 Unix objects are PIC.
+src/oorexx-3.2.0-leopard/aclocal.m4:5024:      netbsd*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5039:	    # Linux and Compaq Tru64 Unix objects are PIC.
+src/oorexx-3.2.0-leopard/aclocal.m4:5049:      solaris*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5065:      sunos4*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5113:      aix*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5114:      # All AIX code is PIC.
+src/oorexx-3.2.0-leopard/aclocal.m4:5116:	# AIX 5 now supports IA64 processor
+src/oorexx-3.2.0-leopard/aclocal.m4:5128:    beos* | cygwin* | irix5* | irix6* | nonstopux* | osf3* | osf4* | osf5*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5132:    mingw* | pw32* | os2*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5162:    hpux*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5182:    aix*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5185:	# AIX 5 now supports IA64 processor
+src/oorexx-3.2.0-leopard/aclocal.m4:5202:    mingw* | pw32* | os2*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5208:    hpux9* | hpux10* | hpux11*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5235:    linux*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5263:    solaris*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5274:    sunos4*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5361:  aix4* | aix5*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5363:    # -C means demangle to AIX nm, but means don't demangle with GNU nm
+src/oorexx-3.2.0-leopard/aclocal.m4:5373:  cygwin* | mingw*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5420:  cygwin* | mingw* | pw32*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5465:    aix3* | aix4* | aix5*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5466:      # On AIX/PPC, the GNU linker is very broken
+src/oorexx-3.2.0-leopard/aclocal.m4:5472:*** to be unable to reliably create shared libraries on AIX.
+src/oorexx-3.2.0-leopard/aclocal.m4:5506:    cygwin* | mingw* | pw32*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5546:    linux*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5577:    netbsd*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5587:    solaris*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5593:*** create shared libraries on Solaris systems.  Therefore, libtool
+src/oorexx-3.2.0-leopard/aclocal.m4:5635:    sunos4*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5661:    aix3*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5675:    aix4* | aix5*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5679:	aix_use_runtimelinking=no
+src/oorexx-3.2.0-leopard/aclocal.m4:5684:	# -C means demangle to AIX nm, but means don't demangle with GNU nm
+src/oorexx-3.2.0-leopard/aclocal.m4:5690:	aix_use_runtimelinking=no
+src/oorexx-3.2.0-leopard/aclocal.m4:5693:	# AIX style linking. If -brtl is somewhere in LDFLAGS, we
+src/oorexx-3.2.0-leopard/aclocal.m4:5695:	case $host_os in aix4.[[23]]|aix4.[[23]].*|aix5*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5698:  	    aix_use_runtimelinking=yes
+src/oorexx-3.2.0-leopard/aclocal.m4:5709:      # When large executables or shared objects are built, AIX ld can
+src/oorexx-3.2.0-leopard/aclocal.m4:5721:	case $host_os in aix4.[[012]]|aix4.[[012]].*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5722:	# We only want to do this on AIX 4.2 and lower, the check
+src/oorexx-3.2.0-leopard/aclocal.m4:5743:	if test "$aix_use_runtimelinking" = yes; then
+src/oorexx-3.2.0-leopard/aclocal.m4:5749:  	# VisualAge C++, Version 5.5 for AIX 5L for IA-64, Beta 3 Release
+src/oorexx-3.2.0-leopard/aclocal.m4:5753:	  if test "$aix_use_runtimelinking" = yes; then
+src/oorexx-3.2.0-leopard/aclocal.m4:5764:      if test "$aix_use_runtimelinking" = yes; then
+src/oorexx-3.2.0-leopard/aclocal.m4:5769:       _LT_AC_SYS_LIBPATH_AIX
+src/oorexx-3.2.0-leopard/aclocal.m4:5770:       _LT_AC_TAGVAR(hardcode_libdir_flag_spec, $1)='${wl}-blibpath:$libdir:'"$aix_libpath"
+src/oorexx-3.2.0-leopard/aclocal.m4:5779:	 _LT_AC_SYS_LIBPATH_AIX
+src/oorexx-3.2.0-leopard/aclocal.m4:5780:	 _LT_AC_TAGVAR(hardcode_libdir_flag_spec, $1)='${wl}-blibpath:$libdir:'"$aix_libpath"
+src/oorexx-3.2.0-leopard/aclocal.m4:5788:	  # This is similar to how AIX traditionally builds its shared libraries.
+src/oorexx-3.2.0-leopard/aclocal.m4:5806:    cygwin* | mingw* | pw32*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5883:    freebsd1*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5887:    # FreeBSD 2.2.[012] allows us to include c++rt0.o to get C++ constructor
+src/oorexx-3.2.0-leopard/aclocal.m4:5891:    freebsd2.2*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5898:    # Unfortunately, older versions of FreeBSD 2 do not have this feature.
+src/oorexx-3.2.0-leopard/aclocal.m4:5899:    freebsd2*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5906:    # FreeBSD 3 and greater uses gcc -shared to do shared libraries.
+src/oorexx-3.2.0-leopard/aclocal.m4:5907:    freebsd* | kfreebsd*-gnu | dragonfly*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5914:    hpux9*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5930:    hpux10*)
+src/oorexx-3.2.0-leopard/aclocal.m4:5949:    hpux11*)
+src/oorexx-3.2.0-leopard/aclocal.m4:6009:    netbsd*)
+src/oorexx-3.2.0-leopard/aclocal.m4:6050:    os2*)
+src/oorexx-3.2.0-leopard/aclocal.m4:6087:    solaris*)
+src/oorexx-3.2.0-leopard/aclocal.m4:6103:      solaris2.[[0-5]] | solaris2.[[0-5]].*) ;;
+src/oorexx-3.2.0-leopard/aclocal.m4:6109: 	# Supported since Solaris 2.6 (maybe 2.5.1?)
+src/oorexx-3.2.0-leopard/aclocal.m4:6120:    sunos4*)
+src/oorexx-3.2.0-leopard/aclocal.m4:6288:# #define WIN32_LEAN_AND_MEAN
+src/oorexx-3.2.0-leopard/aclocal.m4:6289:# #include <windows.h>
+src/oorexx-3.2.0-leopard/aclocal.m4:6290:# #undef WIN32_LEAN_AND_MEAN
+src/oorexx-3.2.0-leopard/aclocal.m4:6293:# #ifndef __CYGWIN__
+src/oorexx-3.2.0-leopard/aclocal.m4:6294:# #  ifdef __CYGWIN32__
+src/oorexx-3.2.0-leopard/aclocal.m4:6295:# #    define __CYGWIN__ __CYGWIN32__
+src/oorexx-3.2.0-leopard/aclocal.m4:6307:# #ifdef __CYGWIN__
+src/oorexx-3.2.0-leopard/aclocal.m4:6308:# #include <cygwin/cygwin_dll.h>
+src/oorexx-3.2.0-leopard/aclocal.m4:6309:# DECLARE_CYGWIN_DLL( DllMain );
+src/oorexx-3.2.0-leopard/aclocal.m4:6379:# Add /usr/xpg4/bin/sed as it is typically found on Solaris
+src/oorexx-3.2.0-leopard/aclocal.m4:6589:    # This happens at least with the AIX C compiler.
+src/oorexx-3.2.0-leopard/aclocal.m4:6594:      # Solaris 8's {/usr,}/bin/sh.
+src/oorexx-3.2.0-leopard/aclocal.m4:7012:# Some implementations (such as Solaris 8's) are not thread-safe: if a
+src/oorexx-3.2.0-leopard/aclocal.m4:7107:# (eg FreeBSD returns the mod time of the symlink's containing
+src/oorexx-3.2.0-leopard/aclocal.m4:7201:# Solaris sh will not grok spaces in the rhs of `-'.
+src/oorexx-3.2.0-leopard/configure:302:  # The Solaris, AIX, and Digital Unix default echo programs unquote
+src/oorexx-3.2.0-leopard/configure:399:# hostname on some systems (SVR3.2, Linux) returns a bogus exit status,
+src/oorexx-3.2.0-leopard/configure:1362:# AIX cpp loses on an empty file, so make sure it contains at least a newline.
+src/oorexx-3.2.0-leopard/configure:1630:# SunOS /usr/etc/install
+src/oorexx-3.2.0-leopard/configure:1632:# AIX /bin/install
+src/oorexx-3.2.0-leopard/configure:1634:# AIX 4 /usr/bin/installbsd, which doesn't work without a -g flag
+src/oorexx-3.2.0-leopard/configure:1654:  ?:\\/os2\\/install\\/* | ?:\\/OS2\\/INSTALL\\/* | \
+src/oorexx-3.2.0-leopard/configure:1665:	    # AIX install.  It has an incompatible calling convention.
+src/oorexx-3.2.0-leopard/configure:1697:# Use test -z because SunOS4 sh mishandles braces in ${var-val}.
+src/oorexx-3.2.0-leopard/configure:1713:# (eg FreeBSD returns the mod time of the symlink's containing
+src/oorexx-3.2.0-leopard/configure:2499:# catch `conftest.exe'.  For instance with Cygwin, `ls conftest' will
+src/oorexx-3.2.0-leopard/configure:2768:# AIX			-qlanglvl=ansi
+src/oorexx-3.2.0-leopard/configure:2771:# HP-UX older versions	-Aa -D_HPUX_SOURCE
+src/oorexx-3.2.0-leopard/configure:2773:for ac_arg in "" -qlanglvl=ansi -std1 -Ae "-Aa -D_HPUX_SOURCE" "-Xc -D__EXTENSIONS__"
+src/oorexx-3.2.0-leopard/configure:3073:    # This happens at least with the AIX C compiler.
+src/oorexx-3.2.0-leopard/configure:3078:      # Solaris 8's {/usr,}/bin/sh.
+src/oorexx-3.2.0-leopard/configure:3383:# SunOS /usr/etc/install
+src/oorexx-3.2.0-leopard/configure:3385:# AIX /bin/install
+src/oorexx-3.2.0-leopard/configure:3387:# AIX 4 /usr/bin/installbsd, which doesn't work without a -g flag
+src/oorexx-3.2.0-leopard/configure:3407:  ?:\\/os2\\/install\\/* | ?:\\/OS2\\/INSTALL\\/* | \
+src/oorexx-3.2.0-leopard/configure:3418:	    # AIX install.  It has an incompatible calling convention.
+src/oorexx-3.2.0-leopard/configure:3450:# Use test -z because SunOS4 sh mishandles braces in ${var-val}.
+src/oorexx-3.2.0-leopard/configure:3665:# Add /usr/xpg4/bin/sed as it is typically found on Solaris
+src/oorexx-3.2.0-leopard/configure:3730:  *-*-mingw*)
+src/oorexx-3.2.0-leopard/configure:3731:    # gcc leaves a trailing carriage return which upsets mingw
+src/oorexx-3.2.0-leopard/configure:3932:aix4* | aix5*)
+src/oorexx-3.2.0-leopard/configure:3946:cygwin*)
+src/oorexx-3.2.0-leopard/configure:3947:  # func_win32_libid is a shell function defined in ltmain.sh
+src/oorexx-3.2.0-leopard/configure:3949:  lt_cv_file_magic_cmd='func_win32_libid'
+src/oorexx-3.2.0-leopard/configure:3952:mingw* | pw32*)
+src/oorexx-3.2.0-leopard/configure:3953:  # Base MSYS/MinGW do not provide the 'file' command needed by
+src/oorexx-3.2.0-leopard/configure:3954:  # func_win32_libid shell function, so use a weaker test based on 'objdump'.
+src/oorexx-3.2.0-leopard/configure:3963:freebsd* | kfreebsd*-gnu | dragonfly*)
+src/oorexx-3.2.0-leopard/configure:3969:      lt_cv_deplibs_check_method='file_magic (FreeBSD|OpenBSD|DragonFly)/i[3-9]86 (compact )?demand paged shared library'
+src/oorexx-3.2.0-leopard/configure:3983:hpux10.20* | hpux11*)
+src/oorexx-3.2.0-leopard/configure:3988:    lt_cv_file_magic_test_file=/usr/lib/hpux32/libc.so
+src/oorexx-3.2.0-leopard/configure:4016:# This must be Linux ELF.
+src/oorexx-3.2.0-leopard/configure:4017:linux*)
+src/oorexx-3.2.0-leopard/configure:4021:netbsd*)
+src/oorexx-3.2.0-leopard/configure:4051:solaris*)
+src/oorexx-3.2.0-leopard/configure:4117:ia64-*-hpux*)
+src/oorexx-3.2.0-leopard/configure:4127:      HPUX_IA64_MODE="32"
+src/oorexx-3.2.0-leopard/configure:4130:      HPUX_IA64_MODE="64"
+src/oorexx-3.2.0-leopard/configure:4173:x86_64-*linux*|ppc*-*linux*|powerpc*-*linux*|s390*-*linux*|sparc*-*linux*)
+src/oorexx-3.2.0-leopard/configure:4184:        x86_64-*linux*)
+src/oorexx-3.2.0-leopard/configure:4187:        ppc64-*linux*|powerpc64-*linux*)
+src/oorexx-3.2.0-leopard/configure:4188:          LD="${LD-ld} -m elf32ppclinux"
+src/oorexx-3.2.0-leopard/configure:4190:        s390x-*linux*)
+src/oorexx-3.2.0-leopard/configure:4193:        sparc64-*linux*)
+src/oorexx-3.2.0-leopard/configure:4200:        x86_64-*linux*)
+src/oorexx-3.2.0-leopard/configure:4203:        ppc*-*linux*|powerpc*-*linux*)
+src/oorexx-3.2.0-leopard/configure:4206:        s390*-*linux*)
+src/oorexx-3.2.0-leopard/configure:4209:        sparc*-*linux*)
+src/oorexx-3.2.0-leopard/configure:4294:sparc*-*solaris*)
+src/oorexx-3.2.0-leopard/configure:4377:  # SunOS 4.x string.h does not declare mem*, contrary to ANSI.
+src/oorexx-3.2.0-leopard/configure:5101:    # This happens at least with the AIX C compiler.
+src/oorexx-3.2.0-leopard/configure:5106:      # Solaris 8's {/usr,}/bin/sh.
+src/oorexx-3.2.0-leopard/configure:5676:  cygwin* | mingw*)
+src/oorexx-3.2.0-leopard/configure:5693:  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
+src/oorexx-3.2.0-leopard/configure:5795:aix*)
+src/oorexx-3.2.0-leopard/configure:5798:cygwin* | mingw* | pw32*)
+src/oorexx-3.2.0-leopard/configure:5801:hpux*) # Its linker distinguishes data from code symbols
+src/oorexx-3.2.0-leopard/configure:5808:linux*)
+src/oorexx-3.2.0-leopard/configure:5821:solaris*)
+src/oorexx-3.2.0-leopard/configure:5838:# Handle CRLF in mingw tool chain
+src/oorexx-3.2.0-leopard/configure:5841:mingw*)
+src/oorexx-3.2.0-leopard/configure:6008:aix3*)
+src/oorexx-3.2.0-leopard/configure:6009:  # AIX sometimes has problems with the GCC collect2 program.  For some
+src/oorexx-3.2.0-leopard/configure:6474:enable_win32_dll=no
+src/oorexx-3.2.0-leopard/configure:6606:      aix*)
+src/oorexx-3.2.0-leopard/configure:6607:      # All AIX code is PIC.
+src/oorexx-3.2.0-leopard/configure:6609:	# AIX 5 now supports IA64 processor
+src/oorexx-3.2.0-leopard/configure:6621:    beos* | cygwin* | irix5* | irix6* | nonstopux* | osf3* | osf4* | osf5*)
+src/oorexx-3.2.0-leopard/configure:6625:    mingw* | pw32* | os2*)
+src/oorexx-3.2.0-leopard/configure:6655:    hpux*)
+src/oorexx-3.2.0-leopard/configure:6675:    aix*)
+src/oorexx-3.2.0-leopard/configure:6678:	# AIX 5 now supports IA64 processor
+src/oorexx-3.2.0-leopard/configure:6695:    mingw* | pw32* | os2*)
+src/oorexx-3.2.0-leopard/configure:6701:    hpux9* | hpux10* | hpux11*)
+src/oorexx-3.2.0-leopard/configure:6728:    linux*)
+src/oorexx-3.2.0-leopard/configure:6756:    solaris*)
+src/oorexx-3.2.0-leopard/configure:6767:    sunos4*)
+src/oorexx-3.2.0-leopard/configure:7041:  cygwin* | mingw* | pw32*)
+src/oorexx-3.2.0-leopard/configure:7086:    aix3* | aix4* | aix5*)
+src/oorexx-3.2.0-leopard/configure:7087:      # On AIX/PPC, the GNU linker is very broken
+src/oorexx-3.2.0-leopard/configure:7093:*** to be unable to reliably create shared libraries on AIX.
+src/oorexx-3.2.0-leopard/configure:7127:    cygwin* | mingw* | pw32*)
+src/oorexx-3.2.0-leopard/configure:7167:    linux*)
+src/oorexx-3.2.0-leopard/configure:7198:    netbsd*)
+src/oorexx-3.2.0-leopard/configure:7208:    solaris*)
+src/oorexx-3.2.0-leopard/configure:7214:*** create shared libraries on Solaris systems.  Therefore, libtool
+src/oorexx-3.2.0-leopard/configure:7256:    sunos4*)
+src/oorexx-3.2.0-leopard/configure:7282:    aix3*)
+src/oorexx-3.2.0-leopard/configure:7296:    aix4* | aix5*)
+src/oorexx-3.2.0-leopard/configure:7300:	aix_use_runtimelinking=no
+src/oorexx-3.2.0-leopard/configure:7305:	# -C means demangle to AIX nm, but means don't demangle with GNU nm
+src/oorexx-3.2.0-leopard/configure:7311:	aix_use_runtimelinking=no
+src/oorexx-3.2.0-leopard/configure:7314:	# AIX style linking. If -brtl is somewhere in LDFLAGS, we
+src/oorexx-3.2.0-leopard/configure:7316:	case $host_os in aix4.[23]|aix4.[23].*|aix5*)
+src/oorexx-3.2.0-leopard/configure:7319:  	    aix_use_runtimelinking=yes
+src/oorexx-3.2.0-leopard/configure:7330:      # When large executables or shared objects are built, AIX ld can
+src/oorexx-3.2.0-leopard/configure:7342:	case $host_os in aix4.[012]|aix4.[012].*)
+src/oorexx-3.2.0-leopard/configure:7343:	# We only want to do this on AIX 4.2 and lower, the check
+src/oorexx-3.2.0-leopard/configure:7364:	if test "$aix_use_runtimelinking" = yes; then
+src/oorexx-3.2.0-leopard/configure:7370:  	# VisualAge C++, Version 5.5 for AIX 5L for IA-64, Beta 3 Release
+src/oorexx-3.2.0-leopard/configure:7374:	  if test "$aix_use_runtimelinking" = yes; then
+src/oorexx-3.2.0-leopard/configure:7385:      if test "$aix_use_runtimelinking" = yes; then
+src/oorexx-3.2.0-leopard/configure:7428:aix_libpath=`dump -H conftest$ac_exeext 2>/dev/null | $SED -n -e '/Import File Strings/,/^$/ { /^0/ { s/^0  *\(.*\)$/\1/; p; }
+src/oorexx-3.2.0-leopard/configure:7431:if test -z "$aix_libpath"; then aix_libpath=`dump -HX64 conftest$ac_exeext 2>/dev/null | $SED -n -e '/Import File Strings/,/^$/ { /^0/ { s/^0  *\(.*\)$/\1/; p; }
+src/oorexx-3.2.0-leopard/configure:7440:if test -z "$aix_libpath"; then aix_libpath="/usr/lib:/lib"; fi
+src/oorexx-3.2.0-leopard/configure:7442:       hardcode_libdir_flag_spec='${wl}-blibpath:$libdir:'"$aix_libpath"
+src/oorexx-3.2.0-leopard/configure:7489:aix_libpath=`dump -H conftest$ac_exeext 2>/dev/null | $SED -n -e '/Import File Strings/,/^$/ { /^0/ { s/^0  *\(.*\)$/\1/; p; }
+src/oorexx-3.2.0-leopard/configure:7492:if test -z "$aix_libpath"; then aix_libpath=`dump -HX64 conftest$ac_exeext 2>/dev/null | $SED -n -e '/Import File Strings/,/^$/ { /^0/ { s/^0  *\(.*\)$/\1/; p; }
+src/oorexx-3.2.0-leopard/configure:7501:if test -z "$aix_libpath"; then aix_libpath="/usr/lib:/lib"; fi
+src/oorexx-3.2.0-leopard/configure:7503:	 hardcode_libdir_flag_spec='${wl}-blibpath:$libdir:'"$aix_libpath"
+src/oorexx-3.2.0-leopard/configure:7511:	  # This is similar to how AIX traditionally builds its shared libraries.
+src/oorexx-3.2.0-leopard/configure:7529:    cygwin* | mingw* | pw32*)
+src/oorexx-3.2.0-leopard/configure:7606:    freebsd1*)
+src/oorexx-3.2.0-leopard/configure:7610:    # FreeBSD 2.2.[012] allows us to include c++rt0.o to get C++ constructor
+src/oorexx-3.2.0-leopard/configure:7614:    freebsd2.2*)
+src/oorexx-3.2.0-leopard/configure:7621:    # Unfortunately, older versions of FreeBSD 2 do not have this feature.
+src/oorexx-3.2.0-leopard/configure:7622:    freebsd2*)
+src/oorexx-3.2.0-leopard/configure:7629:    # FreeBSD 3 and greater uses gcc -shared to do shared libraries.
+src/oorexx-3.2.0-leopard/configure:7630:    freebsd* | kfreebsd*-gnu | dragonfly*)
+src/oorexx-3.2.0-leopard/configure:7637:    hpux9*)
+src/oorexx-3.2.0-leopard/configure:7653:    hpux10*)
+src/oorexx-3.2.0-leopard/configure:7672:    hpux11*)
+src/oorexx-3.2.0-leopard/configure:7732:    netbsd*)
+src/oorexx-3.2.0-leopard/configure:7773:    os2*)
+src/oorexx-3.2.0-leopard/configure:7810:    solaris*)
+src/oorexx-3.2.0-leopard/configure:7826:      solaris2.[0-5] | solaris2.[0-5].*) ;;
+src/oorexx-3.2.0-leopard/configure:7832: 	# Supported since Solaris 2.6 (maybe 2.5.1?)
+src/oorexx-3.2.0-leopard/configure:7843:    sunos4*)
+src/oorexx-3.2.0-leopard/configure:8052:aix3*)
+src/oorexx-3.2.0-leopard/configure:8053:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:8057:  # AIX 3 has no versioning support, so we append a major version to the name.
+src/oorexx-3.2.0-leopard/configure:8061:aix4* | aix5*)
+src/oorexx-3.2.0-leopard/configure:8062:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:8067:    # AIX 5 supports IA64
+src/oorexx-3.2.0-leopard/configure:8077:      aix4 | aix4.[01] | aix4.[01].*)
+src/oorexx-3.2.0-leopard/configure:8087:    # AIX (on Power*) has no versioning support, so currently we can not hardcode correct
+src/oorexx-3.2.0-leopard/configure:8090:    if test "$aix_use_runtimelinking" = yes; then
+src/oorexx-3.2.0-leopard/configure:8091:      # If using run time linking (on AIX 4.2 or later) use lib<name>.so
+src/oorexx-3.2.0-leopard/configure:8093:      # typical AIX shared libraries.
+src/oorexx-3.2.0-leopard/configure:8096:      # We preserve .a as extension for shared libraries through AIX4.2
+src/oorexx-3.2.0-leopard/configure:8118:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:8131:cygwin* | mingw* | pw32*)
+src/oorexx-3.2.0-leopard/configure:8132:  version_type=windows
+src/oorexx-3.2.0-leopard/configure:8138:  yes,cygwin* | yes,mingw* | yes,pw32*)
+src/oorexx-3.2.0-leopard/configure:8153:    cygwin*)
+src/oorexx-3.2.0-leopard/configure:8154:      # Cygwin DLLs use 'cyg' prefix rather than 'lib'
+src/oorexx-3.2.0-leopard/configure:8158:    mingw*)
+src/oorexx-3.2.0-leopard/configure:8159:      # MinGW DLLs use traditional 'lib' prefix
+src/oorexx-3.2.0-leopard/configure:8163:        # It is most probably a Windows format PATH printed by
+src/oorexx-3.2.0-leopard/configure:8164:        # mingw gcc, but we are running on Cygwin. Gcc prints its search
+src/oorexx-3.2.0-leopard/configure:8166:        # drive letters (cygwin fileutils understands them), so leave them,
+src/oorexx-3.2.0-leopard/configure:8167:        # especially as we might pass files found there to a mingw objdump,
+src/oorexx-3.2.0-leopard/configure:8168:        # which wouldn't understand a cygwinified path. Ahh.
+src/oorexx-3.2.0-leopard/configure:8185:  dynamic_linker='Win32 ld.exe'
+src/oorexx-3.2.0-leopard/configure:8210:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:8218:freebsd1*)
+src/oorexx-3.2.0-leopard/configure:8222:kfreebsd*-gnu)
+src/oorexx-3.2.0-leopard/configure:8223:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:8234:freebsd* | dragonfly*)
+src/oorexx-3.2.0-leopard/configure:8241:    freebsd[123]*) objformat=aout ;;
+src/oorexx-3.2.0-leopard/configure:8245:  version_type=freebsd-$objformat
+src/oorexx-3.2.0-leopard/configure:8247:    freebsd-elf*)
+src/oorexx-3.2.0-leopard/configure:8252:    freebsd-*)
+src/oorexx-3.2.0-leopard/configure:8259:  freebsd2*)
+src/oorexx-3.2.0-leopard/configure:8262:  freebsd3.[01]* | freebsdelf3.[01]*)
+src/oorexx-3.2.0-leopard/configure:8266:  freebsd3.[2-9]* | freebsdelf3.[2-9]* | \
+src/oorexx-3.2.0-leopard/configure:8267:  freebsd4.[0-5] | freebsdelf4.[0-5] | freebsd4.1.1 | freebsdelf4.1.1)
+src/oorexx-3.2.0-leopard/configure:8271:  freebsd*) # from 4.6 on
+src/oorexx-3.2.0-leopard/configure:8279:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:8288:hpux9* | hpux10* | hpux11*)
+src/oorexx-3.2.0-leopard/configure:8291:  version_type=sunos
+src/oorexx-3.2.0-leopard/configure:8303:    if test "X$HPUX_IA64_MODE" = X32; then
+src/oorexx-3.2.0-leopard/configure:8304:      sys_lib_search_path_spec="/usr/lib/hpux32 /usr/local/lib/hpux32 /usr/local/lib"
+src/oorexx-3.2.0-leopard/configure:8306:      sys_lib_search_path_spec="/usr/lib/hpux64 /usr/local/lib/hpux64"
+src/oorexx-3.2.0-leopard/configure:8335:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:8351:		version_type=linux
+src/oorexx-3.2.0-leopard/configure:8383:# No shared lib support for Linux oldld, aout, or coff.
+src/oorexx-3.2.0-leopard/configure:8384:linux*oldld* | linux*aout* | linux*coff*)
+src/oorexx-3.2.0-leopard/configure:8388:# This must be Linux ELF.
+src/oorexx-3.2.0-leopard/configure:8389:linux*)
+src/oorexx-3.2.0-leopard/configure:8390:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:8431:  # powerpc, because MkLinux only supported shared libraries with the
+src/oorexx-3.2.0-leopard/configure:8433:  # most powerpc-linux boxes support dynamic linking these days and
+src/oorexx-3.2.0-leopard/configure:8435:  # assume the GNU/Linux dynamic linker is in use.
+src/oorexx-3.2.0-leopard/configure:8436:  dynamic_linker='GNU/Linux ld.so'
+src/oorexx-3.2.0-leopard/configure:8439:knetbsd*-gnu)
+src/oorexx-3.2.0-leopard/configure:8440:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:8451:netbsd*)
+src/oorexx-3.2.0-leopard/configure:8452:  version_type=sunos
+src/oorexx-3.2.0-leopard/configure:8458:    dynamic_linker='NetBSD (a.out) ld.so'
+src/oorexx-3.2.0-leopard/configure:8462:    dynamic_linker='NetBSD ld.elf_so'
+src/oorexx-3.2.0-leopard/configure:8470:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:8477:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:8487:  version_type=sunos
+src/oorexx-3.2.0-leopard/configure:8512:os2*)
+src/oorexx-3.2.0-leopard/configure:8532:solaris*)
+src/oorexx-3.2.0-leopard/configure:8533:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:8545:sunos4*)
+src/oorexx-3.2.0-leopard/configure:8546:  version_type=sunos
+src/oorexx-3.2.0-leopard/configure:8558:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:8583:    version_type=linux
+src/oorexx-3.2.0-leopard/configure:8591:  version_type=freebsd-elf
+src/oorexx-3.2.0-leopard/configure:8614:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:8714:  mingw* | pw32*)
+src/oorexx-3.2.0-leopard/configure:8719:  cygwin*)
+src/oorexx-3.2.0-leopard/configure:9520:# On AIX, shared libraries and static libraries use the same namespace, and
+src/oorexx-3.2.0-leopard/configure:9523:aix3*)
+src/oorexx-3.2.0-leopard/configure:9531:aix4* | aix5*)
+src/oorexx-3.2.0-leopard/configure:9532:  if test "$host_cpu" != ia64 && test "$aix_use_runtimelinking" = no ; then
+src/oorexx-3.2.0-leopard/configure:9756:# Used on cygwin: DLL creation program.
+src/oorexx-3.2.0-leopard/configure:9759:# Used on cygwin: object dumper.
+src/oorexx-3.2.0-leopard/configure:9762:# Used on cygwin: assembler.
+src/oorexx-3.2.0-leopard/configure:9996:  aix3*)
+src/oorexx-3.2.0-leopard/configure:9999:# AIX sometimes has problems with the GCC collect2 program.  For some
+src/oorexx-3.2.0-leopard/configure:10230:  *-*-mingw*)
+src/oorexx-3.2.0-leopard/configure:10231:    # gcc leaves a trailing carriage return which upsets mingw
+src/oorexx-3.2.0-leopard/configure:10373:  aix3*)
+src/oorexx-3.2.0-leopard/configure:10377:  aix4* | aix5*)
+src/oorexx-3.2.0-leopard/configure:10381:      aix_use_runtimelinking=no
+src/oorexx-3.2.0-leopard/configure:10385:      aix_use_runtimelinking=no
+src/oorexx-3.2.0-leopard/configure:10388:      # AIX style linking. If -brtl is somewhere in LDFLAGS, we
+src/oorexx-3.2.0-leopard/configure:10390:      case $host_os in aix4.[23]|aix4.[23].*|aix5*)
+src/oorexx-3.2.0-leopard/configure:10394:	    aix_use_runtimelinking=yes
+src/oorexx-3.2.0-leopard/configure:10406:    # When large executables or shared objects are built, AIX ld can
+src/oorexx-3.2.0-leopard/configure:10418:      case $host_os in aix4.[012]|aix4.[012].*)
+src/oorexx-3.2.0-leopard/configure:10419:      # We only want to do this on AIX 4.2 and lower, the check
+src/oorexx-3.2.0-leopard/configure:10440:      if test "$aix_use_runtimelinking" = yes; then
+src/oorexx-3.2.0-leopard/configure:10446:	# VisualAge C++, Version 5.5 for AIX 5L for IA-64, Beta 3 Release
+src/oorexx-3.2.0-leopard/configure:10450:	if test "$aix_use_runtimelinking" = yes; then
+src/oorexx-3.2.0-leopard/configure:10461:    if test "$aix_use_runtimelinking" = yes; then
+src/oorexx-3.2.0-leopard/configure:10504:aix_libpath=`dump -H conftest$ac_exeext 2>/dev/null | $SED -n -e '/Import File Strings/,/^$/ { /^0/ { s/^0  *\(.*\)$/\1/; p; }
+src/oorexx-3.2.0-leopard/configure:10507:if test -z "$aix_libpath"; then aix_libpath=`dump -HX64 conftest$ac_exeext 2>/dev/null | $SED -n -e '/Import File Strings/,/^$/ { /^0/ { s/^0  *\(.*\)$/\1/; p; }
+src/oorexx-3.2.0-leopard/configure:10516:if test -z "$aix_libpath"; then aix_libpath="/usr/lib:/lib"; fi
+src/oorexx-3.2.0-leopard/configure:10518:      hardcode_libdir_flag_spec_CXX='${wl}-blibpath:$libdir:'"$aix_libpath"
+src/oorexx-3.2.0-leopard/configure:10566:aix_libpath=`dump -H conftest$ac_exeext 2>/dev/null | $SED -n -e '/Import File Strings/,/^$/ { /^0/ { s/^0  *\(.*\)$/\1/; p; }
+src/oorexx-3.2.0-leopard/configure:10569:if test -z "$aix_libpath"; then aix_libpath=`dump -HX64 conftest$ac_exeext 2>/dev/null | $SED -n -e '/Import File Strings/,/^$/ { /^0/ { s/^0  *\(.*\)$/\1/; p; }
+src/oorexx-3.2.0-leopard/configure:10578:if test -z "$aix_libpath"; then aix_libpath="/usr/lib:/lib"; fi
+src/oorexx-3.2.0-leopard/configure:10580:	hardcode_libdir_flag_spec_CXX='${wl}-blibpath:$libdir:'"$aix_libpath"
+src/oorexx-3.2.0-leopard/configure:10588:	# This is similar to how AIX traditionally builds its shared libraries.
+src/oorexx-3.2.0-leopard/configure:10614:  cygwin* | mingw* | pw32*)
+src/oorexx-3.2.0-leopard/configure:10717:  freebsd[12]*)
+src/oorexx-3.2.0-leopard/configure:10721:  freebsd-elf*)
+src/oorexx-3.2.0-leopard/configure:10724:  freebsd* | kfreebsd*-gnu | dragonfly*)
+src/oorexx-3.2.0-leopard/configure:10725:    # FreeBSD 3 and later use GNU C++ and GNU ld with standard ELF
+src/oorexx-3.2.0-leopard/configure:10731:  hpux9*)
+src/oorexx-3.2.0-leopard/configure:10767:  hpux10*|hpux11*)
+src/oorexx-3.2.0-leopard/configure:10883:  linux*)
+src/oorexx-3.2.0-leopard/configure:10985:  netbsd*)
+src/oorexx-3.2.0-leopard/configure:11139:  sunos4*)
+src/oorexx-3.2.0-leopard/configure:11157:  solaris*)
+src/oorexx-3.2.0-leopard/configure:11170:	  solaris2.[0-5] | solaris2.[0-5].*) ;;
+src/oorexx-3.2.0-leopard/configure:11179:	    # Supported since Solaris 2.6 (maybe 2.5.1?)
+src/oorexx-3.2.0-leopard/configure:11201:	# GNU C++ compiler with Solaris linker
+src/oorexx-3.2.0-leopard/configure:11426:solaris*)
+src/oorexx-3.2.0-leopard/configure:11456:    aix*)
+src/oorexx-3.2.0-leopard/configure:11457:      # All AIX code is PIC.
+src/oorexx-3.2.0-leopard/configure:11459:	# AIX 5 now supports IA64 processor
+src/oorexx-3.2.0-leopard/configure:11469:    beos* | cygwin* | irix5* | irix6* | nonstopux* | osf3* | osf4* | osf5*)
+src/oorexx-3.2.0-leopard/configure:11472:    mingw* | os2* | pw32*)
+src/oorexx-3.2.0-leopard/configure:11495:    hpux*)
+src/oorexx-3.2.0-leopard/configure:11512:      aix4* | aix5*)
+src/oorexx-3.2.0-leopard/configure:11513:	# All AIX code is PIC.
+src/oorexx-3.2.0-leopard/configure:11515:	  # AIX 5 now supports IA64 processor
+src/oorexx-3.2.0-leopard/configure:11552:      freebsd* | kfreebsd*-gnu | dragonfly*)
+src/oorexx-3.2.0-leopard/configure:11553:	# FreeBSD uses GNU C++
+src/oorexx-3.2.0-leopard/configure:11555:      hpux9* | hpux10* | hpux11*)
+src/oorexx-3.2.0-leopard/configure:11595:      linux*)
+src/oorexx-3.2.0-leopard/configure:11617:	    # Linux and Compaq Tru64 Unix objects are PIC.
+src/oorexx-3.2.0-leopard/configure:11638:      netbsd*)
+src/oorexx-3.2.0-leopard/configure:11653:	    # Linux and Compaq Tru64 Unix objects are PIC.
+src/oorexx-3.2.0-leopard/configure:11663:      solaris*)
+src/oorexx-3.2.0-leopard/configure:11679:      sunos4*)
+src/oorexx-3.2.0-leopard/configure:11908:  aix4* | aix5*)
+src/oorexx-3.2.0-leopard/configure:11910:    # -C means demangle to AIX nm, but means don't demangle with GNU nm
+src/oorexx-3.2.0-leopard/configure:11920:  cygwin* | mingw*)
+src/oorexx-3.2.0-leopard/configure:12032:aix3*)
+src/oorexx-3.2.0-leopard/configure:12033:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:12037:  # AIX 3 has no versioning support, so we append a major version to the name.
+src/oorexx-3.2.0-leopard/configure:12041:aix4* | aix5*)
+src/oorexx-3.2.0-leopard/configure:12042:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:12047:    # AIX 5 supports IA64
+src/oorexx-3.2.0-leopard/configure:12057:      aix4 | aix4.[01] | aix4.[01].*)
+src/oorexx-3.2.0-leopard/configure:12067:    # AIX (on Power*) has no versioning support, so currently we can not hardcode correct
+src/oorexx-3.2.0-leopard/configure:12070:    if test "$aix_use_runtimelinking" = yes; then
+src/oorexx-3.2.0-leopard/configure:12071:      # If using run time linking (on AIX 4.2 or later) use lib<name>.so
+src/oorexx-3.2.0-leopard/configure:12073:      # typical AIX shared libraries.
+src/oorexx-3.2.0-leopard/configure:12076:      # We preserve .a as extension for shared libraries through AIX4.2
+src/oorexx-3.2.0-leopard/configure:12098:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:12111:cygwin* | mingw* | pw32*)
+src/oorexx-3.2.0-leopard/configure:12112:  version_type=windows
+src/oorexx-3.2.0-leopard/configure:12118:  yes,cygwin* | yes,mingw* | yes,pw32*)
+src/oorexx-3.2.0-leopard/configure:12133:    cygwin*)
+src/oorexx-3.2.0-leopard/configure:12134:      # Cygwin DLLs use 'cyg' prefix rather than 'lib'
+src/oorexx-3.2.0-leopard/configure:12138:    mingw*)
+src/oorexx-3.2.0-leopard/configure:12139:      # MinGW DLLs use traditional 'lib' prefix
+src/oorexx-3.2.0-leopard/configure:12143:        # It is most probably a Windows format PATH printed by
+src/oorexx-3.2.0-leopard/configure:12144:        # mingw gcc, but we are running on Cygwin. Gcc prints its search
+src/oorexx-3.2.0-leopard/configure:12146:        # drive letters (cygwin fileutils understands them), so leave them,
+src/oorexx-3.2.0-leopard/configure:12147:        # especially as we might pass files found there to a mingw objdump,
+src/oorexx-3.2.0-leopard/configure:12148:        # which wouldn't understand a cygwinified path. Ahh.
+src/oorexx-3.2.0-leopard/configure:12165:  dynamic_linker='Win32 ld.exe'
+src/oorexx-3.2.0-leopard/configure:12190:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:12198:freebsd1*)
+src/oorexx-3.2.0-leopard/configure:12202:kfreebsd*-gnu)
+src/oorexx-3.2.0-leopard/configure:12203:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:12214:freebsd* | dragonfly*)
+src/oorexx-3.2.0-leopard/configure:12221:    freebsd[123]*) objformat=aout ;;
+src/oorexx-3.2.0-leopard/configure:12225:  version_type=freebsd-$objformat
+src/oorexx-3.2.0-leopard/configure:12227:    freebsd-elf*)
+src/oorexx-3.2.0-leopard/configure:12232:    freebsd-*)
+src/oorexx-3.2.0-leopard/configure:12239:  freebsd2*)
+src/oorexx-3.2.0-leopard/configure:12242:  freebsd3.[01]* | freebsdelf3.[01]*)
+src/oorexx-3.2.0-leopard/configure:12246:  freebsd3.[2-9]* | freebsdelf3.[2-9]* | \
+src/oorexx-3.2.0-leopard/configure:12247:  freebsd4.[0-5] | freebsdelf4.[0-5] | freebsd4.1.1 | freebsdelf4.1.1)
+src/oorexx-3.2.0-leopard/configure:12251:  freebsd*) # from 4.6 on
+src/oorexx-3.2.0-leopard/configure:12259:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:12268:hpux9* | hpux10* | hpux11*)
+src/oorexx-3.2.0-leopard/configure:12271:  version_type=sunos
+src/oorexx-3.2.0-leopard/configure:12283:    if test "X$HPUX_IA64_MODE" = X32; then
+src/oorexx-3.2.0-leopard/configure:12284:      sys_lib_search_path_spec="/usr/lib/hpux32 /usr/local/lib/hpux32 /usr/local/lib"
+src/oorexx-3.2.0-leopard/configure:12286:      sys_lib_search_path_spec="/usr/lib/hpux64 /usr/local/lib/hpux64"
+src/oorexx-3.2.0-leopard/configure:12315:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:12331:		version_type=linux
+src/oorexx-3.2.0-leopard/configure:12363:# No shared lib support for Linux oldld, aout, or coff.
+src/oorexx-3.2.0-leopard/configure:12364:linux*oldld* | linux*aout* | linux*coff*)
+src/oorexx-3.2.0-leopard/configure:12368:# This must be Linux ELF.
+src/oorexx-3.2.0-leopard/configure:12369:linux*)
+src/oorexx-3.2.0-leopard/configure:12370:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:12411:  # powerpc, because MkLinux only supported shared libraries with the
+src/oorexx-3.2.0-leopard/configure:12413:  # most powerpc-linux boxes support dynamic linking these days and
+src/oorexx-3.2.0-leopard/configure:12415:  # assume the GNU/Linux dynamic linker is in use.
+src/oorexx-3.2.0-leopard/configure:12416:  dynamic_linker='GNU/Linux ld.so'
+src/oorexx-3.2.0-leopard/configure:12419:knetbsd*-gnu)
+src/oorexx-3.2.0-leopard/configure:12420:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:12431:netbsd*)
+src/oorexx-3.2.0-leopard/configure:12432:  version_type=sunos
+src/oorexx-3.2.0-leopard/configure:12438:    dynamic_linker='NetBSD (a.out) ld.so'
+src/oorexx-3.2.0-leopard/configure:12442:    dynamic_linker='NetBSD ld.elf_so'
+src/oorexx-3.2.0-leopard/configure:12450:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:12457:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:12467:  version_type=sunos
+src/oorexx-3.2.0-leopard/configure:12492:os2*)
+src/oorexx-3.2.0-leopard/configure:12512:solaris*)
+src/oorexx-3.2.0-leopard/configure:12513:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:12525:sunos4*)
+src/oorexx-3.2.0-leopard/configure:12526:  version_type=sunos
+src/oorexx-3.2.0-leopard/configure:12538:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:12563:    version_type=linux
+src/oorexx-3.2.0-leopard/configure:12571:  version_type=freebsd-elf
+src/oorexx-3.2.0-leopard/configure:12594:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:12812:# Used on cygwin: DLL creation program.
+src/oorexx-3.2.0-leopard/configure:12815:# Used on cygwin: object dumper.
+src/oorexx-3.2.0-leopard/configure:12818:# Used on cygwin: assembler.
+src/oorexx-3.2.0-leopard/configure:13176:# On AIX, shared libraries and static libraries use the same namespace, and
+src/oorexx-3.2.0-leopard/configure:13179:aix3*)
+src/oorexx-3.2.0-leopard/configure:13186:aix4* | aix5*)
+src/oorexx-3.2.0-leopard/configure:13187:  if test "$host_cpu" != ia64 && test "$aix_use_runtimelinking" = no ; then
+src/oorexx-3.2.0-leopard/configure:13217:      aix*)
+src/oorexx-3.2.0-leopard/configure:13218:      # All AIX code is PIC.
+src/oorexx-3.2.0-leopard/configure:13220:	# AIX 5 now supports IA64 processor
+src/oorexx-3.2.0-leopard/configure:13232:    beos* | cygwin* | irix5* | irix6* | nonstopux* | osf3* | osf4* | osf5*)
+src/oorexx-3.2.0-leopard/configure:13236:    mingw* | pw32* | os2*)
+src/oorexx-3.2.0-leopard/configure:13266:    hpux*)
+src/oorexx-3.2.0-leopard/configure:13286:    aix*)
+src/oorexx-3.2.0-leopard/configure:13289:	# AIX 5 now supports IA64 processor
+src/oorexx-3.2.0-leopard/configure:13306:    mingw* | pw32* | os2*)
+src/oorexx-3.2.0-leopard/configure:13312:    hpux9* | hpux10* | hpux11*)
+src/oorexx-3.2.0-leopard/configure:13339:    linux*)
+src/oorexx-3.2.0-leopard/configure:13367:    solaris*)
+src/oorexx-3.2.0-leopard/configure:13378:    sunos4*)
+src/oorexx-3.2.0-leopard/configure:13652:  cygwin* | mingw* | pw32*)
+src/oorexx-3.2.0-leopard/configure:13697:    aix3* | aix4* | aix5*)
+src/oorexx-3.2.0-leopard/configure:13698:      # On AIX/PPC, the GNU linker is very broken
+src/oorexx-3.2.0-leopard/configure:13704:*** to be unable to reliably create shared libraries on AIX.
+src/oorexx-3.2.0-leopard/configure:13738:    cygwin* | mingw* | pw32*)
+src/oorexx-3.2.0-leopard/configure:13778:    linux*)
+src/oorexx-3.2.0-leopard/configure:13809:    netbsd*)
+src/oorexx-3.2.0-leopard/configure:13819:    solaris*)
+src/oorexx-3.2.0-leopard/configure:13825:*** create shared libraries on Solaris systems.  Therefore, libtool
+src/oorexx-3.2.0-leopard/configure:13867:    sunos4*)
+src/oorexx-3.2.0-leopard/configure:13893:    aix3*)
+src/oorexx-3.2.0-leopard/configure:13907:    aix4* | aix5*)
+src/oorexx-3.2.0-leopard/configure:13911:	aix_use_runtimelinking=no
+src/oorexx-3.2.0-leopard/configure:13916:	# -C means demangle to AIX nm, but means don't demangle with GNU nm
+src/oorexx-3.2.0-leopard/configure:13922:	aix_use_runtimelinking=no
+src/oorexx-3.2.0-leopard/configure:13925:	# AIX style linking. If -brtl is somewhere in LDFLAGS, we
+src/oorexx-3.2.0-leopard/configure:13927:	case $host_os in aix4.[23]|aix4.[23].*|aix5*)
+src/oorexx-3.2.0-leopard/configure:13930:  	    aix_use_runtimelinking=yes
+src/oorexx-3.2.0-leopard/configure:13941:      # When large executables or shared objects are built, AIX ld can
+src/oorexx-3.2.0-leopard/configure:13953:	case $host_os in aix4.[012]|aix4.[012].*)
+src/oorexx-3.2.0-leopard/configure:13954:	# We only want to do this on AIX 4.2 and lower, the check
+src/oorexx-3.2.0-leopard/configure:13975:	if test "$aix_use_runtimelinking" = yes; then
+src/oorexx-3.2.0-leopard/configure:13981:  	# VisualAge C++, Version 5.5 for AIX 5L for IA-64, Beta 3 Release
+src/oorexx-3.2.0-leopard/configure:13985:	  if test "$aix_use_runtimelinking" = yes; then
+src/oorexx-3.2.0-leopard/configure:13996:      if test "$aix_use_runtimelinking" = yes; then
+src/oorexx-3.2.0-leopard/configure:14029:aix_libpath=`dump -H conftest$ac_exeext 2>/dev/null | $SED -n -e '/Import File Strings/,/^$/ { /^0/ { s/^0  *\(.*\)$/\1/; p; }
+src/oorexx-3.2.0-leopard/configure:14032:if test -z "$aix_libpath"; then aix_libpath=`dump -HX64 conftest$ac_exeext 2>/dev/null | $SED -n -e '/Import File Strings/,/^$/ { /^0/ { s/^0  *\(.*\)$/\1/; p; }
+src/oorexx-3.2.0-leopard/configure:14041:if test -z "$aix_libpath"; then aix_libpath="/usr/lib:/lib"; fi
+src/oorexx-3.2.0-leopard/configure:14043:       hardcode_libdir_flag_spec_F77='${wl}-blibpath:$libdir:'"$aix_libpath"
+src/oorexx-3.2.0-leopard/configure:14080:aix_libpath=`dump -H conftest$ac_exeext 2>/dev/null | $SED -n -e '/Import File Strings/,/^$/ { /^0/ { s/^0  *\(.*\)$/\1/; p; }
+src/oorexx-3.2.0-leopard/configure:14083:if test -z "$aix_libpath"; then aix_libpath=`dump -HX64 conftest$ac_exeext 2>/dev/null | $SED -n -e '/Import File Strings/,/^$/ { /^0/ { s/^0  *\(.*\)$/\1/; p; }
+src/oorexx-3.2.0-leopard/configure:14092:if test -z "$aix_libpath"; then aix_libpath="/usr/lib:/lib"; fi
+src/oorexx-3.2.0-leopard/configure:14094:	 hardcode_libdir_flag_spec_F77='${wl}-blibpath:$libdir:'"$aix_libpath"
+src/oorexx-3.2.0-leopard/configure:14102:	  # This is similar to how AIX traditionally builds its shared libraries.
+src/oorexx-3.2.0-leopard/configure:14120:    cygwin* | mingw* | pw32*)
+src/oorexx-3.2.0-leopard/configure:14197:    freebsd1*)
+src/oorexx-3.2.0-leopard/configure:14201:    # FreeBSD 2.2.[012] allows us to include c++rt0.o to get C++ constructor
+src/oorexx-3.2.0-leopard/configure:14205:    freebsd2.2*)
+src/oorexx-3.2.0-leopard/configure:14212:    # Unfortunately, older versions of FreeBSD 2 do not have this feature.
+src/oorexx-3.2.0-leopard/configure:14213:    freebsd2*)
+src/oorexx-3.2.0-leopard/configure:14220:    # FreeBSD 3 and greater uses gcc -shared to do shared libraries.
+src/oorexx-3.2.0-leopard/configure:14221:    freebsd* | kfreebsd*-gnu | dragonfly*)
+src/oorexx-3.2.0-leopard/configure:14228:    hpux9*)
+src/oorexx-3.2.0-leopard/configure:14244:    hpux10*)
+src/oorexx-3.2.0-leopard/configure:14263:    hpux11*)
+src/oorexx-3.2.0-leopard/configure:14323:    netbsd*)
+src/oorexx-3.2.0-leopard/configure:14364:    os2*)
+src/oorexx-3.2.0-leopard/configure:14401:    solaris*)
+src/oorexx-3.2.0-leopard/configure:14417:      solaris2.[0-5] | solaris2.[0-5].*) ;;
+src/oorexx-3.2.0-leopard/configure:14423: 	# Supported since Solaris 2.6 (maybe 2.5.1?)
+src/oorexx-3.2.0-leopard/configure:14434:    sunos4*)
+src/oorexx-3.2.0-leopard/configure:14643:aix3*)
+src/oorexx-3.2.0-leopard/configure:14644:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:14648:  # AIX 3 has no versioning support, so we append a major version to the name.
+src/oorexx-3.2.0-leopard/configure:14652:aix4* | aix5*)
+src/oorexx-3.2.0-leopard/configure:14653:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:14658:    # AIX 5 supports IA64
+src/oorexx-3.2.0-leopard/configure:14668:      aix4 | aix4.[01] | aix4.[01].*)
+src/oorexx-3.2.0-leopard/configure:14678:    # AIX (on Power*) has no versioning support, so currently we can not hardcode correct
+src/oorexx-3.2.0-leopard/configure:14681:    if test "$aix_use_runtimelinking" = yes; then
+src/oorexx-3.2.0-leopard/configure:14682:      # If using run time linking (on AIX 4.2 or later) use lib<name>.so
+src/oorexx-3.2.0-leopard/configure:14684:      # typical AIX shared libraries.
+src/oorexx-3.2.0-leopard/configure:14687:      # We preserve .a as extension for shared libraries through AIX4.2
+src/oorexx-3.2.0-leopard/configure:14709:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:14722:cygwin* | mingw* | pw32*)
+src/oorexx-3.2.0-leopard/configure:14723:  version_type=windows
+src/oorexx-3.2.0-leopard/configure:14729:  yes,cygwin* | yes,mingw* | yes,pw32*)
+src/oorexx-3.2.0-leopard/configure:14744:    cygwin*)
+src/oorexx-3.2.0-leopard/configure:14745:      # Cygwin DLLs use 'cyg' prefix rather than 'lib'
+src/oorexx-3.2.0-leopard/configure:14749:    mingw*)
+src/oorexx-3.2.0-leopard/configure:14750:      # MinGW DLLs use traditional 'lib' prefix
+src/oorexx-3.2.0-leopard/configure:14754:        # It is most probably a Windows format PATH printed by
+src/oorexx-3.2.0-leopard/configure:14755:        # mingw gcc, but we are running on Cygwin. Gcc prints its search
+src/oorexx-3.2.0-leopard/configure:14757:        # drive letters (cygwin fileutils understands them), so leave them,
+src/oorexx-3.2.0-leopard/configure:14758:        # especially as we might pass files found there to a mingw objdump,
+src/oorexx-3.2.0-leopard/configure:14759:        # which wouldn't understand a cygwinified path. Ahh.
+src/oorexx-3.2.0-leopard/configure:14776:  dynamic_linker='Win32 ld.exe'
+src/oorexx-3.2.0-leopard/configure:14801:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:14809:freebsd1*)
+src/oorexx-3.2.0-leopard/configure:14813:kfreebsd*-gnu)
+src/oorexx-3.2.0-leopard/configure:14814:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:14825:freebsd* | dragonfly*)
+src/oorexx-3.2.0-leopard/configure:14832:    freebsd[123]*) objformat=aout ;;
+src/oorexx-3.2.0-leopard/configure:14836:  version_type=freebsd-$objformat
+src/oorexx-3.2.0-leopard/configure:14838:    freebsd-elf*)
+src/oorexx-3.2.0-leopard/configure:14843:    freebsd-*)
+src/oorexx-3.2.0-leopard/configure:14850:  freebsd2*)
+src/oorexx-3.2.0-leopard/configure:14853:  freebsd3.[01]* | freebsdelf3.[01]*)
+src/oorexx-3.2.0-leopard/configure:14857:  freebsd3.[2-9]* | freebsdelf3.[2-9]* | \
+src/oorexx-3.2.0-leopard/configure:14858:  freebsd4.[0-5] | freebsdelf4.[0-5] | freebsd4.1.1 | freebsdelf4.1.1)
+src/oorexx-3.2.0-leopard/configure:14862:  freebsd*) # from 4.6 on
+src/oorexx-3.2.0-leopard/configure:14870:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:14879:hpux9* | hpux10* | hpux11*)
+src/oorexx-3.2.0-leopard/configure:14882:  version_type=sunos
+src/oorexx-3.2.0-leopard/configure:14894:    if test "X$HPUX_IA64_MODE" = X32; then
+src/oorexx-3.2.0-leopard/configure:14895:      sys_lib_search_path_spec="/usr/lib/hpux32 /usr/local/lib/hpux32 /usr/local/lib"
+src/oorexx-3.2.0-leopard/configure:14897:      sys_lib_search_path_spec="/usr/lib/hpux64 /usr/local/lib/hpux64"
+src/oorexx-3.2.0-leopard/configure:14926:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:14942:		version_type=linux
+src/oorexx-3.2.0-leopard/configure:14974:# No shared lib support for Linux oldld, aout, or coff.
+src/oorexx-3.2.0-leopard/configure:14975:linux*oldld* | linux*aout* | linux*coff*)
+src/oorexx-3.2.0-leopard/configure:14979:# This must be Linux ELF.
+src/oorexx-3.2.0-leopard/configure:14980:linux*)
+src/oorexx-3.2.0-leopard/configure:14981:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:15022:  # powerpc, because MkLinux only supported shared libraries with the
+src/oorexx-3.2.0-leopard/configure:15024:  # most powerpc-linux boxes support dynamic linking these days and
+src/oorexx-3.2.0-leopard/configure:15026:  # assume the GNU/Linux dynamic linker is in use.
+src/oorexx-3.2.0-leopard/configure:15027:  dynamic_linker='GNU/Linux ld.so'
+src/oorexx-3.2.0-leopard/configure:15030:knetbsd*-gnu)
+src/oorexx-3.2.0-leopard/configure:15031:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:15042:netbsd*)
+src/oorexx-3.2.0-leopard/configure:15043:  version_type=sunos
+src/oorexx-3.2.0-leopard/configure:15049:    dynamic_linker='NetBSD (a.out) ld.so'
+src/oorexx-3.2.0-leopard/configure:15053:    dynamic_linker='NetBSD ld.elf_so'
+src/oorexx-3.2.0-leopard/configure:15061:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:15068:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:15078:  version_type=sunos
+src/oorexx-3.2.0-leopard/configure:15103:os2*)
+src/oorexx-3.2.0-leopard/configure:15123:solaris*)
+src/oorexx-3.2.0-leopard/configure:15124:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:15136:sunos4*)
+src/oorexx-3.2.0-leopard/configure:15137:  version_type=sunos
+src/oorexx-3.2.0-leopard/configure:15149:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:15174:    version_type=linux
+src/oorexx-3.2.0-leopard/configure:15182:  version_type=freebsd-elf
+src/oorexx-3.2.0-leopard/configure:15205:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:15423:# Used on cygwin: DLL creation program.
+src/oorexx-3.2.0-leopard/configure:15426:# Used on cygwin: object dumper.
+src/oorexx-3.2.0-leopard/configure:15429:# Used on cygwin: assembler.
+src/oorexx-3.2.0-leopard/configure:15816:      aix*)
+src/oorexx-3.2.0-leopard/configure:15817:      # All AIX code is PIC.
+src/oorexx-3.2.0-leopard/configure:15819:	# AIX 5 now supports IA64 processor
+src/oorexx-3.2.0-leopard/configure:15831:    beos* | cygwin* | irix5* | irix6* | nonstopux* | osf3* | osf4* | osf5*)
+src/oorexx-3.2.0-leopard/configure:15835:    mingw* | pw32* | os2*)
+src/oorexx-3.2.0-leopard/configure:15865:    hpux*)
+src/oorexx-3.2.0-leopard/configure:15885:    aix*)
+src/oorexx-3.2.0-leopard/configure:15888:	# AIX 5 now supports IA64 processor
+src/oorexx-3.2.0-leopard/configure:15905:    mingw* | pw32* | os2*)
+src/oorexx-3.2.0-leopard/configure:15911:    hpux9* | hpux10* | hpux11*)
+src/oorexx-3.2.0-leopard/configure:15938:    linux*)
+src/oorexx-3.2.0-leopard/configure:15966:    solaris*)
+src/oorexx-3.2.0-leopard/configure:15977:    sunos4*)
+src/oorexx-3.2.0-leopard/configure:16251:  cygwin* | mingw* | pw32*)
+src/oorexx-3.2.0-leopard/configure:16296:    aix3* | aix4* | aix5*)
+src/oorexx-3.2.0-leopard/configure:16297:      # On AIX/PPC, the GNU linker is very broken
+src/oorexx-3.2.0-leopard/configure:16303:*** to be unable to reliably create shared libraries on AIX.
+src/oorexx-3.2.0-leopard/configure:16337:    cygwin* | mingw* | pw32*)
+src/oorexx-3.2.0-leopard/configure:16377:    linux*)
+src/oorexx-3.2.0-leopard/configure:16408:    netbsd*)
+src/oorexx-3.2.0-leopard/configure:16418:    solaris*)
+src/oorexx-3.2.0-leopard/configure:16424:*** create shared libraries on Solaris systems.  Therefore, libtool
+src/oorexx-3.2.0-leopard/configure:16466:    sunos4*)
+src/oorexx-3.2.0-leopard/configure:16492:    aix3*)
+src/oorexx-3.2.0-leopard/configure:16506:    aix4* | aix5*)
+src/oorexx-3.2.0-leopard/configure:16510:	aix_use_runtimelinking=no
+src/oorexx-3.2.0-leopard/configure:16515:	# -C means demangle to AIX nm, but means don't demangle with GNU nm
+src/oorexx-3.2.0-leopard/configure:16521:	aix_use_runtimelinking=no
+src/oorexx-3.2.0-leopard/configure:16524:	# AIX style linking. If -brtl is somewhere in LDFLAGS, we
+src/oorexx-3.2.0-leopard/configure:16526:	case $host_os in aix4.[23]|aix4.[23].*|aix5*)
+src/oorexx-3.2.0-leopard/configure:16529:  	    aix_use_runtimelinking=yes
+src/oorexx-3.2.0-leopard/configure:16540:      # When large executables or shared objects are built, AIX ld can
+src/oorexx-3.2.0-leopard/configure:16552:	case $host_os in aix4.[012]|aix4.[012].*)
+src/oorexx-3.2.0-leopard/configure:16553:	# We only want to do this on AIX 4.2 and lower, the check
+src/oorexx-3.2.0-leopard/configure:16574:	if test "$aix_use_runtimelinking" = yes; then
+src/oorexx-3.2.0-leopard/configure:16580:  	# VisualAge C++, Version 5.5 for AIX 5L for IA-64, Beta 3 Release
+src/oorexx-3.2.0-leopard/configure:16584:	  if test "$aix_use_runtimelinking" = yes; then
+src/oorexx-3.2.0-leopard/configure:16595:      if test "$aix_use_runtimelinking" = yes; then
+src/oorexx-3.2.0-leopard/configure:16638:aix_libpath=`dump -H conftest$ac_exeext 2>/dev/null | $SED -n -e '/Import File Strings/,/^$/ { /^0/ { s/^0  *\(.*\)$/\1/; p; }
+src/oorexx-3.2.0-leopard/configure:16641:if test -z "$aix_libpath"; then aix_libpath=`dump -HX64 conftest$ac_exeext 2>/dev/null | $SED -n -e '/Import File Strings/,/^$/ { /^0/ { s/^0  *\(.*\)$/\1/; p; }
+src/oorexx-3.2.0-leopard/configure:16650:if test -z "$aix_libpath"; then aix_libpath="/usr/lib:/lib"; fi
+src/oorexx-3.2.0-leopard/configure:16652:       hardcode_libdir_flag_spec_GCJ='${wl}-blibpath:$libdir:'"$aix_libpath"
+src/oorexx-3.2.0-leopard/configure:16699:aix_libpath=`dump -H conftest$ac_exeext 2>/dev/null | $SED -n -e '/Import File Strings/,/^$/ { /^0/ { s/^0  *\(.*\)$/\1/; p; }
+src/oorexx-3.2.0-leopard/configure:16702:if test -z "$aix_libpath"; then aix_libpath=`dump -HX64 conftest$ac_exeext 2>/dev/null | $SED -n -e '/Import File Strings/,/^$/ { /^0/ { s/^0  *\(.*\)$/\1/; p; }
+src/oorexx-3.2.0-leopard/configure:16711:if test -z "$aix_libpath"; then aix_libpath="/usr/lib:/lib"; fi
+src/oorexx-3.2.0-leopard/configure:16713:	 hardcode_libdir_flag_spec_GCJ='${wl}-blibpath:$libdir:'"$aix_libpath"
+src/oorexx-3.2.0-leopard/configure:16721:	  # This is similar to how AIX traditionally builds its shared libraries.
+src/oorexx-3.2.0-leopard/configure:16739:    cygwin* | mingw* | pw32*)
+src/oorexx-3.2.0-leopard/configure:16816:    freebsd1*)
+src/oorexx-3.2.0-leopard/configure:16820:    # FreeBSD 2.2.[012] allows us to include c++rt0.o to get C++ constructor
+src/oorexx-3.2.0-leopard/configure:16824:    freebsd2.2*)
+src/oorexx-3.2.0-leopard/configure:16831:    # Unfortunately, older versions of FreeBSD 2 do not have this feature.
+src/oorexx-3.2.0-leopard/configure:16832:    freebsd2*)
+src/oorexx-3.2.0-leopard/configure:16839:    # FreeBSD 3 and greater uses gcc -shared to do shared libraries.
+src/oorexx-3.2.0-leopard/configure:16840:    freebsd* | kfreebsd*-gnu | dragonfly*)
+src/oorexx-3.2.0-leopard/configure:16847:    hpux9*)
+src/oorexx-3.2.0-leopard/configure:16863:    hpux10*)
+src/oorexx-3.2.0-leopard/configure:16882:    hpux11*)
+src/oorexx-3.2.0-leopard/configure:16942:    netbsd*)
+src/oorexx-3.2.0-leopard/configure:16983:    os2*)
+src/oorexx-3.2.0-leopard/configure:17020:    solaris*)
+src/oorexx-3.2.0-leopard/configure:17036:      solaris2.[0-5] | solaris2.[0-5].*) ;;
+src/oorexx-3.2.0-leopard/configure:17042: 	# Supported since Solaris 2.6 (maybe 2.5.1?)
+src/oorexx-3.2.0-leopard/configure:17053:    sunos4*)
+src/oorexx-3.2.0-leopard/configure:17262:aix3*)
+src/oorexx-3.2.0-leopard/configure:17263:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:17267:  # AIX 3 has no versioning support, so we append a major version to the name.
+src/oorexx-3.2.0-leopard/configure:17271:aix4* | aix5*)
+src/oorexx-3.2.0-leopard/configure:17272:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:17277:    # AIX 5 supports IA64
+src/oorexx-3.2.0-leopard/configure:17287:      aix4 | aix4.[01] | aix4.[01].*)
+src/oorexx-3.2.0-leopard/configure:17297:    # AIX (on Power*) has no versioning support, so currently we can not hardcode correct
+src/oorexx-3.2.0-leopard/configure:17300:    if test "$aix_use_runtimelinking" = yes; then
+src/oorexx-3.2.0-leopard/configure:17301:      # If using run time linking (on AIX 4.2 or later) use lib<name>.so
+src/oorexx-3.2.0-leopard/configure:17303:      # typical AIX shared libraries.
+src/oorexx-3.2.0-leopard/configure:17306:      # We preserve .a as extension for shared libraries through AIX4.2
+src/oorexx-3.2.0-leopard/configure:17328:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:17341:cygwin* | mingw* | pw32*)
+src/oorexx-3.2.0-leopard/configure:17342:  version_type=windows
+src/oorexx-3.2.0-leopard/configure:17348:  yes,cygwin* | yes,mingw* | yes,pw32*)
+src/oorexx-3.2.0-leopard/configure:17363:    cygwin*)
+src/oorexx-3.2.0-leopard/configure:17364:      # Cygwin DLLs use 'cyg' prefix rather than 'lib'
+src/oorexx-3.2.0-leopard/configure:17368:    mingw*)
+src/oorexx-3.2.0-leopard/configure:17369:      # MinGW DLLs use traditional 'lib' prefix
+src/oorexx-3.2.0-leopard/configure:17373:        # It is most probably a Windows format PATH printed by
+src/oorexx-3.2.0-leopard/configure:17374:        # mingw gcc, but we are running on Cygwin. Gcc prints its search
+src/oorexx-3.2.0-leopard/configure:17376:        # drive letters (cygwin fileutils understands them), so leave them,
+src/oorexx-3.2.0-leopard/configure:17377:        # especially as we might pass files found there to a mingw objdump,
+src/oorexx-3.2.0-leopard/configure:17378:        # which wouldn't understand a cygwinified path. Ahh.
+src/oorexx-3.2.0-leopard/configure:17395:  dynamic_linker='Win32 ld.exe'
+src/oorexx-3.2.0-leopard/configure:17420:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:17428:freebsd1*)
+src/oorexx-3.2.0-leopard/configure:17432:kfreebsd*-gnu)
+src/oorexx-3.2.0-leopard/configure:17433:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:17444:freebsd* | dragonfly*)
+src/oorexx-3.2.0-leopard/configure:17451:    freebsd[123]*) objformat=aout ;;
+src/oorexx-3.2.0-leopard/configure:17455:  version_type=freebsd-$objformat
+src/oorexx-3.2.0-leopard/configure:17457:    freebsd-elf*)
+src/oorexx-3.2.0-leopard/configure:17462:    freebsd-*)
+src/oorexx-3.2.0-leopard/configure:17469:  freebsd2*)
+src/oorexx-3.2.0-leopard/configure:17472:  freebsd3.[01]* | freebsdelf3.[01]*)
+src/oorexx-3.2.0-leopard/configure:17476:  freebsd3.[2-9]* | freebsdelf3.[2-9]* | \
+src/oorexx-3.2.0-leopard/configure:17477:  freebsd4.[0-5] | freebsdelf4.[0-5] | freebsd4.1.1 | freebsdelf4.1.1)
+src/oorexx-3.2.0-leopard/configure:17481:  freebsd*) # from 4.6 on
+src/oorexx-3.2.0-leopard/configure:17489:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:17498:hpux9* | hpux10* | hpux11*)
+src/oorexx-3.2.0-leopard/configure:17501:  version_type=sunos
+src/oorexx-3.2.0-leopard/configure:17513:    if test "X$HPUX_IA64_MODE" = X32; then
+src/oorexx-3.2.0-leopard/configure:17514:      sys_lib_search_path_spec="/usr/lib/hpux32 /usr/local/lib/hpux32 /usr/local/lib"
+src/oorexx-3.2.0-leopard/configure:17516:      sys_lib_search_path_spec="/usr/lib/hpux64 /usr/local/lib/hpux64"
+src/oorexx-3.2.0-leopard/configure:17545:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:17561:		version_type=linux
+src/oorexx-3.2.0-leopard/configure:17593:# No shared lib support for Linux oldld, aout, or coff.
+src/oorexx-3.2.0-leopard/configure:17594:linux*oldld* | linux*aout* | linux*coff*)
+src/oorexx-3.2.0-leopard/configure:17598:# This must be Linux ELF.
+src/oorexx-3.2.0-leopard/configure:17599:linux*)
+src/oorexx-3.2.0-leopard/configure:17600:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:17641:  # powerpc, because MkLinux only supported shared libraries with the
+src/oorexx-3.2.0-leopard/configure:17643:  # most powerpc-linux boxes support dynamic linking these days and
+src/oorexx-3.2.0-leopard/configure:17645:  # assume the GNU/Linux dynamic linker is in use.
+src/oorexx-3.2.0-leopard/configure:17646:  dynamic_linker='GNU/Linux ld.so'
+src/oorexx-3.2.0-leopard/configure:17649:knetbsd*-gnu)
+src/oorexx-3.2.0-leopard/configure:17650:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:17661:netbsd*)
+src/oorexx-3.2.0-leopard/configure:17662:  version_type=sunos
+src/oorexx-3.2.0-leopard/configure:17668:    dynamic_linker='NetBSD (a.out) ld.so'
+src/oorexx-3.2.0-leopard/configure:17672:    dynamic_linker='NetBSD ld.elf_so'
+src/oorexx-3.2.0-leopard/configure:17680:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:17687:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:17697:  version_type=sunos
+src/oorexx-3.2.0-leopard/configure:17722:os2*)
+src/oorexx-3.2.0-leopard/configure:17742:solaris*)
+src/oorexx-3.2.0-leopard/configure:17743:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:17755:sunos4*)
+src/oorexx-3.2.0-leopard/configure:17756:  version_type=sunos
+src/oorexx-3.2.0-leopard/configure:17768:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:17793:    version_type=linux
+src/oorexx-3.2.0-leopard/configure:17801:  version_type=freebsd-elf
+src/oorexx-3.2.0-leopard/configure:17824:  version_type=linux
+src/oorexx-3.2.0-leopard/configure:18042:# Used on cygwin: DLL creation program.
+src/oorexx-3.2.0-leopard/configure:18045:# Used on cygwin: object dumper.
+src/oorexx-3.2.0-leopard/configure:18048:# Used on cygwin: assembler.
+src/oorexx-3.2.0-leopard/configure:18526:# Used on cygwin: DLL creation program.
+src/oorexx-3.2.0-leopard/configure:18529:# Used on cygwin: object dumper.
+src/oorexx-3.2.0-leopard/configure:18532:# Used on cygwin: assembler.
+src/oorexx-3.2.0-leopard/configure:18893:   *ibm-aix*)
+src/oorexx-3.2.0-leopard/configure:18894:      GENERIC_OS="-DAIX"
+src/oorexx-3.2.0-leopard/configure:18895:      GENERIC_OPSYS="-DOPSYS_AIX"
+src/oorexx-3.2.0-leopard/configure:18896:      GENERIC_DEFINES="$GENERIC_DEFINES -DOPSYS_AIX43"
+src/oorexx-3.2.0-leopard/configure:18900:            CC_WARNINGS="-maix32 -mthreads $GCC_WARNINGS"
+src/oorexx-3.2.0-leopard/configure:18901:            CXX_WARNINGS="-maix32 -mthreads $GCXX_WARNINGS"
+src/oorexx-3.2.0-leopard/configure:18911:      PACKAGETYPE="aix"
+src/oorexx-3.2.0-leopard/configure:18912:      ORX_SYS_STR="AIX"
+src/oorexx-3.2.0-leopard/configure:18914:   *solaris*)
+src/oorexx-3.2.0-leopard/configure:18925:      ORX_SYS_STR="SUNOS"
+src/oorexx-3.2.0-leopard/configure:18927:         *solaris2.8)
+src/oorexx-3.2.0-leopard/configure:18928:            SPECIFIC_DEFINES="-DLIMITED_SOLARIS_SEMS"
+src/oorexx-3.2.0-leopard/configure:18930:         *solaris2.9)
+src/oorexx-3.2.0-leopard/configure:18931:            SPECIFIC_DEFINES="-DLIMITED_SOLARIS_SEMS"
+src/oorexx-3.2.0-leopard/configure:18936:   sparc*sunos*)
+src/oorexx-3.2.0-leopard/configure:18937:      ORX_SYS_STR="SUNOS"
+src/oorexx-3.2.0-leopard/configure:18939:   i*86-*linux*)
+src/oorexx-3.2.0-leopard/configure:18942:      GENERIC_OS="-DLINUX"
+src/oorexx-3.2.0-leopard/configure:18943:      GENERIC_OPSYS="-DOPSYS_LINUX"
+src/oorexx-3.2.0-leopard/configure:18944:      ORX_SYS_STR="LINUX"
+src/oorexx-3.2.0-leopard/configure:18946:   *86_64-*linux*)
+src/oorexx-3.2.0-leopard/configure:18949:      GENERIC_OS="-DLINUX"
+src/oorexx-3.2.0-leopard/configure:18950:      GENERIC_OPSYS="-DOPSYS_LINUX"
+src/oorexx-3.2.0-leopard/configure:18951:      ORX_SYS_STR="LINUX"
+src/oorexx-3.2.0-leopard/configure:18953:   alpha*-*linux*)
+src/oorexx-3.2.0-leopard/configure:18954:      GENERIC_OS="-DLINUX"
+src/oorexx-3.2.0-leopard/configure:18955:      GENERIC_OPSYS="-DOPSYS_LINUX"
+src/oorexx-3.2.0-leopard/configure:18956:      ORX_SYS_STR="LINUX"
+src/oorexx-3.2.0-leopard/configure:18958:   *linux*)
+src/oorexx-3.2.0-leopard/configure:18959:      GENERIC_OS="-DLINUX"
+src/oorexx-3.2.0-leopard/configure:18960:      GENERIC_OPSYS="-DOPSYS_LINUX"
+src/oorexx-3.2.0-leopard/configure:18961:      ORX_SYS_STR="LINUX"
+src/oorexx-3.2.0-leopard/configure:18969:   *freebsd*)
+src/oorexx-3.2.0-leopard/configure:18970:      ORX_SYS_STR="FREEBSD"
+src/oorexx-3.2.0-leopard/configure:18977:   *netbsd*)
+src/oorexx-3.2.0-leopard/configure:18978:      ORX_SYS_STR="NETBSD"
+src/oorexx-3.2.0-leopard/configure:18986:      ORX_SYS_STR="NETBSD"
+src/oorexx-3.2.0-leopard/configure:18999:   *hp-hpux*)
+src/oorexx-3.2.0-leopard/configure:19082:  # SunOS 4.x string.h does not declare mem*, contrary to ANSI.
+src/oorexx-3.2.0-leopard/configure:21387:# bizarre bug on SunOS 4.1.3.

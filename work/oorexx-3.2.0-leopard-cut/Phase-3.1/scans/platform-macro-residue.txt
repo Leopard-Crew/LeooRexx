@@ -1,0 +1,43 @@
+src/oorexx-3.2.0-leopard/configure:18895:      GENERIC_OPSYS="-DOPSYS_AIX"
+src/oorexx-3.2.0-leopard/configure:18896:      GENERIC_DEFINES="$GENERIC_DEFINES -DOPSYS_AIX43"
+src/oorexx-3.2.0-leopard/configure:18915:      GENERIC_OPSYS="$GENERIC_OPSYS -DOPSYS_SUN"
+src/oorexx-3.2.0-leopard/configure:18928:            SPECIFIC_DEFINES="-DLIMITED_SOLARIS_SEMS"
+src/oorexx-3.2.0-leopard/configure:18931:            SPECIFIC_DEFINES="-DLIMITED_SOLARIS_SEMS"
+src/oorexx-3.2.0-leopard/configure:18943:      GENERIC_OPSYS="-DOPSYS_LINUX"
+src/oorexx-3.2.0-leopard/configure:18950:      GENERIC_OPSYS="-DOPSYS_LINUX"
+src/oorexx-3.2.0-leopard/configure:18955:      GENERIC_OPSYS="-DOPSYS_LINUX"
+src/oorexx-3.2.0-leopard/configure:18960:      GENERIC_OPSYS="-DOPSYS_LINUX"
+src/oorexx-3.2.0-leopard/configure.ac:120:      GENERIC_OPSYS="-DOPSYS_AIX"
+src/oorexx-3.2.0-leopard/configure.ac:121:      GENERIC_DEFINES="$GENERIC_DEFINES -DOPSYS_AIX43"
+src/oorexx-3.2.0-leopard/configure.ac:141:      GENERIC_OPSYS="$GENERIC_OPSYS -DOPSYS_SUN"
+src/oorexx-3.2.0-leopard/configure.ac:155:            SPECIFIC_DEFINES="-DLIMITED_SOLARIS_SEMS"
+src/oorexx-3.2.0-leopard/configure.ac:158:            SPECIFIC_DEFINES="-DLIMITED_SOLARIS_SEMS"
+src/oorexx-3.2.0-leopard/configure.ac:170:      GENERIC_OPSYS="-DOPSYS_LINUX"
+src/oorexx-3.2.0-leopard/configure.ac:177:      GENERIC_OPSYS="-DOPSYS_LINUX"
+src/oorexx-3.2.0-leopard/configure.ac:182:      GENERIC_OPSYS="-DOPSYS_LINUX"
+src/oorexx-3.2.0-leopard/configure.ac:187:      GENERIC_OPSYS="-DOPSYS_LINUX"
+src/oorexx-3.2.0-leopard/kernel/platform/unix/ExternalFunctions.cpp:96:#elif defined(OPSYS_SUN)
+src/oorexx-3.2.0-leopard/kernel/platform/unix/FileSystem.cpp:687:#if defined(AIX) || defined(OPSYS_SUN)
+src/oorexx-3.2.0-leopard/kernel/platform/unix/FileSystem.cpp:690:#if defined(LINUX) && !defined(OPSYS_SUN)
+src/oorexx-3.2.0-leopard/kernel/platform/unix/PlatformDefinitions.h:257:#ifdef OPSYS_AIX41
+src/oorexx-3.2.0-leopard/kernel/platform/unix/PlatformDefinitions.h:428:#elif defined(OPSYS_SUN)
+src/oorexx-3.2.0-leopard/kernel/platform/unix/PlatformDefinitions.h:570:#elif defined(OPSYS_SUN)
+src/oorexx-3.2.0-leopard/kernel/platform/unix/SharedMemorySupport.cpp:108:#if defined(OPSYS_SUN)
+src/oorexx-3.2.0-leopard/kernel/platform/unix/SystemCommands.cpp:84:#elif defined(OPSYS_SUN)                        /*  path for AIX        */
+src/oorexx-3.2.0-leopard/kernel/platform/unix/ThreadSupport.cpp:167://#ifdef OPSYS_SUN
+src/oorexx-3.2.0-leopard/kernel/platform/unix/ThreadSupport.cpp:168:#if defined(OPSYS_AIX43) || LEOOREXX_PTHREAD_PRIORITY_HINTS || defined(OPSYS_SUN)
+src/oorexx-3.2.0-leopard/kernel/platform/unix/ThreadSupport.cpp:176:#if defined(OPSYS_SUN) || defined(OPSYS_AIX43)
+src/oorexx-3.2.0-leopard/kernel/platform/unix/ThreadSupport.hpp:76:#ifdef OPSYS_AIX43
+src/oorexx-3.2.0-leopard/kernel/platform/unix/TimeSupport.cpp:48:#if defined(OPSYS_SUN)
+src/oorexx-3.2.0-leopard/kernel/runtime/RexxActivity.cpp:125:#if defined(OPSYS_SUN)
+src/oorexx-3.2.0-leopard/rexutils/rxmath.cpp:305:#elif OPSYS_SUN
+src/oorexx-3.2.0-leopard/rexutils/rxmath.cpp:307:#elif OPSYS_AIX
+src/oorexx-3.2.0-leopard/rexutils/rxmath.cpp:310:#if defined(WIN32) || defined(OPSYS_SUN) || defined(OPSYS_AIX)
+src/oorexx-3.2.0-leopard/rexutils/rxsock.c:132://#if defined(WIN32) || defined(OPSYS_LINUX)
+src/oorexx-3.2.0-leopard/rexutils/rxsock.c:165:#if defined(OPSYS_AIX31) || LEOOREXX_PLATFORM_BSD_SOCKETS
+src/oorexx-3.2.0-leopard/rexutils/rxsock.c:1000:#if !defined(OPSYS_AIX31)
+src/oorexx-3.2.0-leopard/rexutils/rxsockfn.c:93:#if defined(OPSYS_AIX)
+src/oorexx-3.2.0-leopard/rexxapi/unix/QueuesAPI.cpp:94:#if defined(OPSYS_SUN)
+src/oorexx-3.2.0-leopard/rexxapi/unix/RexxAPIManager.cpp:222:#ifndef OPSYS_AIX41
+src/oorexx-3.2.0-leopard/rexxapi/unix/RexxAPIManager.h:63:# ifdef LIMITED_SOLARIS_SEMS
+src/oorexx-3.2.0-leopard/rxregexp/automaton.cpp:51:#ifdef OPSYS_AIX41
