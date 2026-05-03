@@ -72,7 +72,7 @@
 
 #define CCHMAXPATH PATH_MAX+1
 #if LEOOREXX_PLATFORM_POSIX
-#define SECOND_PARAMETER 1             /* different sign. POSIX/AIX  */
+#define SECOND_PARAMETER 1             /* different sign on POSIX    */
 #define CATD_ERR -1
 #else
 #define SECOND_PARAMETER 0             /* 0 for no  NL_CAT_LOCALE    */

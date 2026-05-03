@@ -1,0 +1,16 @@
+src/oorexx-3.2.0-leopard/rexxapi/unix/MacroSpace.cpp:92://#ifdef AIX
+src/oorexx-3.2.0-leopard/rexxapi/unix/MacroSpace.cpp:674://#ifdef AIX
+src/oorexx-3.2.0-leopard/rexxapi/unix/MacroSpace.cpp:904://#ifndef LINUX
+src/oorexx-3.2.0-leopard/rexxapi/unix/QueuesAPI.cpp:94:#if defined(OPSYS_SUN)
+src/oorexx-3.2.0-leopard/rexxapi/unix/QueuesAPI.cpp:1297:/* this is for LINUX only. AIX does not create different PID's for   */
+src/oorexx-3.2.0-leopard/rexxapi/unix/QueuesAPI.cpp:1308://#ifdef LINUX
+src/oorexx-3.2.0-leopard/rexxapi/unix/QueuesAPI.cpp:1361://#ifdef LINUX
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:82:#if !defined(AIX) && !LEOOREXX_PLATFORM_DARWIN
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:83:#define AIX                           /* Legacy fallback for non-LeooRexx Unix */
+src/oorexx-3.2.0-leopard/rexxapi/unix/RexxAPIManager.cpp:222:#ifndef OPSYS_AIX41
+src/oorexx-3.2.0-leopard/rexxapi/unix/RexxAPIManager.cpp:669:                                     /* allocate a greater segment   */
+src/oorexx-3.2.0-leopard/rexxapi/unix/RexxAPIManager.h:63:# ifdef LIMITED_SOLARIS_SEMS
+src/oorexx-3.2.0-leopard/rexxapi/unix/RexxAPIManager.h:71:#else  /* AIX */
+src/oorexx-3.2.0-leopard/rexxapi/unix/SubcommandAPI.cpp:1954:#ifdef AIX
+src/oorexx-3.2.0-leopard/rexxapi/unix/SubcommandAPI.h:40:#ifndef AIXSEAPI_HC_INCLUDED
+src/oorexx-3.2.0-leopard/rexxapi/unix/SubcommandAPI.h:41:#define AIXSEAPI_HC_INCLUDED

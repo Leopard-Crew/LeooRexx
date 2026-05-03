@@ -37,7 +37,7 @@
 /*----------------------------------------------------------------------------*/
 /******************************************************************************/
 /*                                                                            */
-/*  Module Name:   AIXMACRO.C                                                 */
+/*  Module Name:   MacroSpace.cpp                                             */
 /*                                                                            */
 /*  Description:   This module handles all macro space API's                  */
 /*                                                                            */
@@ -649,7 +649,7 @@ static ULONG callrexx(
   rc = RXMACRO_OK;                     /* find the file size         */
 #if defined( HAVE_FSTAT )
   if(fstat((fileno(f)), &finfo) == -1)
-#else  /* AIX */
+#else  /* Unix */
   if(stat(fnam,&finfo) == -1)
 #endif
     rc = RXMACRO_FILE_ERROR;           /* error getting file info    */
