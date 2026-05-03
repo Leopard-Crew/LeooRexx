@@ -36,7 +36,7 @@
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 /*****************************************************************************/
-/* REXX AIX Support                                            aixmain.c     */
+/* RexxAPI shutdown support                         APIManagerShutdown.cpp */
 /*                                                                           */
 /* Main interface to delete the REXX interpreter''s IPCs                     */
 /*                                                                           */

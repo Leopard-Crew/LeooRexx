@@ -41,7 +41,7 @@
 /******************************************************************************/
 /******************************************************************************/
 /*                                                                            */
-/*  Program Name:       AIXQAPI.C                                             */
+/*  Program Name:       QueuesAPI.cpp                                          */
 /*                                                                            */
 /*  Description:        Library to contain API functions for                  */
 /*                      REXX-SAA/PL queueing services.                        */
@@ -315,7 +315,7 @@ static LONG   queue_allocate(
 /*                                                                   */
 /*  Function:        create_queue_sem                                */
 /*                                                                   */
-/*  Description:     Create synchroniztion semaphores for a Rexx     */
+/*  Description:     Create synchronization semaphores for a Rexx     */
 /*                   queue.                                          */
 /*                                                                   */
 /*                                                                   */
@@ -387,7 +387,7 @@ static VOID   release_queue_item(
 /*                                                                   */
 /*  Function:        delete_queue_sem                                */
 /*                                                                   */
-/*  Description:     Delete synchroniztion semaphores for a Rexx     */
+/*  Description:     Delete synchronization semaphores for a Rexx     */
 /*                   queue.                                          */
 /*                                                                   */
 /*                                                                   */
@@ -1394,7 +1394,7 @@ VOID Queue_Detach(ULONG pid)
 }
 
 /*********************************************************************/
-/* Semapore functions for the queue semaphores                       */
+/* Semaphore functions for the queue semaphores                      */
 /*********************************************************************/
 
 

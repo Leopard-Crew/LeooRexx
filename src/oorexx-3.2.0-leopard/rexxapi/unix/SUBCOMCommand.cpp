@@ -37,9 +37,9 @@
 /*----------------------------------------------------------------------------*/
 /*********************************************************************/
 /*                                                                   */
-/*     Program Name:   AIXRXCMD.C                                    */
+/*     Program Name:   SUBCOMCommand.cpp                             */
 /*                                                                   */
-/* Descriptive Name:   AIX/Linux Command Line Program for Subcommand */
+/* Descriptive Name:   Unix command line program for subcommand      */
 /*                     Interface.                                    */
 /*                                                                   */
 /*********************************************************************/

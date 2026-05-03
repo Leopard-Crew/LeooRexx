@@ -37,7 +37,7 @@
 /*----------------------------------------------------------------------------*/
 /**********************************************************************
 **
-** Module:      AIXRXAPI.C
+** Module:      RexxAPIManager.cpp
 **
 ** Description: Utility functions used by the REXXAPI
 **              Dynalink Module
@@ -332,12 +332,12 @@ LONG        lRC;
 
   apidata->ThreadId=(TID)SysQueryThreadID();
   if(apidata->ThreadId!=(TID)-1){/* if Rexx is up*/
-                                         /*if no session queue exitsts */
-                                         /*greate one                  */
+                                         /* if no session queue exists */
+                                         /* create one                 */
     if(chain != QUEUECHAIN)
       attachall(QUEUECHAIN);             /* get the queue memory       */
-    current = search_session();          /* greate the session queue   */
-    if(chain != QUEUECHAIN)              /* release the queue memeory  */
+    current = search_session();          /* create the session queue   */
+    if(chain != QUEUECHAIN)              /* release the queue memory   */
       detachall(QUEUECHAIN);
 //  ExitMustComplete();                  /* exit critical section      */
   }
@@ -619,7 +619,7 @@ LONG  RxAllocMem(
       while(size > (((apidata->macrosize) - (apidata->mmemtop)-10))){
                                      /* alloc a larger segment       */
         if((newmemId = getshmem(IPC_PRIVATE,((apidata->macrosize)+MSTDSIZE))) == -2)
-          return (1);                /* no more memory avialble      */
+          return (1);                /* no more memory available     */
                                      /* attach the new memory        */
         newmem = attachshmem(newmemId);
                                      /* and clear it out             */
@@ -668,7 +668,7 @@ LONG  RxAllocMem(
       while(size > (((apidata->sememsize) - (apidata->sememtop)-10))){
                                      /* allocate a greater segment   */
         if((newmemId = getshmem(IPC_PRIVATE,((apidata->sememsize)+SESTDSIZE))) == -2)
-          return (1);                /* no more memory avialble       */
+          return (1);                /* no more memory available      */
         newmem = attachshmem(newmemId);/* attach the new memory       */
                                      /* and clear it out              */
         memset((void*)newmem, 0, ((apidata->sememsize)+SESTDSIZE));
@@ -997,7 +997,7 @@ LONG  RxAllocMem(
           {
 //           if((newmemId = getshmem(IPC_PRIVATE,((apidata->qmemsize)+QSTDSIZE))) == -2)
              if((newmemId = getshmem(IPC_PRIVATE,((apidata->qmemsize) * 2))) == -2)
-               return (1);                /* no more memory avialble       */
+               return (1);                /* no more memory available      */
              newmem = attachshmem(newmemId);/* attach the new memory       */
                                           /* and clear it out              */
              memset((void*)newmem, 0, ((apidata->qmemsize)+QSTDSIZE));
@@ -1915,7 +1915,7 @@ VOID  RxExitClear(INT sig) {
                                              /* enable for reuse         */
     RxSubcomExitList();        /* remove process specific registrations*/
     locksem(apidata->rexxapisemaphore, 0);
-    attachall(QUEUECHAIN);     /* get the queue memeory pool           */
+    attachall(QUEUECHAIN);     /* get the queue memory pool            */
     if(SysQueryThreadID()!=-1) /* if Rexx is up                       */
       Queue_Detach(getpid());  /* remove the session queue             */
     detachall(QUEUECHAIN);     /* release the queue memory pool        */
@@ -2145,7 +2145,7 @@ VOID  RxExitClearNormal() {
                                              /* enable for reuse         */
     RxSubcomExitList();        /* remove process specific registrations*/
     locksem(apidata->rexxapisemaphore, 0 );
-    attachall(QUEUECHAIN);     /* get the queue memeory pool           */
+    attachall(QUEUECHAIN);     /* get the queue memory pool            */
     if(SysQueryThreadID()!=-1) /* if Rexx is up                        */
       Queue_Detach(getpid());  /* remove the session queue             */
     detachall(QUEUECHAIN);     /* release the queue memory pool        */
@@ -2271,7 +2271,7 @@ extern "C" {
 /*  Description:     Deletes all shared memory blocks if there is    */
 /*                   no process which has currently attached the     */
 /*                   API anchor memory. The API semaphore will not   */
-/*                   be deleted. It stays until Linux goes down.     */
+/*                   be deleted. It stays until the system shuts down.*/
 /*                                                                   */
 /*                                                                   */
 /*  Entry Point:     RexxShutDownAPI                                 */
