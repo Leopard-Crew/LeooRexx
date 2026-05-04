@@ -1,0 +1,97 @@
+src/oorexx-3.2.0-leopard/rexxapi/unix/APIManagerShutdown.cpp:75:      iRC = (int)RexxShutDownAPI();
+src/oorexx-3.2.0-leopard/rexxapi/unix/APIManagerShutdown.cpp:134:     iRC = (int)RexxShutDownAPI();
+src/oorexx-3.2.0-leopard/rexxapi/unix/MacroSpace.cpp:40:/*  Module Name:   MacroSpace.cpp                                             */
+src/oorexx-3.2.0-leopard/rexxapi/unix/MacroSpace.cpp:314:/*  Function Name:      RexxClearMacroSpace                          */
+src/oorexx-3.2.0-leopard/rexxapi/unix/MacroSpace.cpp:318:/*  Entry Point:        RexxCleanMacroSpace                          */
+src/oorexx-3.2.0-leopard/rexxapi/unix/MacroSpace.cpp:324:APIRET APIENTRY RexxClearMacroSpace(void)
+src/oorexx-3.2.0-leopard/rexxapi/unix/MacroSpace.cpp:348:/*  Function Name:      RexxSaveMacroSpace                           */
+src/oorexx-3.2.0-leopard/rexxapi/unix/MacroSpace.cpp:358:/*  Entry Point:        RexxSaveMacroSpace                           */
+src/oorexx-3.2.0-leopard/rexxapi/unix/MacroSpace.cpp:368:APIRET APIENTRY RexxSaveMacroSpace(
+src/oorexx-3.2.0-leopard/rexxapi/unix/MacroSpace.cpp:431:/*$FD.RexxLoadMacroSpace */
+src/oorexx-3.2.0-leopard/rexxapi/unix/MacroSpace.cpp:434:/*  Function Name:      RexxLoadMacroSpace                           */
+src/oorexx-3.2.0-leopard/rexxapi/unix/MacroSpace.cpp:438:/*  Entry Point:        RexxLoadMacroSpace                           */
+src/oorexx-3.2.0-leopard/rexxapi/unix/MacroSpace.cpp:448:APIRET APIENTRY RexxLoadMacroSpace(
+src/oorexx-3.2.0-leopard/rexxapi/unix/QueueCommand.cpp:171:  if (rc=RexxQueryQueue(quename,/* search for existence of 'quename' */
+src/oorexx-3.2.0-leopard/rexxapi/unix/QueueCommand.cpp:187:      if(rc=RexxAddQueue(              /*   write info to the queue  */
+src/oorexx-3.2.0-leopard/rexxapi/unix/QueueCommand.cpp:198:    rc = RexxPullQueue(quename, &queuedata, &dt, RXQUEUE_NOWAIT);
+src/oorexx-3.2.0-leopard/rexxapi/unix/QueueCommand.cpp:203:      rc = RexxPullQueue(quename, &queuedata, &dt, RXQUEUE_NOWAIT);
+src/oorexx-3.2.0-leopard/rexxapi/unix/QueuesAPI.cpp:49:/*  Entry Points:   LONG  APIENTRY RexxCreateQueue()-create a queue           */
+src/oorexx-3.2.0-leopard/rexxapi/unix/QueuesAPI.cpp:50:/*                  LONG  APIENTRY RexxDeleteQueue()-destroy a                */
+src/oorexx-3.2.0-leopard/rexxapi/unix/QueuesAPI.cpp:52:/*                  LONG  APIENTRY RexxQueryQueue() -query a queue            */
+src/oorexx-3.2.0-leopard/rexxapi/unix/QueuesAPI.cpp:53:/*                  LONG  APIENTRY RexxAddQueue()   -add data                 */
+src/oorexx-3.2.0-leopard/rexxapi/unix/QueuesAPI.cpp:54:/*                  LONG  APIENTRY RexxPullQueue()  -retrieve data            */
+src/oorexx-3.2.0-leopard/rexxapi/unix/QueuesAPI.cpp:469:  /* It's possible that the process terminates until a RexxPullQueue */
+src/oorexx-3.2.0-leopard/rexxapi/unix/QueuesAPI.cpp:688:/*  Function:        RexxCreateQueue()                               */
+src/oorexx-3.2.0-leopard/rexxapi/unix/QueuesAPI.cpp:735:ULONG  APIENTRY RexxCreateQueue(
+src/oorexx-3.2.0-leopard/rexxapi/unix/QueuesAPI.cpp:793:/*  Function:         RexxDeleteQueue()                              */
+src/oorexx-3.2.0-leopard/rexxapi/unix/QueuesAPI.cpp:806:ULONG  APIENTRY RexxDeleteQueue(
+src/oorexx-3.2.0-leopard/rexxapi/unix/QueuesAPI.cpp:879:/*  Function:         RexxQueryQueue()                               */
+src/oorexx-3.2.0-leopard/rexxapi/unix/QueuesAPI.cpp:890:ULONG  APIENTRY RexxQueryQueue(
+src/oorexx-3.2.0-leopard/rexxapi/unix/QueuesAPI.cpp:926:/*  Function:         RexxAddQueue()                                 */
+src/oorexx-3.2.0-leopard/rexxapi/unix/QueuesAPI.cpp:941:ULONG  APIENTRY RexxAddQueue(
+src/oorexx-3.2.0-leopard/rexxapi/unix/QueuesAPI.cpp:1019:/*  Function:         RexxPullQueue()                                */
+src/oorexx-3.2.0-leopard/rexxapi/unix/QueuesAPI.cpp:1046:ULONG  APIENTRY RexxPullQueue(
+src/oorexx-3.2.0-leopard/rexxapi/unix/QueuesAPI.cpp:1364:  /* It's possible that the process terminates until a RexxPullQueue */
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:534:/* Return Codes from RxMacroSpace interface ------------------------- */
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:611:/* RexxRegisterSubcomDll -- Register a library entry point ---------- */
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:617:APIRET APIENTRY RexxRegisterSubcomDll (
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:625:#define REXXREGISTERSUBCOMDLL  RexxRegisterSubcomDll
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:627:/* RexxRegisterSubcomExe -- Register an EXE entry point ------------- */
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:629:APIRET APIENTRY RexxRegisterSubcomExe (
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:635:#define REXXREGISTERSUBCOMEXE  RexxRegisterSubcomExe
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:637:/* RexxQuerySubcom - Query an environment for Existence ------------- */
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:638:APIRET APIENTRY RexxQuerySubcom(
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:646:#define REXXQUERYSUBCOM  RexxQuerySubcom
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:648:/* RexxDeregisterSubcom - Drop registration of a Subcommand --------- */
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:650:APIRET APIENTRY RexxDeregisterSubcom(
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:655:#define REXXDEREGISTERSUBCOM  RexxDeregisterSubcom
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:763:/* RexxShutDownAPI - Remove user specific shared memory ------------- */
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:764:APIRET APIENTRY RexxShutDownAPI(VOID);
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:767:#define REXXSHUTDOWNAPI  RexxShutDownAPI
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:1046:/* Type definition for RexxCreateQueue function pointer (dynamic linking)-- */
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:1048:/* RexxCreateQueue - Create an External Data Queue ------------------ */
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:1049:ULONG  APIENTRY RexxCreateQueue (
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:1055:/* Type definition for RexxCreateQueue function pointer (dynamic linking)-- */
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:1059:/* RexxDeleteQueue - Delete an External Data Queue ------------------ */
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:1060:ULONG  APIENTRY RexxDeleteQueue (
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:1063:/* Type definition for RexxDeleteQueue function pointer (dynamic linking)-- */
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:1067:/* RexxQueryQueue - Query an External Data Queue for number of entries*/
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:1068:ULONG  APIENTRY RexxQueryQueue (
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:1072:/* Type definition for RexxQueryQueue function pointer (dynamic linking)-- */
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:1076:/* RexxAddQueue - Add an entry to an External Data Queue ------------ */
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:1077:ULONG  APIENTRY RexxAddQueue (
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:1082:/* Type definition for RexxAddQueue function pointer (dynamic linking)-- */
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:1086:/* RexxPullQueue - Retrieve data from an External Data Queue -------- */
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:1087:ULONG  APIENTRY RexxPullQueue (
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:1094:/* Type definition for RexxPullQueue function pointer (dynamic linking)-- */
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:1134:/* RexxSaveMacroSpace - Save Macro Space functions to a file -------- */
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:1135:APIRET APIENTRY RexxSaveMacroSpace (
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:1141:#define REXXSAVEMACROSPACE  RexxSaveMacroSpace
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:1143:/* RexxLoadMacroSpace - Load Macro Space functions from a file ------ */
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:1144:APIRET APIENTRY RexxLoadMacroSpace (
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:1150:#define REXXLOADMACROSPACE  RexxLoadMacroSpace
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:1170:/* RexxClearMacroSpace - Remove all functions from a MacroSpace ----- */
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:1171:APIRET APIENTRY RexxClearMacroSpace(
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h:1175:#define REXXCLEARMACROSPACE  RexxClearMacroSpace
+src/oorexx-3.2.0-leopard/rexxapi/unix/RexxAPIManager.cpp:2269:/*  Function Name:   RexxShutDownAPI                                 */
+src/oorexx-3.2.0-leopard/rexxapi/unix/RexxAPIManager.cpp:2277:/*  Entry Point:     RexxShutDownAPI                                 */
+src/oorexx-3.2.0-leopard/rexxapi/unix/RexxAPIManager.cpp:2285:APIRET  APIENTRY RexxShutDownAPI(void)
+src/oorexx-3.2.0-leopard/rexxapi/unix/SUBCOMCommand.cpp:102:     return(RexxRegisterSubcomDll(scbname,
+src/oorexx-3.2.0-leopard/rexxapi/unix/SUBCOMCommand.cpp:112:        RexxQuerySubcom(               /* code.                      */
+src/oorexx-3.2.0-leopard/rexxapi/unix/SUBCOMCommand.cpp:123:        RexxDeregisterSubcom(          /* code                       */
+src/oorexx-3.2.0-leopard/rexxapi/unix/SubcommandAPI.cpp:223:/*  Function Name:  RexxRegisterSubcomDll                            */
+src/oorexx-3.2.0-leopard/rexxapi/unix/SubcommandAPI.cpp:234:/*  Entry Point:    RexxRegisterSubcomDll                            */
+src/oorexx-3.2.0-leopard/rexxapi/unix/SubcommandAPI.cpp:253:APIRET APIENTRY RexxRegisterSubcomDll(
+src/oorexx-3.2.0-leopard/rexxapi/unix/SubcommandAPI.cpp:271:/*  Function Name:  RexxRegisterSubcomExe                            */
+src/oorexx-3.2.0-leopard/rexxapi/unix/SubcommandAPI.cpp:282:/*  Entry Point:    RexxRegisterSubcomDll                            */
+src/oorexx-3.2.0-leopard/rexxapi/unix/SubcommandAPI.cpp:295:APIRET APIENTRY RexxRegisterSubcomExe(
+src/oorexx-3.2.0-leopard/rexxapi/unix/SubcommandAPI.cpp:449:/*  Function Name:   RexxQuerySubcom                                 */
+src/oorexx-3.2.0-leopard/rexxapi/unix/SubcommandAPI.cpp:455:/*  Entry Point:     RexxQuerySubcom                                 */
+src/oorexx-3.2.0-leopard/rexxapi/unix/SubcommandAPI.cpp:470:APIRET APIENTRY RexxQuerySubcom(
+src/oorexx-3.2.0-leopard/rexxapi/unix/SubcommandAPI.cpp:484:/*  Function Name:   RexxDeregisterSubcom                            */
+src/oorexx-3.2.0-leopard/rexxapi/unix/SubcommandAPI.cpp:489:/*  Entry Point:     RexxDeregisterSubcom                            */
+src/oorexx-3.2.0-leopard/rexxapi/unix/SubcommandAPI.cpp:499:APIRET APIENTRY RexxDeregisterSubcom(
+src/oorexx-3.2.0-leopard/rexxapi/unix/SubcommandAPI.cpp:1950:/*  Function Name:   RexxShutDownAPI moved to aixrxapi.c             */
+src/oorexx-3.2.0-leopard/rexxapi/unix/SubcommandAPI.cpp:1981:/*  Function Name:  RexxRegisterSubcom     ( CREXX function )        */
+src/oorexx-3.2.0-leopard/rexxapi/unix/SubcommandAPI.cpp:1984:/*                  interface.  (see RexxRegisterSubcomExe)          */
+src/oorexx-3.2.0-leopard/rexxapi/unix/SubcommandAPI.cpp:1987:APIRET APIENTRY RexxRegisterSubcom(

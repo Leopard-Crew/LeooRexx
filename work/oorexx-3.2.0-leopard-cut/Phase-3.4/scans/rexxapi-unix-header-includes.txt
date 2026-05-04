@@ -1,0 +1,88 @@
+src/oorexx-3.2.0-leopard/kernel/platform/unix/ExternalFunctions.cpp:86:#include "SubcommandAPI.h"
+src/oorexx-3.2.0-leopard/kernel/platform/unix/ExternalFunctions.cpp:87:#include "RexxAPIManager.h"
+src/oorexx-3.2.0-leopard/kernel/platform/unix/RexxMain.cpp:74:#include "RexxAPIManager.h"
+src/oorexx-3.2.0-leopard/kernel/platform/unix/RexxMain.cpp:76:#include "SubcommandAPI.h"
+src/oorexx-3.2.0-leopard/kernel/platform/unix/RexxQueues.cpp:61:#include "SubcommandAPI.h"                 /* Get private REXX API's        */
+src/oorexx-3.2.0-leopard/kernel/platform/unix/SystemCommands.cpp:73:#include "SubcommandAPI.h"                  /* Get private REXX API's         */
+src/oorexx-3.2.0-leopard/kernel/platform/windows/ExternalFunctions.cpp:79:#include "SubcommandAPI.h"                  /* Get private REXXAPI API's      */
+src/oorexx-3.2.0-leopard/kernel/platform/windows/ExternalFunctions.cpp:80:#include "RexxAPIManager.h"
+src/oorexx-3.2.0-leopard/kernel/platform/windows/RexxCompiler.cpp:50:#include "rexx.h"
+src/oorexx-3.2.0-leopard/kernel/platform/windows/RexxMain.cpp:76:#include "SubcommandAPI.h"
+src/oorexx-3.2.0-leopard/kernel/platform/windows/RexxMain.cpp:77:#include "RexxAPIManager.h"
+src/oorexx-3.2.0-leopard/kernel/platform/windows/RexxQueues.cpp:58:#include "SubcommandAPI.h"             /* Get private REXXAPI API's         */
+src/oorexx-3.2.0-leopard/kernel/platform/windows/SystemCommands.cpp:72:#include "SubcommandAPI.h"             /* Get private REXXAPI API's      */
+src/oorexx-3.2.0-leopard/kernel/platform/windows/SystemInitialization.cpp:46:#include "rexx.h"
+src/oorexx-3.2.0-leopard/kernel/platform/windows/SystemInitialization.cpp:48:#include "RexxAPIManager.h"
+src/oorexx-3.2.0-leopard/platform/unix/rexx.cpp:72:#include "rexx.h"
+src/oorexx-3.2.0-leopard/platform/windows/ole/events.cpp:56:#include "rexx.h"
+src/oorexx-3.2.0-leopard/platform/windows/ole/OLEVariant.c:61:#include "rexx.h"
+src/oorexx-3.2.0-leopard/platform/windows/ole/orexxole.c:54:#include "rexx.h"
+src/oorexx-3.2.0-leopard/platform/windows/oodialog/oovbmp.c:40:#include <rexx.h>
+src/oorexx-3.2.0-leopard/platform/windows/oodialog/oovdata.c:42:#include <rexx.h>
+src/oorexx-3.2.0-leopard/platform/windows/oodialog/oovdeskt.c:40:#include <rexx.h>
+src/oorexx-3.2.0-leopard/platform/windows/oodialog/oovdraw.c:40:#include <rexx.h>
+src/oorexx-3.2.0-leopard/platform/windows/oodialog/oovmsg.c:46:#include <rexx.h>
+src/oorexx-3.2.0-leopard/platform/windows/oodialog/oovother.c:45:#include <rexx.h>
+src/oorexx-3.2.0-leopard/platform/windows/oodialog/oovscrll.c:40:#include <rexx.h>
+src/oorexx-3.2.0-leopard/platform/windows/oodialog/oovtext.c:40:#include <rexx.h>
+src/oorexx-3.2.0-leopard/platform/windows/oodialog/oovtools.c:40:#include <rexx.h>
+src/oorexx-3.2.0-leopard/platform/windows/oodialog/oovuser.c:41:#include <rexx.h>
+src/oorexx-3.2.0-leopard/platform/windows/oodialog/oovutil.c:47:#include <rexx.h>
+src/oorexx-3.2.0-leopard/platform/windows/orxscrpt/eng2rexx.hpp:44:#include "rexx.h"
+src/oorexx-3.2.0-leopard/platform/windows/orxscrpt/orxdispid.hpp:43:#include "rexx.h"
+src/oorexx-3.2.0-leopard/platform/windows/rexx.c:57:#include <rexx.h>                           /* needed for RexxStart()     */
+src/oorexx-3.2.0-leopard/platform/windows/rexxc.c:55:#include <rexx.h>                           /* needed for RexxStart()     */
+src/oorexx-3.2.0-leopard/platform/windows/rexxhide.c:47:#include <rexx.h>                           /* needed for RexxStart()     */
+src/oorexx-3.2.0-leopard/platform/windows/rexxpaws.c:48:#include <rexx.h>                           /* needed for RexxStart()     */
+src/oorexx-3.2.0-leopard/rexutils/rxmath.cpp:105:#include "rexx.h"
+src/oorexx-3.2.0-leopard/rexutils/rxmath.cpp:110:#include <rexx.h>
+src/oorexx-3.2.0-leopard/rexutils/rxsock.c:92:   #include "rexx.h"
+src/oorexx-3.2.0-leopard/rexutils/rxsock.c:95:   #include <rexx.h>
+src/oorexx-3.2.0-leopard/rexutils/rxsockfn.c:59:# include "rexx.h"
+src/oorexx-3.2.0-leopard/rexutils/rxsockfn.c:62:#  include <rexx.h>
+src/oorexx-3.2.0-leopard/rexutils/unix/rexxutil.cpp:229:#include "RexxAPIManager.h"
+src/oorexx-3.2.0-leopard/rexutils/windows/rexxutil.c:189:#include <rexx.h>
+src/oorexx-3.2.0-leopard/rexutils/windows/rxwinsys.c:41:#include "rexx.h"
+src/oorexx-3.2.0-leopard/rexxapi/unix/APIManagerShutdown.cpp:49:#include "rexx.h"
+src/oorexx-3.2.0-leopard/rexxapi/unix/MacroSpace.cpp:80:#include "RexxAPIManager.h"                  /* RexxxExecuteMacroFunction() */
+src/oorexx-3.2.0-leopard/rexxapi/unix/QueueCommand.cpp:70:#include "RexxAPIManager.h"
+src/oorexx-3.2.0-leopard/rexxapi/unix/QueueCommand.cpp:71:#include "rexx.h"              /* needed for queue functions & codes */
+src/oorexx-3.2.0-leopard/rexxapi/unix/QueuesAPI.cpp:91:#include "RexxAPIManager.h"
+src/oorexx-3.2.0-leopard/rexxapi/unix/RexxAPIManager.cpp:83:#include "RexxAPIManager.h"
+src/oorexx-3.2.0-leopard/rexxapi/unix/SUBCOMCommand.cpp:61:#include "rexx.h"                      /* for REXXSAA functionality  */
+src/oorexx-3.2.0-leopard/rexxapi/unix/SUBCOMCommand.cpp:62:#include "SubcommandAPI.h"             /* get RexxLoadSubcom calls   */
+src/oorexx-3.2.0-leopard/rexxapi/unix/SUBCOMCommand.cpp:63:#include "RexxAPIManager.h"
+src/oorexx-3.2.0-leopard/rexxapi/unix/SubcommandAPI.cpp:73:#include "SubcommandAPI.h"
+src/oorexx-3.2.0-leopard/rexxapi/unix/SubcommandAPI.cpp:74:#include "RexxAPIManager.h"
+src/oorexx-3.2.0-leopard/rexxapi/windows/APIServiceSystem.h:166:#include "rexx.h"
+src/oorexx-3.2.0-leopard/rexxapi/windows/APIServiceTables.h:43:#include "rexx.h"
+src/oorexx-3.2.0-leopard/rexxapi/windows/APIUtilities.c:53:#include "rexx.h"
+src/oorexx-3.2.0-leopard/rexxapi/windows/APIUtilities.c:56:#include "RexxAPIManager.h"
+src/oorexx-3.2.0-leopard/rexxapi/windows/MacroSpace.c:82:#include "rexx.h"                      /* RXSTRING & REXXSAA() & APIs*/
+src/oorexx-3.2.0-leopard/rexxapi/windows/MacroSpace.c:90:#include "RexxAPIManager.h"            /* RxMacroFunctionExecute()   */
+src/oorexx-3.2.0-leopard/rexxapi/windows/QueueCommand.c:56:#include "RexxAPIManager.h"    /* needed for queue functions & codes */
+src/oorexx-3.2.0-leopard/rexxapi/windows/QueuesAPI.c:73:#include <rexx.h>
+src/oorexx-3.2.0-leopard/rexxapi/windows/QueuesAPI.c:78:#include "RexxAPIManager.h"
+src/oorexx-3.2.0-leopard/rexxapi/windows/RexxAPIManager.c:95:#include "rexx.h"
+src/oorexx-3.2.0-leopard/rexxapi/windows/RexxAPIManager.c:98:#include "RexxAPIManager.h"
+src/oorexx-3.2.0-leopard/rexxapi/windows/RexxAPIService.c:41:#include "rexx.h"
+src/oorexx-3.2.0-leopard/rexxapi/windows/RexxAPIService.c:49:#include "RexxAPIManager.h"
+src/oorexx-3.2.0-leopard/rexxapi/windows/SUBCOMCommand.c:50:#include "rexx.h"                      /* for REXX functionality     */
+src/oorexx-3.2.0-leopard/rexxapi/windows/SUBCOMCommand.c:51:#include "SubcommandAPI.h"             /* get RexxLoadSubcom calls   */
+src/oorexx-3.2.0-leopard/rexxapi/windows/SUBCOMCommand.c:52:#include "RexxAPIManager.h"
+src/oorexx-3.2.0-leopard/rexxapi/windows/SubcommandAPI.c:88:#include "rexx.h"
+src/oorexx-3.2.0-leopard/rexxapi/windows/SubcommandAPI.c:90:#include "RexxAPIManager.h"
+src/oorexx-3.2.0-leopard/rexxapi/windows/SubcommandAPI.c:91:#include "SubcommandAPI.h"
+src/oorexx-3.2.0-leopard/rxregexp/automaton.cpp:52:#include <rexx.h>
+src/oorexx-3.2.0-leopard/rxregexp/rxregexp.cpp:50:#include "rexx.h"
+src/oorexx-3.2.0-leopard/samples/unix/api/callrexx/callrexx1.cpp:62:#include "rexx.h"
+src/oorexx-3.2.0-leopard/samples/unix/api/callrexx/callrexx2.c:64:#include "rexx.h"
+src/oorexx-3.2.0-leopard/samples/unix/api/wpipe1/rexxasp1.c:54:#include <rexx.h>
+src/oorexx-3.2.0-leopard/samples/unix/api/wpipe2/rexxasp2.c:54:#include <rexx.h>
+src/oorexx-3.2.0-leopard/samples/unix/api/wpipe3/rexxasp3.c:54:#include <rexx.h>
+src/oorexx-3.2.0-leopard/samples/windows/api/callrxnt/callrxnt.c:55:#include <rexx.h>                      /* needed for RexxStart()     */
+src/oorexx-3.2.0-leopard/samples/windows/api/callrxwn/callrxwn.c:63:#include <rexx.h>                      /* needed for RexxStart()     */
+src/oorexx-3.2.0-leopard/samples/windows/api/rexxexit/rexxexit.c:55:#include <rexx.h>                           /* needed for RexxStart()     */
+src/oorexx-3.2.0-leopard/samples/windows/api/wpipe/wpipe1/rexxapi1.c:47:#include <rexx.h>
+src/oorexx-3.2.0-leopard/samples/windows/api/wpipe/wpipe2/rexxapi2.c:47:#include <rexx.h>
+src/oorexx-3.2.0-leopard/samples/windows/api/wpipe/wpipe3/rexxapi3.c:47:#include <rexx.h>

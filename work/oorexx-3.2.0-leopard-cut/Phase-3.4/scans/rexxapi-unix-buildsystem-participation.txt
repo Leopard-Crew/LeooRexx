@@ -1,0 +1,222 @@
+src/oorexx-3.2.0-leopard/Makefile.am:66:rexxapi_unix_dir = $(rexxapi_dir)/unix
+src/oorexx-3.2.0-leopard/Makefile.am:238:rexxapiunixHeaders = $(rexxapi_unix_dir)/APIUtilities.h \
+src/oorexx-3.2.0-leopard/Makefile.am:239:                     $(rexxapi_unix_dir)/RexxAPIManager.h \
+src/oorexx-3.2.0-leopard/Makefile.am:240:                     $(rexxapi_unix_dir)/SubcommandAPI.h
+src/oorexx-3.2.0-leopard/Makefile.am:292:bin_PROGRAMS = rexx rexxc rxmigrate rxqueue rxsubcom rxdelipc
+src/oorexx-3.2.0-leopard/Makefile.am:297:pkglib_LTLIBRARIES = librexxapi.la librexx.la librexxutil.la librxmath.la librxregexp.la librxsock.la
+src/oorexx-3.2.0-leopard/Makefile.am:307:include_HEADERS = $(rexxapi_unix_dir)/rexx.h
+src/oorexx-3.2.0-leopard/Makefile.am:315:           $(platform_unix_dir)/rxsubcom.1 \
+src/oorexx-3.2.0-leopard/Makefile.am:316:           $(platform_unix_dir)/rxqueue.1
+src/oorexx-3.2.0-leopard/Makefile.am:319:# Sources for librexxapi.so
+src/oorexx-3.2.0-leopard/Makefile.am:321:librexxapi_la_SOURCES = $(rexxapi_unix_dir)/SubcommandAPI.cpp \
+src/oorexx-3.2.0-leopard/Makefile.am:322:                        $(rexxapi_unix_dir)/RexxAPIManager.cpp \
+src/oorexx-3.2.0-leopard/Makefile.am:325:                        $(rexxapi_unix_dir)/MacroSpace.cpp \
+src/oorexx-3.2.0-leopard/Makefile.am:326:                        $(rexxapi_unix_dir)/QueuesAPI.cpp
+src/oorexx-3.2.0-leopard/Makefile.am:329:# Preprocessor flags for librexxapi.so
+src/oorexx-3.2.0-leopard/Makefile.am:331:librexxapi_la_CXXFLAGS  = $(COMMON_CPPFLAGS) \
+src/oorexx-3.2.0-leopard/Makefile.am:343:                          -I$(rexxapi_unix_dir)
+src/oorexx-3.2.0-leopard/Makefile.am:345:librexxapi_la_LDFLAGS = $(VERSION_INFO)
+src/oorexx-3.2.0-leopard/Makefile.am:526:                       -I$(rexxapi_unix_dir)
+src/oorexx-3.2.0-leopard/Makefile.am:540:                 -I$(rexxapi_unix_dir)
+src/oorexx-3.2.0-leopard/Makefile.am:544:rexx_LDADD   = librexx.la librexxapi.la @ORX_LDADD_EXECUTABLE@
+src/oorexx-3.2.0-leopard/Makefile.am:558:                  -I$(rexxapi_unix_dir)
+src/oorexx-3.2.0-leopard/Makefile.am:564:rexxc_LDADD   = librexx.la librexxapi.la @ORX_LDADD_EXECUTABLE@
+src/oorexx-3.2.0-leopard/Makefile.am:587:                   -I$(rexxapi_unix_dir)
+src/oorexx-3.2.0-leopard/Makefile.am:593:rxmigrate_LDADD   = librexx.la librexxapi.la @ORX_LDADD_EXECUTABLE@
+src/oorexx-3.2.0-leopard/Makefile.am:596:#################### rxqueue #########################
+src/oorexx-3.2.0-leopard/Makefile.am:597:# Sources for rxqueue
+src/oorexx-3.2.0-leopard/Makefile.am:599:rxqueue_SOURCES =  $(rexxapi_unix_dir)/QueueCommand.cpp
+src/oorexx-3.2.0-leopard/Makefile.am:601:# Preprocessor flags for rxqueue
+src/oorexx-3.2.0-leopard/Makefile.am:603:rxqueue_CXXFLAGS  = $(COMMON_CPPFLAGS) \
+src/oorexx-3.2.0-leopard/Makefile.am:607:                    -I$(rexxapi_unix_dir)
+src/oorexx-3.2.0-leopard/Makefile.am:609:# Extra libraries for rxqueue
+src/oorexx-3.2.0-leopard/Makefile.am:611:rxqueue_LDADD   = librexx.la librexxapi.la @ORX_LDADD_EXECUTABLE@
+src/oorexx-3.2.0-leopard/Makefile.am:612:rxqueue_LDFLAGS = @ORX_LDFLAGS_EXECUTABLE@
+src/oorexx-3.2.0-leopard/Makefile.am:614:#################### rxsubcom #########################
+src/oorexx-3.2.0-leopard/Makefile.am:615:# Sources for rxsubcom
+src/oorexx-3.2.0-leopard/Makefile.am:617:rxsubcom_SOURCES =  $(rexxapi_unix_dir)/SUBCOMCommand.cpp
+src/oorexx-3.2.0-leopard/Makefile.am:619:# Preprocessor flags for rxsubcom
+src/oorexx-3.2.0-leopard/Makefile.am:621:rxsubcom_CXXFLAGS  = $(COMMON_CPPFLAGS) \
+src/oorexx-3.2.0-leopard/Makefile.am:625:                    -I$(rexxapi_unix_dir)
+src/oorexx-3.2.0-leopard/Makefile.am:627:# Extra libraries for rxsubcom
+src/oorexx-3.2.0-leopard/Makefile.am:629:rxsubcom_LDADD   = librexx.la librexxapi.la @ORX_LDADD_EXECUTABLE@
+src/oorexx-3.2.0-leopard/Makefile.am:630:rxsubcom_LDFLAGS = @ORX_LDFLAGS_EXECUTABLE@
+src/oorexx-3.2.0-leopard/Makefile.am:632:#################### rxdelipc #########################
+src/oorexx-3.2.0-leopard/Makefile.am:633:# Sources for rxdelipc
+src/oorexx-3.2.0-leopard/Makefile.am:635:rxdelipc_SOURCES =  $(rexxapi_unix_dir)/APIManagerShutdown.cpp
+src/oorexx-3.2.0-leopard/Makefile.am:637:# Preprocessor flags for rxdelipc
+src/oorexx-3.2.0-leopard/Makefile.am:639:rxdelipc_CXXFLAGS  = $(COMMON_CPPFLAGS)
+src/oorexx-3.2.0-leopard/Makefile.am:644:# Extra libraries for rxdelipc
+src/oorexx-3.2.0-leopard/Makefile.am:646:rxdelipc_LDADD   = librexx.la librexxapi.la @ORX_LDADD_EXECUTABLE@
+src/oorexx-3.2.0-leopard/Makefile.am:647:rxdelipc_LDFLAGS = @ORX_LDFLAGS_EXECUTABLE@
+src/oorexx-3.2.0-leopard/Makefile.am:658:                          -I$(rexxapi_unix_dir)
+src/oorexx-3.2.0-leopard/Makefile.am:679:                        -I$(rexxapi_unix_dir)
+src/oorexx-3.2.0-leopard/Makefile.am:694:                      -I$(rexxapi_unix_dir)
+src/oorexx-3.2.0-leopard/Makefile.am:718:                          -I$(rexxapi_unix_dir)
+src/oorexx-3.2.0-leopard/Makefile.in:89:bin_PROGRAMS = rexx$(EXEEXT) rexxc$(EXEEXT) rxmigrate$(EXEEXT) \
+src/oorexx-3.2.0-leopard/Makefile.in:90:	rxqueue$(EXEEXT) rxsubcom$(EXEEXT) rxdelipc$(EXEEXT)
+src/oorexx-3.2.0-leopard/Makefile.in:205:librexxapi_la_LIBADD =
+src/oorexx-3.2.0-leopard/Makefile.in:206:am_librexxapi_la_OBJECTS = librexxapi_la-SubcommandAPI.lo \
+src/oorexx-3.2.0-leopard/Makefile.in:207:	librexxapi_la-RexxAPIManager.lo \
+src/oorexx-3.2.0-leopard/Makefile.in:208:	librexxapi_la-SystemSemaphores.lo \
+src/oorexx-3.2.0-leopard/Makefile.in:209:	librexxapi_la-SharedMemorySupport.lo \
+src/oorexx-3.2.0-leopard/Makefile.in:210:	librexxapi_la-MacroSpace.lo librexxapi_la-QueuesAPI.lo
+src/oorexx-3.2.0-leopard/Makefile.in:211:librexxapi_la_OBJECTS = $(am_librexxapi_la_OBJECTS)
+src/oorexx-3.2.0-leopard/Makefile.in:227:PROGRAMS = $(bin_PROGRAMS)
+src/oorexx-3.2.0-leopard/Makefile.in:230:rexx_DEPENDENCIES = librexx.la librexxapi.la
+src/oorexx-3.2.0-leopard/Makefile.in:233:rexxc_DEPENDENCIES = librexx.la librexxapi.la
+src/oorexx-3.2.0-leopard/Makefile.in:234:am_rxdelipc_OBJECTS = rxdelipc-APIManagerShutdown.$(OBJEXT)
+src/oorexx-3.2.0-leopard/Makefile.in:235:rxdelipc_OBJECTS = $(am_rxdelipc_OBJECTS)
+src/oorexx-3.2.0-leopard/Makefile.in:236:rxdelipc_DEPENDENCIES = librexx.la librexxapi.la
+src/oorexx-3.2.0-leopard/Makefile.in:239:rxmigrate_DEPENDENCIES = librexx.la librexxapi.la
+src/oorexx-3.2.0-leopard/Makefile.in:240:am_rxqueue_OBJECTS = rxqueue-QueueCommand.$(OBJEXT)
+src/oorexx-3.2.0-leopard/Makefile.in:241:rxqueue_OBJECTS = $(am_rxqueue_OBJECTS)
+src/oorexx-3.2.0-leopard/Makefile.in:242:rxqueue_DEPENDENCIES = librexx.la librexxapi.la
+src/oorexx-3.2.0-leopard/Makefile.in:243:am_rxsubcom_OBJECTS = rxsubcom-SUBCOMCommand.$(OBJEXT)
+src/oorexx-3.2.0-leopard/Makefile.in:244:rxsubcom_OBJECTS = $(am_rxsubcom_OBJECTS)
+src/oorexx-3.2.0-leopard/Makefile.in:245:rxsubcom_DEPENDENCIES = librexx.la librexxapi.la
+src/oorexx-3.2.0-leopard/Makefile.in:267:SOURCES = $(librexx_la_SOURCES) $(librexxapi_la_SOURCES) \
+src/oorexx-3.2.0-leopard/Makefile.in:270:	$(rexx_SOURCES) $(rexxc_SOURCES) $(rxdelipc_SOURCES) \
+src/oorexx-3.2.0-leopard/Makefile.in:271:	$(rxmigrate_SOURCES) $(rxqueue_SOURCES) $(rxsubcom_SOURCES)
+src/oorexx-3.2.0-leopard/Makefile.in:272:DIST_SOURCES = $(librexx_la_SOURCES) $(librexxapi_la_SOURCES) \
+src/oorexx-3.2.0-leopard/Makefile.in:275:	$(rexx_SOURCES) $(rexxc_SOURCES) $(rxdelipc_SOURCES) \
+src/oorexx-3.2.0-leopard/Makefile.in:276:	$(rxmigrate_SOURCES) $(rxqueue_SOURCES) $(rxsubcom_SOURCES)
+src/oorexx-3.2.0-leopard/Makefile.in:461:rexxapi_unix_dir = $(rexxapi_dir)/unix
+src/oorexx-3.2.0-leopard/Makefile.in:639:rexxapiunixHeaders = $(rexxapi_unix_dir)/APIUtilities.h \
+src/oorexx-3.2.0-leopard/Makefile.in:640:                     $(rexxapi_unix_dir)/RexxAPIManager.h \
+src/oorexx-3.2.0-leopard/Makefile.in:641:                     $(rexxapi_unix_dir)/SubcommandAPI.h
+src/oorexx-3.2.0-leopard/Makefile.in:701:pkglib_LTLIBRARIES = librexxapi.la librexx.la librexxutil.la librxmath.la librxregexp.la librxsock.la
+src/oorexx-3.2.0-leopard/Makefile.in:711:include_HEADERS = $(rexxapi_unix_dir)/rexx.h
+src/oorexx-3.2.0-leopard/Makefile.in:719:           $(platform_unix_dir)/rxsubcom.1 \
+src/oorexx-3.2.0-leopard/Makefile.in:720:           $(platform_unix_dir)/rxqueue.1
+src/oorexx-3.2.0-leopard/Makefile.in:724:# Sources for librexxapi.so
+src/oorexx-3.2.0-leopard/Makefile.in:726:librexxapi_la_SOURCES = $(rexxapi_unix_dir)/SubcommandAPI.cpp \
+src/oorexx-3.2.0-leopard/Makefile.in:727:                        $(rexxapi_unix_dir)/RexxAPIManager.cpp \
+src/oorexx-3.2.0-leopard/Makefile.in:730:                        $(rexxapi_unix_dir)/MacroSpace.cpp \
+src/oorexx-3.2.0-leopard/Makefile.in:731:                        $(rexxapi_unix_dir)/QueuesAPI.cpp
+src/oorexx-3.2.0-leopard/Makefile.in:735:# Preprocessor flags for librexxapi.so
+src/oorexx-3.2.0-leopard/Makefile.in:737:librexxapi_la_CXXFLAGS = $(COMMON_CPPFLAGS) \
+src/oorexx-3.2.0-leopard/Makefile.in:749:                          -I$(rexxapi_unix_dir)
+src/oorexx-3.2.0-leopard/Makefile.in:751:librexxapi_la_LDFLAGS = $(VERSION_INFO)
+src/oorexx-3.2.0-leopard/Makefile.in:943:                       -I$(rexxapi_unix_dir)
+src/oorexx-3.2.0-leopard/Makefile.in:957:                 -I$(rexxapi_unix_dir)
+src/oorexx-3.2.0-leopard/Makefile.in:962:rexx_LDADD = librexx.la librexxapi.la @ORX_LDADD_EXECUTABLE@
+src/oorexx-3.2.0-leopard/Makefile.in:976:                  -I$(rexxapi_unix_dir)
+src/oorexx-3.2.0-leopard/Makefile.in:983:rexxc_LDADD = librexx.la librexxapi.la @ORX_LDADD_EXECUTABLE@
+src/oorexx-3.2.0-leopard/Makefile.in:1006:                   -I$(rexxapi_unix_dir)
+src/oorexx-3.2.0-leopard/Makefile.in:1013:rxmigrate_LDADD = librexx.la librexxapi.la @ORX_LDADD_EXECUTABLE@
+src/oorexx-3.2.0-leopard/Makefile.in:1016:#################### rxqueue #########################
+src/oorexx-3.2.0-leopard/Makefile.in:1017:# Sources for rxqueue
+src/oorexx-3.2.0-leopard/Makefile.in:1019:rxqueue_SOURCES = $(rexxapi_unix_dir)/QueueCommand.cpp
+src/oorexx-3.2.0-leopard/Makefile.in:1021:# Preprocessor flags for rxqueue
+src/oorexx-3.2.0-leopard/Makefile.in:1023:rxqueue_CXXFLAGS = $(COMMON_CPPFLAGS) \
+src/oorexx-3.2.0-leopard/Makefile.in:1027:                    -I$(rexxapi_unix_dir)
+src/oorexx-3.2.0-leopard/Makefile.in:1030:# Extra libraries for rxqueue
+src/oorexx-3.2.0-leopard/Makefile.in:1032:rxqueue_LDADD = librexx.la librexxapi.la @ORX_LDADD_EXECUTABLE@
+src/oorexx-3.2.0-leopard/Makefile.in:1033:rxqueue_LDFLAGS = @ORX_LDFLAGS_EXECUTABLE@
+src/oorexx-3.2.0-leopard/Makefile.in:1035:#################### rxsubcom #########################
+src/oorexx-3.2.0-leopard/Makefile.in:1036:# Sources for rxsubcom
+src/oorexx-3.2.0-leopard/Makefile.in:1038:rxsubcom_SOURCES = $(rexxapi_unix_dir)/SUBCOMCommand.cpp
+src/oorexx-3.2.0-leopard/Makefile.in:1040:# Preprocessor flags for rxsubcom
+src/oorexx-3.2.0-leopard/Makefile.in:1042:rxsubcom_CXXFLAGS = $(COMMON_CPPFLAGS) \
+src/oorexx-3.2.0-leopard/Makefile.in:1046:                    -I$(rexxapi_unix_dir)
+src/oorexx-3.2.0-leopard/Makefile.in:1049:# Extra libraries for rxsubcom
+src/oorexx-3.2.0-leopard/Makefile.in:1051:rxsubcom_LDADD = librexx.la librexxapi.la @ORX_LDADD_EXECUTABLE@
+src/oorexx-3.2.0-leopard/Makefile.in:1052:rxsubcom_LDFLAGS = @ORX_LDFLAGS_EXECUTABLE@
+src/oorexx-3.2.0-leopard/Makefile.in:1054:#################### rxdelipc #########################
+src/oorexx-3.2.0-leopard/Makefile.in:1055:# Sources for rxdelipc
+src/oorexx-3.2.0-leopard/Makefile.in:1057:rxdelipc_SOURCES = $(rexxapi_unix_dir)/APIManagerShutdown.cpp
+src/oorexx-3.2.0-leopard/Makefile.in:1059:# Preprocessor flags for rxdelipc
+src/oorexx-3.2.0-leopard/Makefile.in:1061:rxdelipc_CXXFLAGS = $(COMMON_CPPFLAGS)
+src/oorexx-3.2.0-leopard/Makefile.in:1066:# Extra libraries for rxdelipc
+src/oorexx-3.2.0-leopard/Makefile.in:1068:rxdelipc_LDADD = librexx.la librexxapi.la @ORX_LDADD_EXECUTABLE@
+src/oorexx-3.2.0-leopard/Makefile.in:1069:rxdelipc_LDFLAGS = @ORX_LDFLAGS_EXECUTABLE@
+src/oorexx-3.2.0-leopard/Makefile.in:1080:                          -I$(rexxapi_unix_dir)
+src/oorexx-3.2.0-leopard/Makefile.in:1102:                        -I$(rexxapi_unix_dir)
+src/oorexx-3.2.0-leopard/Makefile.in:1118:                      -I$(rexxapi_unix_dir)
+src/oorexx-3.2.0-leopard/Makefile.in:1144:                          -I$(rexxapi_unix_dir)
+src/oorexx-3.2.0-leopard/Makefile.in:1290:librexxapi.la: $(librexxapi_la_OBJECTS) $(librexxapi_la_DEPENDENCIES) 
+src/oorexx-3.2.0-leopard/Makefile.in:1291:	$(CXXLINK) -rpath $(pkglibdir) $(librexxapi_la_LDFLAGS) $(librexxapi_la_OBJECTS) $(librexxapi_la_LIBADD) $(LIBS)
+src/oorexx-3.2.0-leopard/Makefile.in:1300:install-binPROGRAMS: $(bin_PROGRAMS)
+src/oorexx-3.2.0-leopard/Makefile.in:1303:	@list='$(bin_PROGRAMS)'; for p in $$list; do \
+src/oorexx-3.2.0-leopard/Makefile.in:1316:	@list='$(bin_PROGRAMS)'; for p in $$list; do \
+src/oorexx-3.2.0-leopard/Makefile.in:1323:	@list='$(bin_PROGRAMS)'; for p in $$list; do \
+src/oorexx-3.2.0-leopard/Makefile.in:1334:rxdelipc$(EXEEXT): $(rxdelipc_OBJECTS) $(rxdelipc_DEPENDENCIES) 
+src/oorexx-3.2.0-leopard/Makefile.in:1335:	@rm -f rxdelipc$(EXEEXT)
+src/oorexx-3.2.0-leopard/Makefile.in:1336:	$(CXXLINK) $(rxdelipc_LDFLAGS) $(rxdelipc_OBJECTS) $(rxdelipc_LDADD) $(LIBS)
+src/oorexx-3.2.0-leopard/Makefile.in:1340:rxqueue$(EXEEXT): $(rxqueue_OBJECTS) $(rxqueue_DEPENDENCIES) 
+src/oorexx-3.2.0-leopard/Makefile.in:1341:	@rm -f rxqueue$(EXEEXT)
+src/oorexx-3.2.0-leopard/Makefile.in:1342:	$(CXXLINK) $(rxqueue_LDFLAGS) $(rxqueue_OBJECTS) $(rxqueue_LDADD) $(LIBS)
+src/oorexx-3.2.0-leopard/Makefile.in:1343:rxsubcom$(EXEEXT): $(rxsubcom_OBJECTS) $(rxsubcom_DEPENDENCIES) 
+src/oorexx-3.2.0-leopard/Makefile.in:1344:	@rm -f rxsubcom$(EXEEXT)
+src/oorexx-3.2.0-leopard/Makefile.in:1345:	$(CXXLINK) $(rxsubcom_LDFLAGS) $(rxsubcom_OBJECTS) $(rxsubcom_LDADD) $(LIBS)
+src/oorexx-3.2.0-leopard/Makefile.in:1514:@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/librexxapi_la-MacroSpace.Plo@am__quote@
+src/oorexx-3.2.0-leopard/Makefile.in:1515:@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/librexxapi_la-QueuesAPI.Plo@am__quote@
+src/oorexx-3.2.0-leopard/Makefile.in:1516:@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/librexxapi_la-RexxAPIManager.Plo@am__quote@
+src/oorexx-3.2.0-leopard/Makefile.in:1517:@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/librexxapi_la-SharedMemorySupport.Plo@am__quote@
+src/oorexx-3.2.0-leopard/Makefile.in:1518:@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/librexxapi_la-SubcommandAPI.Plo@am__quote@
+src/oorexx-3.2.0-leopard/Makefile.in:1519:@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/librexxapi_la-SystemSemaphores.Plo@am__quote@
+src/oorexx-3.2.0-leopard/Makefile.in:1529:@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/rxdelipc-APIManagerShutdown.Po@am__quote@
+src/oorexx-3.2.0-leopard/Makefile.in:1531:@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/rxqueue-QueueCommand.Po@am__quote@
+src/oorexx-3.2.0-leopard/Makefile.in:1532:@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/rxsubcom-SUBCOMCommand.Po@am__quote@
+src/oorexx-3.2.0-leopard/Makefile.in:2584:librexxapi_la-SubcommandAPI.lo: $(rexxapi_unix_dir)/SubcommandAPI.cpp
+src/oorexx-3.2.0-leopard/Makefile.in:2585:@am__fastdepCXX_TRUE@	if $(LIBTOOL) --tag=CXX --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(librexxapi_la_CXXFLAGS) $(CXXFLAGS) -MT librexxapi_la-SubcommandAPI.lo -MD -MP -MF "$(DEPDIR)/librexxapi_la-SubcommandAPI.Tpo" -c -o librexxapi_la-SubcommandAPI.lo `test -f '$(rexxapi_unix_dir)/SubcommandAPI.cpp' || echo '$(srcdir)/'`$(rexxapi_unix_dir)/SubcommandAPI.cpp; \
+src/oorexx-3.2.0-leopard/Makefile.in:2586:@am__fastdepCXX_TRUE@	then mv -f "$(DEPDIR)/librexxapi_la-SubcommandAPI.Tpo" "$(DEPDIR)/librexxapi_la-SubcommandAPI.Plo"; else rm -f "$(DEPDIR)/librexxapi_la-SubcommandAPI.Tpo"; exit 1; fi
+src/oorexx-3.2.0-leopard/Makefile.in:2587:@AMDEP_TRUE@@am__fastdepCXX_FALSE@	source='$(rexxapi_unix_dir)/SubcommandAPI.cpp' object='librexxapi_la-SubcommandAPI.lo' libtool=yes @AMDEPBACKSLASH@
+src/oorexx-3.2.0-leopard/Makefile.in:2589:@am__fastdepCXX_FALSE@	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(librexxapi_la_CXXFLAGS) $(CXXFLAGS) -c -o librexxapi_la-SubcommandAPI.lo `test -f '$(rexxapi_unix_dir)/SubcommandAPI.cpp' || echo '$(srcdir)/'`$(rexxapi_unix_dir)/SubcommandAPI.cpp
+src/oorexx-3.2.0-leopard/Makefile.in:2591:librexxapi_la-RexxAPIManager.lo: $(rexxapi_unix_dir)/RexxAPIManager.cpp
+src/oorexx-3.2.0-leopard/Makefile.in:2592:@am__fastdepCXX_TRUE@	if $(LIBTOOL) --tag=CXX --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(librexxapi_la_CXXFLAGS) $(CXXFLAGS) -MT librexxapi_la-RexxAPIManager.lo -MD -MP -MF "$(DEPDIR)/librexxapi_la-RexxAPIManager.Tpo" -c -o librexxapi_la-RexxAPIManager.lo `test -f '$(rexxapi_unix_dir)/RexxAPIManager.cpp' || echo '$(srcdir)/'`$(rexxapi_unix_dir)/RexxAPIManager.cpp; \
+src/oorexx-3.2.0-leopard/Makefile.in:2593:@am__fastdepCXX_TRUE@	then mv -f "$(DEPDIR)/librexxapi_la-RexxAPIManager.Tpo" "$(DEPDIR)/librexxapi_la-RexxAPIManager.Plo"; else rm -f "$(DEPDIR)/librexxapi_la-RexxAPIManager.Tpo"; exit 1; fi
+src/oorexx-3.2.0-leopard/Makefile.in:2594:@AMDEP_TRUE@@am__fastdepCXX_FALSE@	source='$(rexxapi_unix_dir)/RexxAPIManager.cpp' object='librexxapi_la-RexxAPIManager.lo' libtool=yes @AMDEPBACKSLASH@
+src/oorexx-3.2.0-leopard/Makefile.in:2596:@am__fastdepCXX_FALSE@	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(librexxapi_la_CXXFLAGS) $(CXXFLAGS) -c -o librexxapi_la-RexxAPIManager.lo `test -f '$(rexxapi_unix_dir)/RexxAPIManager.cpp' || echo '$(srcdir)/'`$(rexxapi_unix_dir)/RexxAPIManager.cpp
+src/oorexx-3.2.0-leopard/Makefile.in:2598:librexxapi_la-SystemSemaphores.lo: $(kernel_platform_unix_dir)/SystemSemaphores.cpp
+src/oorexx-3.2.0-leopard/Makefile.in:2599:@am__fastdepCXX_TRUE@	if $(LIBTOOL) --tag=CXX --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(librexxapi_la_CXXFLAGS) $(CXXFLAGS) -MT librexxapi_la-SystemSemaphores.lo -MD -MP -MF "$(DEPDIR)/librexxapi_la-SystemSemaphores.Tpo" -c -o librexxapi_la-SystemSemaphores.lo `test -f '$(kernel_platform_unix_dir)/SystemSemaphores.cpp' || echo '$(srcdir)/'`$(kernel_platform_unix_dir)/SystemSemaphores.cpp; \
+src/oorexx-3.2.0-leopard/Makefile.in:2600:@am__fastdepCXX_TRUE@	then mv -f "$(DEPDIR)/librexxapi_la-SystemSemaphores.Tpo" "$(DEPDIR)/librexxapi_la-SystemSemaphores.Plo"; else rm -f "$(DEPDIR)/librexxapi_la-SystemSemaphores.Tpo"; exit 1; fi
+src/oorexx-3.2.0-leopard/Makefile.in:2601:@AMDEP_TRUE@@am__fastdepCXX_FALSE@	source='$(kernel_platform_unix_dir)/SystemSemaphores.cpp' object='librexxapi_la-SystemSemaphores.lo' libtool=yes @AMDEPBACKSLASH@
+src/oorexx-3.2.0-leopard/Makefile.in:2603:@am__fastdepCXX_FALSE@	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(librexxapi_la_CXXFLAGS) $(CXXFLAGS) -c -o librexxapi_la-SystemSemaphores.lo `test -f '$(kernel_platform_unix_dir)/SystemSemaphores.cpp' || echo '$(srcdir)/'`$(kernel_platform_unix_dir)/SystemSemaphores.cpp
+src/oorexx-3.2.0-leopard/Makefile.in:2605:librexxapi_la-SharedMemorySupport.lo: $(kernel_platform_unix_dir)/SharedMemorySupport.cpp
+src/oorexx-3.2.0-leopard/Makefile.in:2606:@am__fastdepCXX_TRUE@	if $(LIBTOOL) --tag=CXX --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(librexxapi_la_CXXFLAGS) $(CXXFLAGS) -MT librexxapi_la-SharedMemorySupport.lo -MD -MP -MF "$(DEPDIR)/librexxapi_la-SharedMemorySupport.Tpo" -c -o librexxapi_la-SharedMemorySupport.lo `test -f '$(kernel_platform_unix_dir)/SharedMemorySupport.cpp' || echo '$(srcdir)/'`$(kernel_platform_unix_dir)/SharedMemorySupport.cpp; \
+src/oorexx-3.2.0-leopard/Makefile.in:2607:@am__fastdepCXX_TRUE@	then mv -f "$(DEPDIR)/librexxapi_la-SharedMemorySupport.Tpo" "$(DEPDIR)/librexxapi_la-SharedMemorySupport.Plo"; else rm -f "$(DEPDIR)/librexxapi_la-SharedMemorySupport.Tpo"; exit 1; fi
+src/oorexx-3.2.0-leopard/Makefile.in:2608:@AMDEP_TRUE@@am__fastdepCXX_FALSE@	source='$(kernel_platform_unix_dir)/SharedMemorySupport.cpp' object='librexxapi_la-SharedMemorySupport.lo' libtool=yes @AMDEPBACKSLASH@
+src/oorexx-3.2.0-leopard/Makefile.in:2610:@am__fastdepCXX_FALSE@	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(librexxapi_la_CXXFLAGS) $(CXXFLAGS) -c -o librexxapi_la-SharedMemorySupport.lo `test -f '$(kernel_platform_unix_dir)/SharedMemorySupport.cpp' || echo '$(srcdir)/'`$(kernel_platform_unix_dir)/SharedMemorySupport.cpp
+src/oorexx-3.2.0-leopard/Makefile.in:2612:librexxapi_la-MacroSpace.lo: $(rexxapi_unix_dir)/MacroSpace.cpp
+src/oorexx-3.2.0-leopard/Makefile.in:2613:@am__fastdepCXX_TRUE@	if $(LIBTOOL) --tag=CXX --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(librexxapi_la_CXXFLAGS) $(CXXFLAGS) -MT librexxapi_la-MacroSpace.lo -MD -MP -MF "$(DEPDIR)/librexxapi_la-MacroSpace.Tpo" -c -o librexxapi_la-MacroSpace.lo `test -f '$(rexxapi_unix_dir)/MacroSpace.cpp' || echo '$(srcdir)/'`$(rexxapi_unix_dir)/MacroSpace.cpp; \
+src/oorexx-3.2.0-leopard/Makefile.in:2614:@am__fastdepCXX_TRUE@	then mv -f "$(DEPDIR)/librexxapi_la-MacroSpace.Tpo" "$(DEPDIR)/librexxapi_la-MacroSpace.Plo"; else rm -f "$(DEPDIR)/librexxapi_la-MacroSpace.Tpo"; exit 1; fi
+src/oorexx-3.2.0-leopard/Makefile.in:2615:@AMDEP_TRUE@@am__fastdepCXX_FALSE@	source='$(rexxapi_unix_dir)/MacroSpace.cpp' object='librexxapi_la-MacroSpace.lo' libtool=yes @AMDEPBACKSLASH@
+src/oorexx-3.2.0-leopard/Makefile.in:2617:@am__fastdepCXX_FALSE@	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(librexxapi_la_CXXFLAGS) $(CXXFLAGS) -c -o librexxapi_la-MacroSpace.lo `test -f '$(rexxapi_unix_dir)/MacroSpace.cpp' || echo '$(srcdir)/'`$(rexxapi_unix_dir)/MacroSpace.cpp
+src/oorexx-3.2.0-leopard/Makefile.in:2619:librexxapi_la-QueuesAPI.lo: $(rexxapi_unix_dir)/QueuesAPI.cpp
+src/oorexx-3.2.0-leopard/Makefile.in:2620:@am__fastdepCXX_TRUE@	if $(LIBTOOL) --tag=CXX --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(librexxapi_la_CXXFLAGS) $(CXXFLAGS) -MT librexxapi_la-QueuesAPI.lo -MD -MP -MF "$(DEPDIR)/librexxapi_la-QueuesAPI.Tpo" -c -o librexxapi_la-QueuesAPI.lo `test -f '$(rexxapi_unix_dir)/QueuesAPI.cpp' || echo '$(srcdir)/'`$(rexxapi_unix_dir)/QueuesAPI.cpp; \
+src/oorexx-3.2.0-leopard/Makefile.in:2621:@am__fastdepCXX_TRUE@	then mv -f "$(DEPDIR)/librexxapi_la-QueuesAPI.Tpo" "$(DEPDIR)/librexxapi_la-QueuesAPI.Plo"; else rm -f "$(DEPDIR)/librexxapi_la-QueuesAPI.Tpo"; exit 1; fi
+src/oorexx-3.2.0-leopard/Makefile.in:2622:@AMDEP_TRUE@@am__fastdepCXX_FALSE@	source='$(rexxapi_unix_dir)/QueuesAPI.cpp' object='librexxapi_la-QueuesAPI.lo' libtool=yes @AMDEPBACKSLASH@
+src/oorexx-3.2.0-leopard/Makefile.in:2624:@am__fastdepCXX_FALSE@	$(LIBTOOL) --tag=CXX --mode=compile $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(librexxapi_la_CXXFLAGS) $(CXXFLAGS) -c -o librexxapi_la-QueuesAPI.lo `test -f '$(rexxapi_unix_dir)/QueuesAPI.cpp' || echo '$(srcdir)/'`$(rexxapi_unix_dir)/QueuesAPI.cpp
+src/oorexx-3.2.0-leopard/Makefile.in:2689:rxdelipc-APIManagerShutdown.o: $(rexxapi_unix_dir)/APIManagerShutdown.cpp
+src/oorexx-3.2.0-leopard/Makefile.in:2690:@am__fastdepCXX_TRUE@	if $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(rxdelipc_CXXFLAGS) $(CXXFLAGS) -MT rxdelipc-APIManagerShutdown.o -MD -MP -MF "$(DEPDIR)/rxdelipc-APIManagerShutdown.Tpo" -c -o rxdelipc-APIManagerShutdown.o `test -f '$(rexxapi_unix_dir)/APIManagerShutdown.cpp' || echo '$(srcdir)/'`$(rexxapi_unix_dir)/APIManagerShutdown.cpp; \
+src/oorexx-3.2.0-leopard/Makefile.in:2691:@am__fastdepCXX_TRUE@	then mv -f "$(DEPDIR)/rxdelipc-APIManagerShutdown.Tpo" "$(DEPDIR)/rxdelipc-APIManagerShutdown.Po"; else rm -f "$(DEPDIR)/rxdelipc-APIManagerShutdown.Tpo"; exit 1; fi
+src/oorexx-3.2.0-leopard/Makefile.in:2692:@AMDEP_TRUE@@am__fastdepCXX_FALSE@	source='$(rexxapi_unix_dir)/APIManagerShutdown.cpp' object='rxdelipc-APIManagerShutdown.o' libtool=no @AMDEPBACKSLASH@
+src/oorexx-3.2.0-leopard/Makefile.in:2694:@am__fastdepCXX_FALSE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(rxdelipc_CXXFLAGS) $(CXXFLAGS) -c -o rxdelipc-APIManagerShutdown.o `test -f '$(rexxapi_unix_dir)/APIManagerShutdown.cpp' || echo '$(srcdir)/'`$(rexxapi_unix_dir)/APIManagerShutdown.cpp
+src/oorexx-3.2.0-leopard/Makefile.in:2696:rxdelipc-APIManagerShutdown.obj: $(rexxapi_unix_dir)/APIManagerShutdown.cpp
+src/oorexx-3.2.0-leopard/Makefile.in:2697:@am__fastdepCXX_TRUE@	if $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(rxdelipc_CXXFLAGS) $(CXXFLAGS) -MT rxdelipc-APIManagerShutdown.obj -MD -MP -MF "$(DEPDIR)/rxdelipc-APIManagerShutdown.Tpo" -c -o rxdelipc-APIManagerShutdown.obj `if test -f '$(rexxapi_unix_dir)/APIManagerShutdown.cpp'; then $(CYGPATH_W) '$(rexxapi_unix_dir)/APIManagerShutdown.cpp'; else $(CYGPATH_W) '$(srcdir)/$(rexxapi_unix_dir)/APIManagerShutdown.cpp'; fi`; \
+src/oorexx-3.2.0-leopard/Makefile.in:2698:@am__fastdepCXX_TRUE@	then mv -f "$(DEPDIR)/rxdelipc-APIManagerShutdown.Tpo" "$(DEPDIR)/rxdelipc-APIManagerShutdown.Po"; else rm -f "$(DEPDIR)/rxdelipc-APIManagerShutdown.Tpo"; exit 1; fi
+src/oorexx-3.2.0-leopard/Makefile.in:2699:@AMDEP_TRUE@@am__fastdepCXX_FALSE@	source='$(rexxapi_unix_dir)/APIManagerShutdown.cpp' object='rxdelipc-APIManagerShutdown.obj' libtool=no @AMDEPBACKSLASH@
+src/oorexx-3.2.0-leopard/Makefile.in:2701:@am__fastdepCXX_FALSE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(rxdelipc_CXXFLAGS) $(CXXFLAGS) -c -o rxdelipc-APIManagerShutdown.obj `if test -f '$(rexxapi_unix_dir)/APIManagerShutdown.cpp'; then $(CYGPATH_W) '$(rexxapi_unix_dir)/APIManagerShutdown.cpp'; else $(CYGPATH_W) '$(srcdir)/$(rexxapi_unix_dir)/APIManagerShutdown.cpp'; fi`
+src/oorexx-3.2.0-leopard/Makefile.in:2717:rxqueue-QueueCommand.o: $(rexxapi_unix_dir)/QueueCommand.cpp
+src/oorexx-3.2.0-leopard/Makefile.in:2718:@am__fastdepCXX_TRUE@	if $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(rxqueue_CXXFLAGS) $(CXXFLAGS) -MT rxqueue-QueueCommand.o -MD -MP -MF "$(DEPDIR)/rxqueue-QueueCommand.Tpo" -c -o rxqueue-QueueCommand.o `test -f '$(rexxapi_unix_dir)/QueueCommand.cpp' || echo '$(srcdir)/'`$(rexxapi_unix_dir)/QueueCommand.cpp; \
+src/oorexx-3.2.0-leopard/Makefile.in:2719:@am__fastdepCXX_TRUE@	then mv -f "$(DEPDIR)/rxqueue-QueueCommand.Tpo" "$(DEPDIR)/rxqueue-QueueCommand.Po"; else rm -f "$(DEPDIR)/rxqueue-QueueCommand.Tpo"; exit 1; fi
+src/oorexx-3.2.0-leopard/Makefile.in:2720:@AMDEP_TRUE@@am__fastdepCXX_FALSE@	source='$(rexxapi_unix_dir)/QueueCommand.cpp' object='rxqueue-QueueCommand.o' libtool=no @AMDEPBACKSLASH@
+src/oorexx-3.2.0-leopard/Makefile.in:2722:@am__fastdepCXX_FALSE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(rxqueue_CXXFLAGS) $(CXXFLAGS) -c -o rxqueue-QueueCommand.o `test -f '$(rexxapi_unix_dir)/QueueCommand.cpp' || echo '$(srcdir)/'`$(rexxapi_unix_dir)/QueueCommand.cpp
+src/oorexx-3.2.0-leopard/Makefile.in:2724:rxqueue-QueueCommand.obj: $(rexxapi_unix_dir)/QueueCommand.cpp
+src/oorexx-3.2.0-leopard/Makefile.in:2725:@am__fastdepCXX_TRUE@	if $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(rxqueue_CXXFLAGS) $(CXXFLAGS) -MT rxqueue-QueueCommand.obj -MD -MP -MF "$(DEPDIR)/rxqueue-QueueCommand.Tpo" -c -o rxqueue-QueueCommand.obj `if test -f '$(rexxapi_unix_dir)/QueueCommand.cpp'; then $(CYGPATH_W) '$(rexxapi_unix_dir)/QueueCommand.cpp'; else $(CYGPATH_W) '$(srcdir)/$(rexxapi_unix_dir)/QueueCommand.cpp'; fi`; \
+src/oorexx-3.2.0-leopard/Makefile.in:2726:@am__fastdepCXX_TRUE@	then mv -f "$(DEPDIR)/rxqueue-QueueCommand.Tpo" "$(DEPDIR)/rxqueue-QueueCommand.Po"; else rm -f "$(DEPDIR)/rxqueue-QueueCommand.Tpo"; exit 1; fi
+src/oorexx-3.2.0-leopard/Makefile.in:2727:@AMDEP_TRUE@@am__fastdepCXX_FALSE@	source='$(rexxapi_unix_dir)/QueueCommand.cpp' object='rxqueue-QueueCommand.obj' libtool=no @AMDEPBACKSLASH@
+src/oorexx-3.2.0-leopard/Makefile.in:2729:@am__fastdepCXX_FALSE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(rxqueue_CXXFLAGS) $(CXXFLAGS) -c -o rxqueue-QueueCommand.obj `if test -f '$(rexxapi_unix_dir)/QueueCommand.cpp'; then $(CYGPATH_W) '$(rexxapi_unix_dir)/QueueCommand.cpp'; else $(CYGPATH_W) '$(srcdir)/$(rexxapi_unix_dir)/QueueCommand.cpp'; fi`
+src/oorexx-3.2.0-leopard/Makefile.in:2731:rxsubcom-SUBCOMCommand.o: $(rexxapi_unix_dir)/SUBCOMCommand.cpp
+src/oorexx-3.2.0-leopard/Makefile.in:2732:@am__fastdepCXX_TRUE@	if $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(rxsubcom_CXXFLAGS) $(CXXFLAGS) -MT rxsubcom-SUBCOMCommand.o -MD -MP -MF "$(DEPDIR)/rxsubcom-SUBCOMCommand.Tpo" -c -o rxsubcom-SUBCOMCommand.o `test -f '$(rexxapi_unix_dir)/SUBCOMCommand.cpp' || echo '$(srcdir)/'`$(rexxapi_unix_dir)/SUBCOMCommand.cpp; \
+src/oorexx-3.2.0-leopard/Makefile.in:2733:@am__fastdepCXX_TRUE@	then mv -f "$(DEPDIR)/rxsubcom-SUBCOMCommand.Tpo" "$(DEPDIR)/rxsubcom-SUBCOMCommand.Po"; else rm -f "$(DEPDIR)/rxsubcom-SUBCOMCommand.Tpo"; exit 1; fi
+src/oorexx-3.2.0-leopard/Makefile.in:2734:@AMDEP_TRUE@@am__fastdepCXX_FALSE@	source='$(rexxapi_unix_dir)/SUBCOMCommand.cpp' object='rxsubcom-SUBCOMCommand.o' libtool=no @AMDEPBACKSLASH@
+src/oorexx-3.2.0-leopard/Makefile.in:2736:@am__fastdepCXX_FALSE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(rxsubcom_CXXFLAGS) $(CXXFLAGS) -c -o rxsubcom-SUBCOMCommand.o `test -f '$(rexxapi_unix_dir)/SUBCOMCommand.cpp' || echo '$(srcdir)/'`$(rexxapi_unix_dir)/SUBCOMCommand.cpp
+src/oorexx-3.2.0-leopard/Makefile.in:2738:rxsubcom-SUBCOMCommand.obj: $(rexxapi_unix_dir)/SUBCOMCommand.cpp
+src/oorexx-3.2.0-leopard/Makefile.in:2739:@am__fastdepCXX_TRUE@	if $(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(rxsubcom_CXXFLAGS) $(CXXFLAGS) -MT rxsubcom-SUBCOMCommand.obj -MD -MP -MF "$(DEPDIR)/rxsubcom-SUBCOMCommand.Tpo" -c -o rxsubcom-SUBCOMCommand.obj `if test -f '$(rexxapi_unix_dir)/SUBCOMCommand.cpp'; then $(CYGPATH_W) '$(rexxapi_unix_dir)/SUBCOMCommand.cpp'; else $(CYGPATH_W) '$(srcdir)/$(rexxapi_unix_dir)/SUBCOMCommand.cpp'; fi`; \
+src/oorexx-3.2.0-leopard/Makefile.in:2740:@am__fastdepCXX_TRUE@	then mv -f "$(DEPDIR)/rxsubcom-SUBCOMCommand.Tpo" "$(DEPDIR)/rxsubcom-SUBCOMCommand.Po"; else rm -f "$(DEPDIR)/rxsubcom-SUBCOMCommand.Tpo"; exit 1; fi
+src/oorexx-3.2.0-leopard/Makefile.in:2741:@AMDEP_TRUE@@am__fastdepCXX_FALSE@	source='$(rexxapi_unix_dir)/SUBCOMCommand.cpp' object='rxsubcom-SUBCOMCommand.obj' libtool=no @AMDEPBACKSLASH@
+src/oorexx-3.2.0-leopard/Makefile.in:2743:@am__fastdepCXX_FALSE@	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) $(CPPFLAGS) $(rxsubcom_CXXFLAGS) $(CXXFLAGS) -c -o rxsubcom-SUBCOMCommand.obj `if test -f '$(rexxapi_unix_dir)/SUBCOMCommand.cpp'; then $(CYGPATH_W) '$(rexxapi_unix_dir)/SUBCOMCommand.cpp'; else $(CYGPATH_W) '$(srcdir)/$(rexxapi_unix_dir)/SUBCOMCommand.cpp'; fi`
+src/oorexx-3.2.0-leopard/Makefile.in:2952:	$(mkdir_p) $(distdir)/$(classes_dir) $(distdir)/$(expression_dir) $(distdir)/$(instructions_dir) $(distdir)/$(kernel_dir) $(distdir)/$(kernel_platform_common_dir) $(distdir)/$(kernel_platform_unix_dir) $(distdir)/$(kernel_platform_windows_dir) $(distdir)/$(lib_dir) $(distdir)/$(messages_dir) $(distdir)/$(parser_dir) $(distdir)/$(platform_unix_dir) $(distdir)/$(platform_windows_dir) $(distdir)/$(rexutils_dir) $(distdir)/$(rexutils_unix_dir) $(distdir)/$(rexutils_windows_dir) $(distdir)/$(rexxapi_dir) $(distdir)/$(rexxapi_unix_dir) $(distdir)/$(rexxapi_windows_dir) $(distdir)/$(runtime_dir) $(distdir)/$(rxregexp_dir) $(distdir)/$(samples_dir) $(distdir)/$(samples_windows_dir) $(distdir)/$(som_dir) $(distdir)/$(streamlibrary_dir) $(distdir)/$(top_srcdir) $(distdir)/. $(distdir)/platform/unix $(distdir)/platform/unix/debian

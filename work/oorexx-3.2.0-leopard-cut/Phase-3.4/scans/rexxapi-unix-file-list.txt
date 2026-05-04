@@ -1,0 +1,11 @@
+src/oorexx-3.2.0-leopard/rexxapi/unix/APIManagerShutdown.cpp
+src/oorexx-3.2.0-leopard/rexxapi/unix/APIUtilities.h
+src/oorexx-3.2.0-leopard/rexxapi/unix/MacroSpace.cpp
+src/oorexx-3.2.0-leopard/rexxapi/unix/QueueCommand.cpp
+src/oorexx-3.2.0-leopard/rexxapi/unix/QueuesAPI.cpp
+src/oorexx-3.2.0-leopard/rexxapi/unix/RexxAPIManager.cpp
+src/oorexx-3.2.0-leopard/rexxapi/unix/RexxAPIManager.h
+src/oorexx-3.2.0-leopard/rexxapi/unix/rexx.h
+src/oorexx-3.2.0-leopard/rexxapi/unix/SUBCOMCommand.cpp
+src/oorexx-3.2.0-leopard/rexxapi/unix/SubcommandAPI.cpp
+src/oorexx-3.2.0-leopard/rexxapi/unix/SubcommandAPI.h
