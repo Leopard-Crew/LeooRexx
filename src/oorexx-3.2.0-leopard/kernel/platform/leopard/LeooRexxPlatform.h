@@ -1,3 +1,5 @@
+/* Make a special profile for LeooRexx */
+
 #ifndef LEOOREXX_PLATFORM_H
 #define LEOOREXX_PLATFORM_H
 
